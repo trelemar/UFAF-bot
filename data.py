@@ -122,6 +122,7 @@ stat_breakdowns = {
     }
 }
 
+'''
 def stats(player_name):
     stats_df = pd.read_csv("/media/trevor/DECK/UFAF/Season 1/S1_W1.csv")
     stats_data = stats_df.to_dict("records")
@@ -138,6 +139,7 @@ def stats(player_name):
     return part
 
 print(stats("Jude Zimmerman"))
+'''
 
 weights = pull_csv("WEIGHTS.csv")
 
@@ -160,8 +162,7 @@ def get_team_emoji(message, team):
     if message.guild == None:
         return ""
     emoji_id = 0
-    if team == "Z": team = "naga"
-    if team == "ZZ": team = "naga"
+    if team == 0: team = "ufaf"
     for emoji in message.guild.emojis:
         if emoji.name == removeSpacesAndPeriods(team):
             emoji_id = emoji.id

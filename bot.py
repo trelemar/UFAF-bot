@@ -33,17 +33,26 @@ def getChannelByName(ctx, name):
             channel = i
     return channel
 
+if len(sys.argv) > 1 and sys.argv[1] == "y":
+    BOT_TOKEN = TOKEN.BETA
+    prefix = "?"
+    data_path = "/home/trevor/UFAF_data/"
+else:
+    BOT_TOKEN = TOKEN.MAIN
+    prefix = "!"
+    data_path = "/mnt/rasp/"
+
 def init():
     global player_records, teams, team_table, transaction_queue, players, league_settings
     with open("league_settings.json") as settings_file:
         league_settings = json.load(settings_file)
 
-    player_records = pull_csv("ROSTER.csv")
+    player_records = pull_csv(data_path + "ROSTER.csv")
     players = []
     for p in player_records:
         players.append(Player(p))
     print(len(players))
-    teams = pull_csv("TEAMS.csv")
+    teams = pull_csv(data_path + "TEAMS.csv")
     team_table = {}
     for team in teams:
         team_table[team["ID"]] = team
@@ -54,12 +63,6 @@ async def role_to_team_name(ctx, team_role):
     role = await commands.RoleConverter().convert(ctx, team_role)
     return role.name
 
-if len(sys.argv) > 1 and sys.argv[1] == "y":
-    BOT_TOKEN = TOKEN.BETA
-    prefix = "?"
-else:
-    BOT_TOKEN = TOKEN.MAIN
-    prefix = "!"
 
 bot = commands.Bot(command_prefix=prefix, description=description, intents=intents)
 
@@ -138,12 +141,14 @@ class Everyone(commands.Cog, name="Everyone"):
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
 
         team_name = "Free Agent"
+        emoji_name = "ufaf"
         if p.attributes["TEAMID"] > 0:
             team = team_table[p.attributes["TEAMID"]]
             team_name = team["CITY"] + " " + team["NICKNAME"]
+            emoji_name = team["CITY"]
 
         try:
-            role = await commands.RoleConverter().convert(ctx, team_name)
+            role = await commands.RoleConverter().convert(ctx, team["CITY"] + " " + team["NICKNAME"])
         except:
             role = False
             
@@ -151,13 +156,13 @@ class Everyone(commands.Cog, name="Everyone"):
         if role:
             color = role.color
 
-        path = f'/home/trevor/.steam/debian-installation/steamapps/common/Axis Football 2024/Mods/Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
+        path = f'{data_path}Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
         
         thumb = discord.File(path, filename="portrait.png")
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
-        team_emoji = get_team_emoji(ctx.message, team_table[p.attributes["TEAMID"]]["CITY"])
+        team_emoji = get_team_emoji(ctx.message, emoji_name)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
-        title = f'**{p.letter_grade()} {p.attributes["DEV"]}**\n{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
+        title = f'{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {p.attributes["DEV"]}'
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
         embedMsg.add_field(name="", value=f'**Age** {p.attributes["AGE"]}')
         embedMsg.add_field(name="", value=f'**Ht** {height} · **Wt** {p.attributes["Weight"]} lbs', inline=False)
@@ -332,7 +337,7 @@ async def processTransaction(msg_id, message):
     for p in players:
         player_records.append(p.attributes)
 
-    push_csv(player_records, "ROSTER.csv")
+    push_csv(player_records, data_path + "ROSTER.csv")
 
     await transactions_feed.send(transaction_message)
 
@@ -422,7 +427,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
             if not p.attributes["INDEX"] in used:
                 export_list.append(p.attributes)
         await ctx.reply(msg)
-        push_csv(export_list, "EXPORT.csv")
+        push_csv(export_list, data_path + "EXPORT.csv")
 
 class TeamOwner(commands.Cog, name="Team Owner"):
     def __init__(self, bot):
@@ -470,7 +475,7 @@ class TeamOwner(commands.Cog, name="Team Owner"):
                 for p in players:
                     player_records.append(p.attributes)
 
-                push_csv(player_records, "ROSTER.csv")
+                push_csv(player_records, data_path + "ROSTER.csv")
 
                 await ctx.send(msg)
             else:
