@@ -122,6 +122,7 @@ stat_breakdowns = {
     }
 }
 
+'''
 def stats(player_name):
     stats_df = pd.read_csv("/media/trevor/DECK/UFAF/Season 1/S1_W1.csv")
     stats_data = stats_df.to_dict("records")
@@ -138,6 +139,7 @@ def stats(player_name):
     return part
 
 print(stats("Jude Zimmerman"))
+'''
 
 weights = pull_csv("WEIGHTS.csv")
 
