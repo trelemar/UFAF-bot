@@ -40,7 +40,7 @@ position_fills = [1, 1, 1, 5, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 3,
 positions = ["QB", "RB", "FB", "TE", "WR", "OL", "LT", "LG", "C", "RG", "RT", "DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "FS", "SS", "DB", "K", "P"]
 team_units = {
     "Offense" : ["QB", "RB", "FB", "TE", "WR", "OL", "LT", "LG", "C", "RG", "RT"],
-    "Defense" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "FS", "SS", "DB"],
+    "Defense" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "DB", "FS", "SS", "DB"],
     "Special Teams" : ["K", "P"]
 }
 
@@ -89,6 +89,8 @@ core_attributes = {
     'K' :  ['KPW',  'KAC',  'AWR',  'SPD',  'THP',  'THA',  'TKL',  'BSHD', 'FIT'],
     'P' :  ['KPW',  'KAC',  'AWR',  'SPD',  'THP',  'THA',  'TKL',  'BSHD', 'FIT']
 }
+
+print(core_attributes["DB"])
 
 def simplest_type(s):
     try:
@@ -204,6 +206,22 @@ class Player:
             if ovr in r:
                 g = letter
         return g
+
+    def team_emoji(self, ctx, teams_table):
+        tid = self.attributes["TEAMID"]
+        if tid > 0:
+            team_city = teams_table[tid]["CITY"]
+        else:
+            team_city = "ufaf"
+
+        if ctx.guild == None:
+            return ""
+        for emoji in ctx.guild.emojis:
+            if emoji.name == removeSpacesAndPeriods(team_city):
+                emoji_id = emoji.id
+        emoji_string = "<:{}:{}>".format(removeSpacesAndPeriods(team_city), emoji_id)
+        return emoji_string
+
     def assign_random_dev_trait(self):
         self.attributes["DEV"] = random.choices(dev_levels, weights=dev_weights)[0]
 

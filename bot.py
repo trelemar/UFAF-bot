@@ -36,11 +36,12 @@ def getChannelByName(ctx, name):
 if len(sys.argv) > 1 and sys.argv[1] == "y":
     BOT_TOKEN = TOKEN.BETA
     prefix = "?"
-    data_path = "/home/trevor/UFAF_data/"
+    data_path = "/mnt/rasp/"
 else:
     BOT_TOKEN = TOKEN.MAIN
     prefix = "!"
-    data_path = "/mnt/rasp/"
+    
+    data_path = "/home/trevor/UFAF_data/"
 
 def init():
     global player_records, teams, team_table, transaction_queue, players, league_settings
@@ -160,13 +161,14 @@ class Everyone(commands.Cog, name="Everyone"):
         
         thumb = discord.File(path, filename="portrait.png")
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
-        team_emoji = get_team_emoji(ctx.message, emoji_name)
+        team_emoji = p.team_emoji(ctx, team_table)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         title = f'{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {p.attributes["DEV"]}'
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
         embedMsg.add_field(name="", value=f'**Age** {p.attributes["AGE"]}')
         embedMsg.add_field(name="", value=f'**Ht** {height} · **Wt** {p.attributes["Weight"]} lbs', inline=False)
         #embedMsg.add_field(name="", value=f'**College** {p["College"]} · **Hometown** {p["Hometown"]}, {p["State"]}', inline=False)
+
         for rating_name in core_attributes[p.attributes["POS"]]:
             l = p.rating_grade(attributes[rating_name])
             embedMsg.add_field(name=l, value=rating_name, inline=True)
