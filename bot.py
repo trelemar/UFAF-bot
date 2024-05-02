@@ -8,10 +8,13 @@ from discord.ext.commands import Greedy, Context # or a subclass of yours
 from functools import cmp_to_key
 import math
 import json
+import sys
 
 from data import *
 from checks import *
 from button_views import *
+
+import TOKEN
 
 description = f'''
 Here is a list of available commands:
@@ -51,7 +54,14 @@ async def role_to_team_name(ctx, team_role):
     role = await commands.RoleConverter().convert(ctx, team_role)
     return role.name
 
-bot = commands.Bot(command_prefix="!", description=description, intents=intents)
+if len(sys.argv) > 1 and sys.argv[1] == "y":
+    BOT_TOKEN = TOKEN.BETA
+    prefix = "?"
+else:
+    BOT_TOKEN = TOKEN.MAIN
+    prefix = "!"
+
+bot = commands.Bot(command_prefix=prefix, description=description, intents=intents)
 
 @bot.command()
 @commands.guild_only()
@@ -588,7 +598,4 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     async def cog_command_error(self, ctx, error):
         await ctx.message.reply(error)
 
-with open("TOKEN.txt", "r") as file:
-    TOKEN = file.read()
-
-bot.run(TOKEN)
+bot.run(BOT_TOKEN)
