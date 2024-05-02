@@ -141,12 +141,14 @@ class Everyone(commands.Cog, name="Everyone"):
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
 
         team_name = "Free Agent"
+        emoji_name = "ufaf"
         if p.attributes["TEAMID"] > 0:
             team = team_table[p.attributes["TEAMID"]]
             team_name = team["CITY"] + " " + team["NICKNAME"]
+            emoji_name = team["CITY"]
 
         try:
-            role = await commands.RoleConverter().convert(ctx, team_name)
+            role = await commands.RoleConverter().convert(ctx, team["CITY"] + " " + team["NICKNAME"])
         except:
             role = False
             
@@ -154,13 +156,13 @@ class Everyone(commands.Cog, name="Everyone"):
         if role:
             color = role.color
 
-        path = f'/home/trevor/.steam/debian-installation/steamapps/common/Axis Football 2024/Mods/Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
+        path = f'{data_path}Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
         
         thumb = discord.File(path, filename="portrait.png")
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
-        team_emoji = get_team_emoji(ctx.message, team_table[p.attributes["TEAMID"]]["CITY"])
+        team_emoji = get_team_emoji(ctx.message, emoji_name)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
-        title = f'**{p.letter_grade()} {p.attributes["DEV"]}**\n{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
+        title = f'{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {p.attributes["DEV"]}'
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
         embedMsg.add_field(name="", value=f'**Age** {p.attributes["AGE"]}')
         embedMsg.add_field(name="", value=f'**Ht** {height} · **Wt** {p.attributes["Weight"]} lbs', inline=False)
