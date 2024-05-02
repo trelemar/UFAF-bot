@@ -164,14 +164,15 @@ class Everyone(commands.Cog, name="Everyone"):
         #embedMsg = discord.Embed(title=title, description=f'{team_name}', color=color)
         embedMsg.set_thumbnail(url="attachment://portrait.png")
 
-        if p.attributes["TEAMID"] == 0:
-            view.add_item(SignButton(ctx, bot, p))
-        elif p.attributes["TEAMID"] in ownedTeams:
-            if p.attributes["STATUS"] == "Active":
-                view.add_item(DemoteButton(ctx, bot, p))
-            elif p.attributes["STATUS"] == "Practice Squad":
-                view.add_item(PromoteButton(ctx, bot, p))
-            view.add_item(ReleaseButton(ctx, bot, p))
+        if league_settings["LOCK"] == 0:
+            if p.attributes["TEAMID"] == 0:
+                view.add_item(SignButton(ctx, bot, p))
+            elif p.attributes["TEAMID"] in ownedTeams:
+                if p.attributes["STATUS"] == "Active":
+                    view.add_item(DemoteButton(ctx, bot, p))
+                elif p.attributes["STATUS"] == "Practice Squad":
+                    view.add_item(PromoteButton(ctx, bot, p))
+                view.add_item(ReleaseButton(ctx, bot, p))
 
 
         '''
@@ -420,7 +421,6 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     @commands.hybrid_command(name="set_depth", with_app_command=True, description="Set a player's depth chart position.")
     @commands.has_role("Team Owner")
     async def set_depth(self, ctx, player_id: str, depth_position : int):
-        print(league_settings)
         if league_settings["LOCK"] == 1:
             print("LOCKED")
             await ctx.reply("Team rosters are currently locked.")
@@ -471,6 +471,10 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     @commands.hybrid_command(name="sign", with_app_command=True, description="Sign a player to a team's roster")
     @commands.has_role("Team Owner")
     async def sign(self, ctx, player_id : str, team_role):
+        if league_settings["LOCK"] == 1:
+            print("LOCKED")
+            await ctx.reply("Team rosters are currently locked.")
+            return
         init()
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
         p = getPlayer(players, player_id)
@@ -506,6 +510,10 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     @commands.hybrid_command(name="release", with_app_command=True, description="Release a player from a team you own.")
     @commands.has_role("Team Owner")
     async def release(self, ctx, player_id : str):
+        if league_settings["LOCK"] == 1:
+            print("LOCKED")
+            await ctx.reply("Team rosters are currently locked.")
+            return
         init()
         pid = str(player_id)
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
@@ -527,6 +535,10 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     @commands.hybrid_command(name="promote", with_app_command=True, description="Move a player to the active roster.")
     @commands.has_role("Team Owner")
     async def promote(self, ctx, player_id : str):
+        if league_settings["LOCK"] == 1:
+            print("LOCKED")
+            await ctx.reply("Team rosters are currently locked.")
+            return
         init()
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
         p = getPlayer(players, player_id)
@@ -549,6 +561,10 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     @commands.hybrid_command(name="demote", with_app_command=True, description="Move a player to the practice squad")
     @commands.has_role("Team Owner")
     async def demote(self, ctx, player_id : str):
+        if league_settings["LOCK"] == 1:
+            print("LOCKED")
+            await ctx.reply("Team rosters are currently locked.")
+            return
         init()
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
         p = getPlayer(players, player_id)
