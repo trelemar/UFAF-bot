@@ -139,30 +139,6 @@ reassignments = {
     "P" : []
 }
 
-core_attributes = {
-    'QB' : ['THP',  'THA',  'AWR',  'SPD',  'FIT',  'FUM'],
-    'RB' : ['TLB',  'SPD',  'FUM', 'AWR', 'CAT',  'RTRN', 'PBLK'],
-    'FB' : ['RBLK', 'PBLK', 'SPD',  'TLB',  'FUM',  'AWR'],
-    'WR' : ['SPD',  'CAT',  'RTRN', 'FUM',  'FIT'],
-    'TE' : ['SPD',  'CAT',  'RBLK', 'AWR',  'RTRN', 'PBLK', 'TLB'],
-    'LT' : ['RBLK', 'PBLK', 'AWR',  'SPD',  'FIT',  'SPD',  'FIT'],
-    'LG' : ['RBLK', 'PBLK', 'AWR',  'SPD',  'FIT',  'SPD',  'FIT'],
-    'C' : ['RBLK', 'PBLK', 'AWR',  'SPD',  'FIT',  'SPD',  'FIT'],
-    'RG' : ['RBLK', 'PBLK', 'AWR',  'SPD',  'FIT',  'SPD',  'FIT'],
-    'RT' : ['RBLK', 'PBLK', 'AWR',  'SPD',  'FIT',  'SPD',  'FIT'],
-    'DE' : ['SPD',  'TKL',  'BSHD', 'PRSH', 'AWR',  'HTP',  'FIT'],
-    'DT' : ['PRSH', 'BSHD', 'TKL',  'AWR',  'SPD',  'HTP',  'FIT'],
-    'OLB' : ['TKL',  'HTP',  'SPD',  'PRSH', 'BSHD', 'AWR',  'ZCOV', 'MCOV', 'CAT'],
-    'MLB' : ['SPD',  'TKL',  'BSHD', 'HTP',  'AWR',  'ZCOV', 'PRSH', 'FIT',  'MCOV'],
-    'CB' : ['SPD',  'MCOV', 'ZCOV', 'CAT',  'TKL',  'AWR',  'BSHD', 'HTP',  'FIT'],
-    'FS' : ['SPD',  'ZCOV', 'TKL',  'MCOV', 'HTP',  'BSHD', 'AWR',  'CAT',  'FIT'],
-    'SS' : ['SPD',  'ZCOV', 'TKL',  'MCOV', 'HTP',  'BSHD', 'AWR',  'CAT',  'FIT'],
-    'K' :  ['KPW',  'KAC',  'AWR',  'SPD',  'THP',  'THA',  'TKL',  'BSHD', 'FIT'],
-    'P' :  ['KPW',  'KAC',  'AWR',  'SPD',  'THP',  'THA',  'TKL',  'BSHD', 'FIT']
-}
-
-
-
 
 #bio_info = ["Age", "Exp"]
 
