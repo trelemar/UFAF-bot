@@ -1,0 +1,2511 @@
+INFO: 1ST QTR, 10:00 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 12 yard line
+ELLIS MINNICK (DB) tackled HAYDEN QUINN at the TB 25 yard line
+Play was ended as Tackle
+Play ended at the VR 26 yard line
+Play is over - 1st & 10 from the TB 26 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 9:56 remaining
+Ball at the TB 26.  1st & 10
+Offense picked SHOTGUN - TIGHT - MTN HB SWING (SCREEN PASS)
+Defense picked FOUR THREE - OVER PLUS - COVER 2 SINK (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 19 yard line
+DARRYL COBBS (WR, TB) gained control of the ball at the TB 38 yard line
+ELLIS MINNICK (DB) tackled DARRYL COBBS at the TB 42 yard line
+Play was ended as Tackle
+Play ended at the TB 46 yard line
+DARRYL COBBS gained 20 receiving yards on the play.
+SIMON GUINN is now 1 for 1 with 20 yards and 0 TDs.
+DARRYL COBBS now has 1 catches for 20 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 46 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 9:30 remaining
+Ball at the TB 46.  1st & 10
+Offense picked I FORM - NORMAL - RB BLAST (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - ROBBER PRESS COVER 1 (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 45 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 40 yard line
+BRIAN SHIELDS (LB) tackled JUDSON ABLES at the TB 48 yard line
+Play was ended as Tackle
+Play ended at the VR 50 yard line
+JUDSON ABLES gained 5 rushing yards on the play.
+JUDSON ABLES now has 1 rushes for 5 yards and 0 TDs.
+Play is over - 2nd & 5 from the VR 50 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 9:14 remaining
+Ball at the VR 50.  2nd & 5
+Offense picked I FORM - NORMAL - SLUGGOS (DEEP PASS)
+Defense picked FOUR THREE - OVER PLUS - INVERT COVER 2 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 49 yard line
+ELLIS MINNICK (DB) deflected the pass at the VR 11 yard line
+Play was ended as Incomplete
+Play ended at the VR 50 yard line
+Play is over - 3rd & 5 from the VR 50 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 9:08 remaining
+Ball at the VR 50.  3rd & 5
+Offense picked STRONG I - NORMAL - PA X COMEBACK (PLAY ACTION)
+Defense picked FOUR THREE - STACK - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 49 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 48 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the VR 48 yard line
+Play was ended as Tackle
+Play ended at the VR 47 yard line
+JUDSON ABLES gained 3 receiving yards on the play.
+SIMON GUINN is now 2 for 3 with 23 yards and 0 TDs.
+JUDSON ABLES now has 1 catches for 3 yards and 0 TDs.
+Play is over - 4th & 2 from the VR 47 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 8:52 remaining
+Ball at the VR 47.  4th & 2
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+HARRIS LAWHORN (P, TB) gained control of the ball at the VR 43 yard line
+Play was ended as OOB
+Play ended at the TB 26 yard line
+Play is over - 1st & 10 from the VR 26 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 8:47 remaining
+Ball at the VR 26.  1st & 10
+Offense picked I FORM - NORMAL - HB SCREEN (SCREEN PASS)
+Defense picked THREE FOUR - SPLIT - COVER 3 SKY (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 26 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 21 yard line
+JON SWAIM (DB) tackled DARRELL JEFFERSON at the VR 22 yard line
+Play was ended as Tackle
+Play ended at the VR 23 yard line
+DARRELL JEFFERSON gained -4 receiving yards on the play.
+RANDOLPH MERRIMAN is now 1 for 1 with -4 yards and 0 TDs.
+DARRELL JEFFERSON now has 1 catches for -4 yards and 0 TDs.
+Play is over - 2nd & 14 from the VR 23 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 8:22 remaining
+Ball at the VR 23.  2nd & 14
+Offense picked SHOTGUN - NORMAL Y FLEX - TE CROSS (MID PASS)
+Defense picked DIME - TWO THREE WILL - EDGE BLITZ 2 (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 16 yard line
+DEMARIO ROYSTER (WR) dropped the pass at the VR 46 yard line
+Play was ended as Incomplete
+Play ended at the VR 23 yard line
+Play is over - 3rd & 14 from the VR 23 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 8:17 remaining
+Ball at the VR 23.  3rd & 14
+Offense picked WEAK I - TWINS - X POST (MID PASS)
+Defense picked NICKEL - THREE THREE CUB - TAMPA 2 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 22 yard line
+ZACHARY KELLEY (DB) deflected the pass at the VR 49 yard line
+Play was ended as Incomplete
+Play ended at the VR 23 yard line
+Play is over - 4th & 14 from the VR 23 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 8:13 remaining
+Ball at the VR 23.  4th & 14
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+DUSTIN BEACHY (P, VR) gained control of the ball at the VR 12 yard line
+DUSTIN BEACHY punted the ball
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 32 yard line
+DEMARIO ROYSTER (WR) tackled HAYDEN QUINN at the TB 37 yard line
+Play was ended as Tackle
+Play ended at the VR 38 yard line
+Play is over - 1st & 10 from the TB 38 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 8:06 remaining
+Ball at the TB 38.  1st & 10
+Offense picked SHOTGUN - TIGHT - HB TOSS (OUTSIDE RUN)
+Defense picked FOUR THREE - OVER PLUS - DOUBLE OLB BLITZ (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 32 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 32 yard line
+BRIAN SHIELDS (LB) tackled JUDSON ABLES at the TB 37 yard line
+Play was ended as Tackle
+Play ended at the TB 39 yard line
+JUDSON ABLES gained 0 rushing yards on the play.
+JUDSON ABLES now has 2 rushes for 5 yards and 0 TDs.
+Play is over - 2nd & 10 from the TB 39 yard line
+Score is TB - 0, VR - 0
+
+INFO: 1ST QTR, 7:45 remaining
+Ball at the TB 39.  2nd & 10
+Offense picked SINGLE BACK - TREY OPEN - HB PITCH WEAK (OUTSIDE RUN)
+Defense picked FOUR THREE - WEAK - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 38 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 32 yard line
+JUDSON ABLES broke the tackle of BRIAN SHIELDS (LB) at the TB 40 yard line
+Play was ended as Touchdown
+Play ended at the TB 39 yard line
+JUDSON ABLES gained 61 rushing yards on the play.
+JUDSON ABLES now has 3 rushes for 66 yards and 1 TDs.
+Play is over - 1st & GL from the VR 15 yard line
+Score is TB - 6, VR - 0
+
+INFO: 1ST QTR, 7:34 remaining
+Ball at the VR 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 22 yard line
+Play was ended as MadeFG
+Play ended at the TB 39 yard line
+Play is over - 1st & 10 from the TB 35 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 7:34 remaining
+Ball at the TB 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 9 yard line
+JON SWAIM (DB) tackled DEMARIO ROYSTER at the VR 24 yard line
+Play was ended as Tackle
+Play ended at the TB 26 yard line
+Play is over - 1st & 10 from the VR 26 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 7:31 remaining
+Ball at the VR 26.  1st & 10
+Offense picked STRONG I - TWINS FLEX - DEUCE (SHORT PASS)
+Defense picked THREE FOUR - OVER -  (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 25 yard line
+EZRA RIDDICK (DL) tackled RANDOLPH MERRIMAN at the VR 19 yard line
+Play was ended as Tackle
+Play ended at the VR 19 yard line
+Play is over - 2nd & 17 from the VR 19 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 7:11 remaining
+Ball at the VR 19.  2nd & 17
+Offense picked WEAK I - NORMAL - TE DRAG (SHORT PASS)
+Defense picked DIME - ONE FOUR - COVER 4 DROP (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 18 yard line
+CHARLIE BOYKIN (WR, VR) gained control of the ball at the VR 40 yard line
+CAMRYN BOYKIN (DB) tackled CHARLIE BOYKIN at the VR 39 yard line
+Play was ended as Tackle
+Play ended at the TB 38 yard line
+CHARLIE BOYKIN gained 43 receiving yards on the play.
+RANDOLPH MERRIMAN is now 2 for 4 with 39 yards and 0 TDs.
+CHARLIE BOYKIN now has 1 catches for 43 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 38 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 6:52 remaining
+Ball at the TB 38.  1st & 10
+Offense picked I FORM - SLOT FLEX - HB TOSS (OUTSIDE RUN)
+Defense picked THREE FOUR - SPLIT - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 39 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 45 yard line
+JON SWAIM (DB) tackled DARRELL JEFFERSON at the TB 35 yard line
+Play was ended as Tackle
+Play ended at the TB 34 yard line
+DARRELL JEFFERSON gained 5 rushing yards on the play.
+DARRELL JEFFERSON now has 1 rushes for 5 yards and 0 TDs.
+Play is over - 2nd & 5 from the TB 34 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 6:30 remaining
+Ball at the TB 34.  2nd & 5
+Offense picked SINGLE BACK - TREY OPEN - PA SMASH (PLAY ACTION)
+Defense picked THREE FOUR - OVER - DOUBLE STUFF (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 35 yard line
+CHASE WELSH (LB) tackled RANDOLPH MERRIMAN at the TB 41 yard line
+Play was ended as Tackle
+Play ended at the TB 41 yard line
+Play is over - 3rd & 13 from the TB 41 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 6:09 remaining
+Ball at the TB 41.  3rd & 13
+Offense picked STRONG I - NORMAL - PITCH STRONG (OUTSIDE RUN)
+Defense picked DIME - TWO THREE WILL - CORNER FIRE 2 (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 42 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 48 yard line
+ZACHARY KELLEY (DB) tackled DARRELL JEFFERSON at the TB 35 yard line
+Play was ended as Tackle
+Play ended at the TB 33 yard line
+DARRELL JEFFERSON gained 8 rushing yards on the play.
+DARRELL JEFFERSON now has 2 rushes for 13 yards and 0 TDs.
+There was a penalty on the play - Penalty Details: Facemask against the Defense for 15 yards. FirstDown.  It was accepted
+Play is over - 1st & 10 from the TB 18 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 5:44 remaining
+Ball at the TB 18.  1st & 10
+Offense picked I FORM - NORMAL - DEUCE (SHORT PASS)
+Defense picked THREE FOUR - UNDER - WILL FIRE COVER 3 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 19 yard line
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the TB 8 yard line
+JON SWAIM (DB) tackled DEMARIO ROYSTER at the TB 6 yard line
+Play was ended as Tackle
+Play ended at the TB 6 yard line
+DEMARIO ROYSTER gained 12 receiving yards on the play.
+RANDOLPH MERRIMAN is now 3 for 5 with 51 yards and 0 TDs.
+DEMARIO ROYSTER now has 1 catches for 12 yards and 0 TDs.
+Play is over - 1st & GL from the TB 6 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 5:26 remaining
+Ball at the TB 6.  1st & GL
+Offense picked SHOTGUN - TRIPS - DEEP CROSS (DEEP PASS)
+Defense picked THREE FOUR - ODD - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 13 yard line
+CHANDLER LAND (LB) tackled RANDOLPH MERRIMAN at the TB 15 yard line
+Play was ended as Tackle
+Play ended at the TB 13 yard line
+Play is over - 2nd & GL from the TB 13 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 5:01 remaining
+Ball at the TB 13.  2nd & GL
+Offense picked SHOTGUN - TIGHT - X FLY (MID PASS)
+Defense picked NICKEL - THREE THREE ODD - COVER 3 SKY (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 20 yard line
+DONTE BROCKINGTON (WR, VR) gained control of the ball at the TB 11 yard line
+JON SWAIM (DB) tackled DONTE BROCKINGTON at the TB 11 yard line
+Play was ended as Tackle
+Play ended at the TB 10 yard line
+DONTE BROCKINGTON gained 3 receiving yards on the play.
+RANDOLPH MERRIMAN is now 4 for 6 with 54 yards and 0 TDs.
+DONTE BROCKINGTON now has 1 catches for 3 yards and 0 TDs.
+Play is over - 3rd & GL from the TB 10 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 4:44 remaining
+Ball at the TB 10.  3rd & GL
+Offense picked SHOTGUN - TREY - TE CROSS (MID PASS)
+Defense picked THREE FOUR - SPLIT - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 17 yard line
+Play was ended as Incomplete
+Play ended at the TB 10 yard line
+Play is over - 4th & GL from the TB 10 yard line
+Score is TB - 7, VR - 0
+
+INFO: 1ST QTR, 4:40 remaining
+Ball at the TB 10.  4th & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 17 yard line
+Play was ended as MadeFG
+RANDALL WHITT made a 27 yard FG
+Play ended at the TB 10 yard line
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 4:37 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 7 yard line
+ELLIS MINNICK (DB) tackled HAYDEN QUINN at the TB 28 yard line
+Play was ended as Tackle
+Play ended at the VR 29 yard line
+Play is over - 1st & 10 from the TB 29 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 4:33 remaining
+Ball at the TB 29.  1st & 10
+Offense picked SHOTGUN - SLOT OFFSET - MTN HB SWING (SCREEN PASS)
+Defense picked FOUR THREE - EVEN SIX ONE - COVER 4 QUARTERS (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 23 yard line
+Play was ended as Incomplete
+Play ended at the TB 29 yard line
+Play is over - 2nd & 10 from the TB 29 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 4:28 remaining
+Ball at the TB 29.  2nd & 10
+Offense picked WEAK I - NORMAL - HB ISO WEAK (INSIDE RUN)
+Defense picked FOUR THREE - STACK - OLB STING COVER 1 (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 28 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 24 yard line
+DARRYL COUNCIL (DB) tackled JUDSON ABLES at the TB 32 yard line
+Play was ended as Tackle
+Play ended at the TB 36 yard line
+JUDSON ABLES gained 7 rushing yards on the play.
+JUDSON ABLES now has 4 rushes for 73 yards and 1 TDs.
+Play is over - 3rd & 3 from the TB 36 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 4:12 remaining
+Ball at the TB 36.  3rd & 3
+Offense picked STRONG I - TWINS - TOSS WEAK (OUTSIDE RUN)
+Defense picked FOUR FOUR - STACK - COVER 2 INVERT (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 35 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 29 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the TB 41 yard line
+Play was ended as Tackle
+Play ended at the TB 41 yard line
+JUDSON ABLES gained 5 rushing yards on the play.
+JUDSON ABLES now has 5 rushes for 78 yards and 1 TDs.
+Play is over - 1st & 10 from the TB 41 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 3:51 remaining
+Ball at the TB 41.  1st & 10
+Offense picked STRONG I - TWINS - PA POWER O (PLAY ACTION)
+Defense picked FOUR THREE - OVER PLUS - BASE MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 40 yard line
+Play was ended as Incomplete
+Play ended at the TB 41 yard line
+Play is over - 2nd & 10 from the TB 41 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 3:46 remaining
+Ball at the TB 41.  2nd & 10
+Offense picked SINGLE BACK - BUNCH - HB POWER STRONG (OUTSIDE RUN)
+Defense picked FOUR THREE - WEAK - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 40 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 35 yard line
+JUDSON ABLES broke the tackle of PARIS PINKNEY (DL) at the TB 36 yard line
+ELLIS MINNICK (DB) tackled JUDSON ABLES at the TB 45 yard line
+Play was ended as Tackle
+Play ended at the TB 49 yard line
+JUDSON ABLES gained 9 rushing yards on the play.
+JUDSON ABLES now has 6 rushes for 87 yards and 1 TDs.
+Play is over - 3rd & 1 from the TB 49 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 3:29 remaining
+Ball at the TB 49.  3rd & 1
+Offense picked STRONG I - TWINS - POWER O (OUTSIDE RUN)
+Defense picked FOUR FOUR - OVER - COVER 3 INSIDE BLITZ (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 48 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 44 yard line
+EDGAR TARIN (DB) tackled STEVIE COUNCIL at the TB 44 yard line
+Play was ended as Tackle
+Play ended at the VR 40 yard line
+STEVIE COUNCIL gained 11 rushing yards on the play.
+STEVIE COUNCIL now has 1 rushes for 11 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 40 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 3:13 remaining
+Ball at the VR 40.  1st & 10
+Offense picked SINGLE BACK - SPREAD - HB FLATS (SCREEN PASS)
+Defense picked FOUR THREE - WEAK - COVER 1 SPY (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 41 yard line
+Play was ended as Incomplete
+Play ended at the VR 40 yard line
+Play is over - 2nd & 10 from the VR 40 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 3:07 remaining
+Ball at the VR 40.  2nd & 10
+Offense picked SHOTGUN - SLOT OFFSET - ACE POSTS (DEEP PASS)
+Defense picked FOUR THREE - EVEN SIX ONE - SAM BLITZ COVER 3 (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 47 yard line
+HAYDEN QUINN (RB, TB) gained control of the ball at the VR 37 yard line
+JAMARCUS MCNAIR (DB) tackled HAYDEN QUINN at the VR 37 yard line
+Play was ended as OOB
+Play ended at the VR 37 yard line
+HAYDEN QUINN gained 3 receiving yards on the play.
+SIMON GUINN is now 3 for 7 with 26 yards and 0 TDs.
+HAYDEN QUINN now has 1 catches for 3 yards and 0 TDs.
+Play is over - 3rd & 7 from the VR 37 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 2:50 remaining
+Ball at the VR 37.  3rd & 7
+Offense picked GOAL LINE - HEAVY - FB FAKE HB FLIP (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 3 HARD FLAT (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 38 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 44 yard line
+JUDSON ABLES broke the tackle of JAMARCUS MCNAIR (DB) at the VR 36 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the VR 38 yard line
+Play was ended as Tackle
+Play ended at the VR 39 yard line
+JUDSON ABLES gained -2 rushing yards on the play.
+JUDSON ABLES now has 7 rushes for 85 yards and 1 TDs.
+Play is over - 4th & 9 from the VR 39 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 2:33 remaining
+Ball at the VR 39.  4th & 9
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+HARRIS LAWHORN (P, TB) gained control of the ball at the VR 50 yard line
+Play was ended as OOB_In_Endzone
+Play ended at the TB 0 yard line
+Play is over - 1st & 10 from the VR 20 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 2:29 remaining
+Ball at the VR 20.  1st & 10
+Offense picked SHOTGUN - NORMAL Y FLEX - ACE POSTS (DEEP PASS)
+Defense picked THREE FOUR - UNDER - PINCH BUCK 0 (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 14 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 21 yard line
+JON SWAIM (DB) tackled DARRELL JEFFERSON at the VR 22 yard line
+Play was ended as Tackle
+Play ended at the VR 28 yard line
+DARRELL JEFFERSON gained 8 receiving yards on the play.
+RANDOLPH MERRIMAN is now 5 for 8 with 62 yards and 0 TDs.
+DARRELL JEFFERSON now has 2 catches for 4 yards and 0 TDs.
+Play is over - 2nd & 2 from the VR 28 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 2:04 remaining
+Ball at the VR 28.  2nd & 2
+Offense picked I FORM - NORMAL - FB FLARE (SHORT PASS)
+Defense picked FOUR FOUR - STACK - COVER 2 INVERT (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 27 yard line
+JASPER MACKLIN (TE, VR) gained control of the ball at the VR 44 yard line
+CAMRYN BOYKIN (DB) tackled JASPER MACKLIN at the VR 40 yard line
+Play was ended as Tackle
+Play ended at the TB 37 yard line
+JASPER MACKLIN gained 35 receiving yards on the play.
+RANDOLPH MERRIMAN is now 6 for 9 with 97 yards and 0 TDs.
+JASPER MACKLIN now has 1 catches for 35 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 37 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 1:46 remaining
+Ball at the TB 37.  1st & 10
+Offense picked WEAK I - TWINS - PA POWER O (PLAY ACTION)
+Defense picked THREE FOUR - UNDER - COVER 1 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 38 yard line
+RODGER GOLDMAN (RB, VR) gained control of the ball at the TB 31 yard line
+Play was ended as OOB
+Play ended at the TB 30 yard line
+RODGER GOLDMAN gained 7 receiving yards on the play.
+RANDOLPH MERRIMAN is now 7 for 10 with 104 yards and 0 TDs.
+RODGER GOLDMAN now has 1 catches for 7 yards and 0 TDs.
+Play is over - 2nd & 3 from the TB 30 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 1:25 remaining
+Ball at the TB 30.  2nd & 3
+Offense picked I FORM - NORMAL - PA SCISSORS (PLAY ACTION)
+Defense picked FOUR FOUR - OVER - COVER 1 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 31 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 23 yard line
+GREG MULDER (DB) tackled DARRELL JEFFERSON at the TB 19 yard line
+Play was ended as Tackle
+Play ended at the TB 18 yard line
+DARRELL JEFFERSON gained 12 receiving yards on the play.
+RANDOLPH MERRIMAN is now 8 for 11 with 116 yards and 0 TDs.
+DARRELL JEFFERSON now has 3 catches for 16 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 18 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 1:05 remaining
+Ball at the TB 18.  1st & 10
+Offense picked STRONG I - TWINS FLEX - POWER O (OUTSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 2 SS BLITZ (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 19 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 24 yard line
+ZACHARY KELLEY (DB) tackled DARRELL JEFFERSON at the TB 12 yard line
+Play was ended as Tackle
+Play ended at the TB 11 yard line
+DARRELL JEFFERSON gained 8 rushing yards on the play.
+DARRELL JEFFERSON now has 3 rushes for 21 yards and 0 TDs.
+Play is over - 2nd & 2 from the TB 11 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 0:44 remaining
+Ball at the TB 11.  2nd & 2
+Offense picked SINGLE BACK - SLOT - TAIL ISO (INSIDE RUN)
+Defense picked FOUR FOUR - OVER - COVER 1 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 11 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 16 yard line
+JABARI CURETON (LB) tackled DARRELL JEFFERSON at the TB 10 yard line
+Play was ended as Tackle
+Play ended at the TB 9 yard line
+DARRELL JEFFERSON gained 2 rushing yards on the play.
+DARRELL JEFFERSON now has 4 rushes for 23 yards and 0 TDs.
+Play is over - 3rd & 1 from the TB 9 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 0:27 remaining
+Ball at the TB 9.  3rd & 1
+Offense picked I FORM - Y TRIPS - RB TOSS WEAK (OUTSIDE RUN)
+Defense picked FOUR FOUR - STACK - COVER 3 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 10 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 15 yard line
+GREG MULDER (DB) tackled LEONARD BOWENS at the TB 9 yard line
+Play was ended as Tackle
+Play ended at the TB 9 yard line
+LEONARD BOWENS gained 0 rushing yards on the play.
+LEONARD BOWENS now has 1 rushes for 0 yards and 0 TDs.
+Play is over - 4th & 1 from the TB 9 yard line
+Score is TB - 7, VR - 3
+
+INFO: 1ST QTR, 0:09 remaining
+Ball at the TB 9.  4th & 1
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 16 yard line
+Play was ended as MadeFG
+RANDALL WHITT made a 26 yard FG
+Play ended at the TB 9 yard line
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 7, VR - 6
+
+INFO: 1ST QTR, 0:06 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 8 yard line
+ALONZO MCKOY (DB) tackled HAYDEN QUINN at the TB 20 yard line
+Play was ended as Tackle
+Play ended at the VR 25 yard line
+Play is over - 1st & 10 from the TB 25 yard line
+Score is TB - 7, VR - 6
+
+INFO: 1ST QTR, 0:03 remaining
+Ball at the TB 25.  1st & 10
+Offense picked WEAK I - TWINS - WEAK TRAP (INSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 24 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 20 yard line
+JUDSON ABLES broke the tackle of MARSHALL SHELL (LB) at the TB 25 yard line
+QUINCY CHISOLM (DL) tackled JUDSON ABLES at the TB 27 yard line
+Play was ended as Tackle
+Play ended at the TB 28 yard line
+JUDSON ABLES gained 3 rushing yards on the play.
+JUDSON ABLES now has 8 rushes for 88 yards and 1 TDs.
+Play is over - 1st & 10 from the TB 28 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 10:00 remaining
+Ball at the TB 28.  2nd & 7
+Offense picked I FORM - SLOT FLEX - POWER O (OUTSIDE RUN)
+Defense picked FOUR THREE - OVER PLUS - BASE MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 27 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 23 yard line
+JAMARCUS MCNAIR (DB) tackled JUDSON ABLES at the TB 31 yard line
+Play was ended as Tackle
+Play ended at the TB 33 yard line
+JUDSON ABLES gained 4 rushing yards on the play.
+JUDSON ABLES now has 9 rushes for 92 yards and 1 TDs.
+Play is over - 3rd & 2 from the TB 33 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 9:43 remaining
+Ball at the TB 33.  3rd & 2
+Offense picked STRONG I - NORMAL - HB SLAM (INSIDE RUN)
+Defense picked FOUR FOUR - STACK - LB FIRE (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 32 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 27 yard line
+CYRIL PEEL (LB) tackled JUDSON ABLES at the TB 38 yard line
+Play was ended as Tackle
+Play ended at the TB 41 yard line
+JUDSON ABLES gained 9 rushing yards on the play.
+JUDSON ABLES now has 10 rushes for 101 yards and 1 TDs.
+Play is over - 1st & 10 from the TB 41 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 9:27 remaining
+Ball at the TB 41.  1st & 10
+Offense picked WEAK I - TWINS - PITCH STRONG (OUTSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 2 MAN UNDER (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 41 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 35 yard line
+EDGAR TARIN (DB) tackled JUDSON ABLES at the TB 46 yard line
+Play was ended as Tackle
+Play ended at the TB 45 yard line
+JUDSON ABLES gained 4 rushing yards on the play.
+JUDSON ABLES now has 11 rushes for 105 yards and 1 TDs.
+Play is over - 2nd & 6 from the TB 45 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 9:07 remaining
+Ball at the TB 45.  2nd & 6
+Offense picked SINGLE BACK - TREY OPEN - TAIL ISO (INSIDE RUN)
+Defense picked FOUR THREE - WEAK - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 44 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 40 yard line
+ELLIS MINNICK (DB) tackled STEVIE COUNCIL at the TB 48 yard line
+Play was ended as Tackle
+Play ended at the VR 44 yard line
+STEVIE COUNCIL gained 11 rushing yards on the play.
+STEVIE COUNCIL now has 2 rushes for 22 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 44 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 8:49 remaining
+Ball at the VR 44.  1st & 10
+Offense picked WEAK I - TWINS FLEX - RB LEAD (INSIDE RUN)
+Defense picked FOUR THREE - WEAK - CB BLITZ 2 (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 44 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 49 yard line
+JUDSON ABLES broke the tackle of EDGAR TARIN (DB) at the VR 42 yard line
+MARSHALL SHELL (LB) tackled JUDSON ABLES at the VR 39 yard line
+Play was ended as Tackle
+Play ended at the VR 39 yard line
+JUDSON ABLES gained 4 rushing yards on the play.
+JUDSON ABLES now has 12 rushes for 109 yards and 1 TDs.
+Play is over - 2nd & 6 from the VR 39 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 8:32 remaining
+Ball at the VR 39.  2nd & 6
+Offense picked STRONG I - NORMAL - HB ISO (INSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 40 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the VR 45 yard line
+STEVIE COUNCIL broke the tackle of JAMARCUS MCNAIR (DB) at the VR 39 yard line
+CHARLIE MAYE (LB) tackled STEVIE COUNCIL at the VR 38 yard line
+Play was ended as Tackle
+Play ended at the VR 37 yard line
+STEVIE COUNCIL gained 2 rushing yards on the play.
+STEVIE COUNCIL now has 3 rushes for 24 yards and 0 TDs.
+Play is over - 3rd & 4 from the VR 37 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 8:09 remaining
+Ball at the VR 37.  3rd & 4
+Offense picked WEAK I - TWINS - HB ISO (INSIDE RUN)
+Defense picked FOUR THREE - UNDER - ROBBER PRESS COVER 1 (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 38 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 42 yard line
+JAMARCUS MCNAIR (DB) tackled JUDSON ABLES at the VR 33 yard line
+Play was ended as Tackle
+Play ended at the VR 30 yard line
+JUDSON ABLES gained 7 rushing yards on the play.
+JUDSON ABLES now has 13 rushes for 116 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 30 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 7:45 remaining
+Ball at the VR 30.  1st & 10
+Offense picked SINGLE BACK - TRIO - HB PITCH WEAK (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 31 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 37 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the VR 33 yard line
+Play was ended as Tackle
+Play ended at the VR 32 yard line
+JUDSON ABLES gained -2 rushing yards on the play.
+JUDSON ABLES now has 14 rushes for 114 yards and 1 TDs.
+Play is over - 2nd & 12 from the VR 32 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 7:45 remaining
+Ball at the VR 30.  1st & 10
+Offense picked SINGLE BACK - TRIO - HB PITCH WEAK (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 31 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 37 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the VR 33 yard line
+Play was ended as Tackle
+Play ended at the VR 32 yard line
+JUDSON ABLES gained -2 rushing yards on the play.
+JUDSON ABLES now has 14 rushes for 114 yards and 1 TDs.
+Play is over - 2nd & 12 from the VR 32 yard line
+Score is TB - 7, VR - 6
+Play was ended as PrePlayPenalty
+Play ended at the VR 32 yard line
+There was a penalty on the play - Penalty Details: False Start against the Offense for -5 yards. Repeat.  It was accepted
+Play is over - 2nd & 17 from the VR 37 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 7:07 remaining
+Ball at the VR 37.  2nd & 17
+Offense picked SINGLE BACK - TREY OPEN - HB FLATS (SCREEN PASS)
+Defense picked DIME - TWO THREE - COVER 6 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 38 yard line
+MARSHALL SHELL (LB) tackled SIMON GUINN at the VR 44 yard line
+SIMON GUINN fumbled at the VR 44 yard line
+QUINCY CHISOLM (DL, VR) gained control of the ball at the TB 44 yard line
+WILL CONE (OL) tackled QUINCY CHISOLM at the TB 45 yard line
+Play was ended as Tackle
+Play ended at the TB 47 yard line
+Play is over - 1st & 10 from the VR 47 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 7:00 remaining
+Ball at the VR 47.  1st & 10
+Offense picked WEAK I - TWINS - HB ISO (INSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 46 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 42 yard line
+JABARI CURETON (LB) tackled LEONARD BOWENS at the VR 48 yard line
+Play was ended as Tackle
+Play ended at the VR 49 yard line
+LEONARD BOWENS gained 1 rushing yards on the play.
+LEONARD BOWENS now has 2 rushes for 1 yards and 0 TDs.
+Play is over - 2nd & 9 from the VR 49 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 6:43 remaining
+Ball at the VR 49.  2nd & 9
+Offense picked SINGLE BACK - TRIO - HB PITCH WEAK (OUTSIDE RUN)
+Defense picked THREE FOUR - OVER - COVER 2 MAN UNDER (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 48 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 42 yard line
+ZACHARY KELLEY (DB) tackled LEONARD BOWENS at the VR 46 yard line
+Play was ended as Tackle
+Play ended at the TB 45 yard line
+LEONARD BOWENS gained 6 rushing yards on the play.
+LEONARD BOWENS now has 3 rushes for 7 yards and 0 TDs.
+Play is over - 3rd & 3 from the TB 45 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 6:26 remaining
+Ball at the TB 45.  3rd & 3
+Offense picked I FORM - NORMAL - HB COUNTER (MISDIRECTION)
+Defense picked FOUR FOUR - STACK - COVER 3 SEAM (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 46 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 49 yard line
+CAMRYN BOYKIN (DB) tackled LEONARD BOWENS at the TB 39 yard line
+Play was ended as Tackle
+Play ended at the TB 33 yard line
+LEONARD BOWENS gained 12 rushing yards on the play.
+LEONARD BOWENS now has 4 rushes for 19 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 33 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 6:09 remaining
+Ball at the TB 33.  1st & 10
+Offense picked SINGLE BACK - TRIO - HB DIVE WEAK (INSIDE RUN)
+Defense picked THREE FOUR - UNDER - ROBBER PRESS 1 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 34 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 38 yard line
+MERLIN FORTSON (LB) tackled DARRELL JEFFERSON at the TB 32 yard line
+Play was ended as Tackle
+Play ended at the TB 31 yard line
+DARRELL JEFFERSON gained 2 rushing yards on the play.
+DARRELL JEFFERSON now has 5 rushes for 25 yards and 0 TDs.
+Play is over - 2nd & 8 from the TB 31 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 5:51 remaining
+Ball at the TB 31.  2nd & 8
+Offense picked SINGLE BACK - SPREAD - HB PITCH WEAK (OUTSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 2 LOW FLAT (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 32 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 38 yard line
+ZACHARY KELLEY (DB) tackled DARRELL JEFFERSON at the TB 27 yard line
+Play was ended as Tackle
+Play ended at the TB 26 yard line
+DARRELL JEFFERSON gained 5 rushing yards on the play.
+DARRELL JEFFERSON now has 6 rushes for 30 yards and 0 TDs.
+Play is over - 3rd & 2 from the TB 26 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 5:34 remaining
+Ball at the TB 26.  3rd & 2
+Offense picked WEAK I - NORMAL - TOSS WEAK (OUTSIDE RUN)
+Defense picked FOUR FOUR - OVER - COVER 1 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 26 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the TB 33 yard line
+MERLIN FORTSON (LB) tackled DARRELL JEFFERSON at the TB 25 yard line
+Play was ended as Tackle
+Play ended at the TB 18 yard line
+DARRELL JEFFERSON gained 8 rushing yards on the play.
+DARRELL JEFFERSON now has 7 rushes for 38 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 18 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 5:17 remaining
+Ball at the TB 18.  1st & 10
+Offense picked SINGLE BACK - TRIO - SLANT (MID PASS)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 19 yard line
+CORNELL CHARLESTON (WR, VR) gained control of the ball at the TB 13 yard line
+JON SWAIM (DB) tackled CORNELL CHARLESTON at the TB 7 yard line
+Play was ended as Tackle
+Play ended at the TB 5 yard line
+CORNELL CHARLESTON gained 13 receiving yards on the play.
+RANDOLPH MERRIMAN is now 9 for 12 with 129 yards and 0 TDs.
+CORNELL CHARLESTON now has 1 catches for 13 yards and 0 TDs.
+Play is over - 1st & GL from the TB 5 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 4:52 remaining
+Ball at the TB 5.  1st & GL
+Offense picked I FORM - TWINS - HB TOSS STRONG (OUTSIDE RUN)
+Defense picked THREE FOUR - UNDER - SPY COVER 2 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 6 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 12 yard line
+EZRA RIDDICK (DL) tackled LEONARD BOWENS at the TB 8 yard line
+Play was ended as Tackle
+Play ended at the TB 6 yard line
+LEONARD BOWENS gained -1 rushing yards on the play.
+LEONARD BOWENS now has 5 rushes for 18 yards and 0 TDs.
+Play is over - 2nd & GL from the TB 6 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 4:35 remaining
+Ball at the TB 6.  2nd & GL
+Offense picked SINGLE BACK - TREY OPEN - DBL POST (MID PASS)
+Defense picked THREE FOUR - OVER - COVER 1 SS BLITZ (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 7 yard line
+Play was ended as Incomplete
+Play ended at the TB 6 yard line
+Play is over - 3rd & GL from the TB 6 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 4:31 remaining
+Ball at the TB 6.  3rd & GL
+Offense picked WEAK I - TWINS - HB SLAM (INSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 7 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 11 yard line
+LEONARD DOBBS (DL) tackled LEONARD BOWENS at the TB 9 yard line
+Play was ended as Tackle
+Play ended at the TB 9 yard line
+LEONARD BOWENS gained -3 rushing yards on the play.
+LEONARD BOWENS now has 6 rushes for 15 yards and 0 TDs.
+Play is over - 4th & GL from the TB 9 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 4:15 remaining
+Ball at the TB 9.  4th & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 16 yard line
+RANDALL WHITT missed a 26 yard FG
+Play was ended as MissedFG
+Play ended at the TB 9 yard line
+Play is over - 1st & 10 from the TB 9 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 4:11 remaining
+Ball at the TB 9.  1st & 10
+Offense picked SINGLE BACK - TREY OPEN - HB DIVE STRONG (INSIDE RUN)
+Defense picked FOUR THREE - OVER PLUS - SS BLITZ COVER 1 (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 9 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 4 yard line
+ELLIS MINNICK (DB) tackled STEVIE COUNCIL at the TB 16 yard line
+Play was ended as Tackle
+Play ended at the TB 17 yard line
+STEVIE COUNCIL gained 8 rushing yards on the play.
+STEVIE COUNCIL now has 4 rushes for 32 yards and 0 TDs.
+Play is over - 2nd & 2 from the TB 17 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 3:54 remaining
+Ball at the TB 17.  2nd & 2
+Offense picked I FORM - TWINS - TE Corner Fly (SHORT PASS)
+Defense picked FOUR FOUR - STACK - COVER 3 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 17 yard line
+TREY PINKNEY (WR, TB) gained control of the ball at the TB 48 yard line
+Play was ended as OOB
+Play ended at the VR 43 yard line
+TREY PINKNEY gained 39 receiving yards on the play.
+SIMON GUINN is now 4 for 8 with 65 yards and 0 TDs.
+TREY PINKNEY now has 1 catches for 39 yards and 0 TDs.
+There was a penalty on the play - Penalty Details: Offsides against the Defense for 5 yards. Repeat.  It was declined
+Play is over - 1st & 10 from the VR 43 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 3:46 remaining
+Ball at the VR 43.  1st & 10
+Offense picked WEAK I - NORMAL - PA STRETCH (PLAY ACTION)
+Defense picked FOUR THREE - OVER PLUS - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 44 yard line
+PARIS PINKNEY (DL) tackled SIMON GUINN at the VR 49 yard line
+Play was ended as Tackle
+Play ended at the VR 50 yard line
+Play is over - 2nd & 16 from the VR 50 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 3:27 remaining
+Ball at the VR 50.  2nd & 16
+Offense picked SHOTGUN - SLOT OFFSET - PA CROSSES (PLAY ACTION)
+Defense picked DIME - NORMAL - COVER 1 ROBBER (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 44 yard line
+Play was ended as Incomplete
+Play ended at the VR 50 yard line
+Play is over - 3rd & 16 from the VR 50 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 3:22 remaining
+Ball at the VR 50.  3rd & 16
+Offense picked SHOTGUN - TREY - CORNER STRIKE (DEEP PASS)
+Defense picked DIME - ONE FOUR - COVER 2 MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 44 yard line
+Play was ended as Incomplete
+Play ended at the VR 50 yard line
+Play is over - 4th & 16 from the VR 50 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 3:20 remaining
+Ball at the VR 50.  4th & 16
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+HARRIS LAWHORN (P, TB) gained control of the ball at the VR 39 yard line
+Play was ended as OOB
+Play ended at the TB 15 yard line
+Play is over - 1st & 10 from the VR 15 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 3:15 remaining
+Ball at the VR 15.  1st & 10
+Offense picked SHOTGUN - TIGHT - MTN HB SWING (SCREEN PASS)
+Defense picked THREE FOUR - SPLIT - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 9 yard line
+CORNELL CHARLESTON (WR, VR) gained control of the ball at the VR 26 yard line
+JABARI CURETON (LB) tackled CORNELL CHARLESTON at the VR 26 yard line
+Play was ended as Tackle
+Play ended at the VR 26 yard line
+CORNELL CHARLESTON gained 11 receiving yards on the play.
+RANDOLPH MERRIMAN is now 10 for 14 with 140 yards and 0 TDs.
+CORNELL CHARLESTON now has 2 catches for 24 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 26 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 2:51 remaining
+Ball at the VR 26.  1st & 10
+Offense picked SINGLE BACK - SLOT - HB DIVE STRONG (INSIDE RUN)
+Defense picked THREE FOUR - UNDER - MAN BASE COVER 3 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 25 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 21 yard line
+CAMRYN BOYKIN (DB) tackled LEONARD BOWENS at the VR 32 yard line
+Play was ended as Tackle
+Play ended at the VR 36 yard line
+LEONARD BOWENS gained 10 rushing yards on the play.
+LEONARD BOWENS now has 7 rushes for 25 yards and 0 TDs.
+Play is over - 2nd & IN from the VR 36 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 2:31 remaining
+Ball at the VR 36.  2nd & IN
+Offense picked STRONG I - TWINS - RB LEAD (INSIDE RUN)
+Defense picked FOUR FOUR - OVER - AVALANCHE (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 35 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 31 yard line
+LEONARD DOBBS (DL) tackled LEONARD BOWENS at the VR 32 yard line
+Play was ended as Tackle
+Defense called a timeout
+Play ended at the VR 33 yard line
+LEONARD BOWENS gained -2 rushing yards on the play.
+LEONARD BOWENS now has 8 rushes for 23 yards and 0 TDs.
+Play is over - 3rd & 3 from the VR 33 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 2:27 remaining
+Ball at the VR 33.  3rd & 3
+Offense picked SHOTGUN - NORMAL - CORNER STRIKE (DEEP PASS)
+Defense picked FOUR FOUR - OVER - COVER 3 CENTER BLITZ (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 27 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 43 yard line
+CHASE WELSH (LB) tackled LEONARD BOWENS at the VR 44 yard line
+Play was ended as Tackle
+Play ended at the VR 48 yard line
+LEONARD BOWENS gained 14 receiving yards on the play.
+RANDOLPH MERRIMAN is now 11 for 15 with 154 yards and 0 TDs.
+LEONARD BOWENS now has 1 catches for 14 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 48 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 2:11 remaining
+Ball at the VR 48.  1st & 10
+Offense picked SINGLE BACK - TRIO - HB PITCH STRONG (OUTSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 3 SEAM (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 47 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 41 yard line
+JON SWAIM (DB) tackled LEONARD BOWENS at the VR 49 yard line
+LEONARD BOWENS fumbled at the VR 47 yard line
+CAMRYN BOYKIN (DB, TB) gained control of the ball at the TB 47 yard line
+JASPER MACKLIN (TE) tackled CAMRYN BOYKIN at the TB 46 yard line
+Play was ended as Tackle
+Play ended at the VR 46 yard line
+Play is over - 1st & 10 from the TB 46 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 2:05 remaining
+Ball at the TB 46.  1st & 10
+Offense picked I FORM - TWINS - Corner Fly (SHORT PASS)
+Defense picked FOUR THREE - STACK - COVER 2 MAN UNDER (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 46 yard line
+CHARLIE MAYE (LB) deflected the pass at the TB 48 yard line
+Play was ended as Incomplete
+Play ended at the TB 46 yard line
+Play is over - 2nd & 10 from the TB 46 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 2:01 remaining
+Ball at the TB 46.  2nd & 10
+Offense picked SINGLE BACK - TREY OPEN - HB POWER STRONG (OUTSIDE RUN)
+Defense picked FOUR THREE - EVEN SIX ONE - BASE COVER 2 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 46 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 41 yard line
+PARIS PINKNEY (DL) tackled STEVIE COUNCIL at the TB 43 yard line
+Play was ended as Tackle
+Play ended at the TB 44 yard line
+STEVIE COUNCIL gained -2 rushing yards on the play.
+STEVIE COUNCIL now has 5 rushes for 30 yards and 0 TDs.
+Play is over - 3rd & 12 from the TB 44 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 1:59 remaining
+Ball at the TB 44.  3rd & 12
+Offense picked I FORM - NORMAL - PITCH STRONG (OUTSIDE RUN)
+Defense picked NICKEL - OVER - COVER 2 INVERT (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 43 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 38 yard line
+CHARLIE MAYE (LB) tackled STEVIE COUNCIL at the TB 50 yard line
+Play was ended as Tackle
+Defense called a timeout
+Play ended at the VR 47 yard line
+STEVIE COUNCIL gained 9 rushing yards on the play.
+STEVIE COUNCIL now has 6 rushes for 39 yards and 0 TDs.
+Play is over - 4th & 3 from the VR 47 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 1:52 remaining
+Ball at the VR 47.  4th & 3
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+HARRIS LAWHORN (P, TB) gained control of the ball at the VR 42 yard line
+Play was ended as OOB_In_Endzone
+Play ended at the TB 0 yard line
+Play is over - 1st & 10 from the VR 20 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 1:48 remaining
+Ball at the VR 20.  1st & 10
+Offense picked STRONG I - TWINS - FB FLARE (SHORT PASS)
+Defense picked THREE FOUR - UNDER - COVER 2 SINK (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 19 yard line
+CHARLIE BOYKIN (WR, VR) gained control of the ball at the VR 31 yard line
+GREG MULDER (DB) tackled CHARLIE BOYKIN at the VR 31 yard line
+Play was ended as Tackle
+Play ended at the VR 32 yard line
+CHARLIE BOYKIN gained 12 receiving yards on the play.
+RANDOLPH MERRIMAN is now 12 for 16 with 166 yards and 0 TDs.
+CHARLIE BOYKIN now has 2 catches for 55 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 32 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 1:27 remaining
+Ball at the VR 32.  1st & 10
+Offense picked WEAK I - TWINS FLEX - SKINNY POSTS TE DRAG (MID PASS)
+Defense picked THREE FOUR - ODD - COVER 3 SKY (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 31 yard line
+CHANDLER LAND (LB) deflected the pass at the VR 43 yard line
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 43 yard line
+CHANDLER LAND (LB) tackled DEMARIO ROYSTER at the VR 43 yard line
+Play was ended as Tackle
+Play ended at the TB 43 yard line
+DEMARIO ROYSTER gained 25 receiving yards on the play.
+RANDOLPH MERRIMAN is now 13 for 17 with 191 yards and 0 TDs.
+DEMARIO ROYSTER now has 2 catches for 37 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 43 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 1:27 remaining
+Ball at the VR 32.  1st & 10
+Offense picked WEAK I - TWINS FLEX - SKINNY POSTS TE DRAG (MID PASS)
+Defense picked THREE FOUR - ODD - COVER 3 SKY (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 31 yard line
+CHANDLER LAND (LB) deflected the pass at the VR 43 yard line
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 43 yard line
+CHANDLER LAND (LB) tackled DEMARIO ROYSTER at the VR 43 yard line
+Play was ended as Tackle
+Play ended at the TB 43 yard line
+DEMARIO ROYSTER gained 25 receiving yards on the play.
+RANDOLPH MERRIMAN is now 13 for 17 with 191 yards and 0 TDs.
+DEMARIO ROYSTER now has 2 catches for 37 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 43 yard line
+Score is TB - 7, VR - 6
+Play was ended as PrePlayPenalty
+Play ended at the TB 43 yard line
+There was a penalty on the play - Penalty Details: Encroachment against the Defense for 5 yards. Repeat.  It was accepted
+Play is over - 1st & 5 from the TB 38 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:58 remaining
+Ball at the TB 38.  1st & 5
+Offense picked I FORM - TWINS - SLANTS (SHORT PASS)
+Defense picked THREE FOUR - ODD - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 38 yard line
+Play was ended as Incomplete
+Play ended at the TB 38 yard line
+Play is over - 2nd & 5 from the TB 38 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:55 remaining
+Ball at the TB 38.  2nd & 5
+Offense picked I FORM - NORMAL - CORNER FADES (MID PASS)
+Defense picked THREE FOUR - ODD - BASE COVER 4 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 38 yard line
+CHARLIE BOYKIN (WR, VR) gained control of the ball at the TB 33 yard line
+Play was ended as OOB
+Play ended at the TB 35 yard line
+CHARLIE BOYKIN gained 3 receiving yards on the play.
+RANDOLPH MERRIMAN is now 14 for 19 with 194 yards and 0 TDs.
+CHARLIE BOYKIN now has 3 catches for 58 yards and 0 TDs.
+Play is over - 3rd & 2 from the TB 35 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:51 remaining
+Ball at the TB 35.  3rd & 2
+Offense picked WEAK I - NORMAL - DEUCE (SHORT PASS)
+Defense picked FOUR FOUR - OVER - STRONG PRESS (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 35 yard line
+CHARLIE BOYKIN (WR) dropped the pass at the TB 23 yard line
+Play was ended as Incomplete
+Play ended at the TB 35 yard line
+Play is over - 4th & 2 from the TB 35 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:49 remaining
+Ball at the TB 35.  4th & 2
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+DUSTIN BEACHY (P, VR) gained control of the ball at the TB 45 yard line
+Play was ended as OOB
+Play ended at the VR 19 yard line
+Play is over - 1st & 10 from the TB 19 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:44 remaining
+Ball at the TB 19.  1st & 10
+Offense picked SHOTGUN - TRIPS - RB ISO FLAT (DEEP PASS)
+Defense picked FOUR THREE - OVER PLUS - COVER 3 HARD FLAT (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 13 yard line
+EDGAR TARIN (DB) deflected the pass at the TB 43 yard line
+Play was ended as Incomplete
+Play ended at the TB 19 yard line
+There was a penalty on the play - Penalty Details: Pass Interference against the Offense for -10 yards. Repeat.  It was accepted
+Play is over - 1st & 20 from the TB 9 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:41 remaining
+Ball at the TB 9.  1st & 20
+Offense picked STRONG I - TWINS - SLANT AND GO (MID PASS)
+Defense picked DIME - NORMAL - COVER 2 MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 9 yard line
+ALFRED GREATHOUSE (DB) deflected the pass at the TB 39 yard line
+Play was ended as Incomplete
+Play ended at the TB 9 yard line
+Play is over - 2nd & 20 from the TB 9 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:37 remaining
+Ball at the TB 9.  2nd & 20
+Offense picked SHOTGUN - SLOT OFFSET - CORNER STRIKE (DEEP PASS)
+Defense picked NICKEL - OVER - COVER 2 MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 3 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the TB 35 yard line
+ELLIS MINNICK (DB) tackled DERRICK CURETON at the TB 36 yard line
+Play was ended as Tackle
+Offense called a timeout
+Play ended at the TB 40 yard line
+DERRICK CURETON gained 31 receiving yards on the play.
+SIMON GUINN is now 5 for 13 with 96 yards and 0 TDs.
+DERRICK CURETON now has 1 catches for 31 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 40 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:30 remaining
+Ball at the TB 40.  1st & 10
+Offense picked GOAL LINE - HEAVY - SLANT (SHORT PASS)
+Defense picked FOUR THREE - OVER PLUS - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 39 yard line
+CRAIG VANHORN (TE, TB) gained control of the ball at the TB 42 yard line
+CHARLIE MAYE (LB) tackled CRAIG VANHORN at the TB 41 yard line
+Play was ended as Tackle
+Offense called a timeout
+Play ended at the TB 41 yard line
+CRAIG VANHORN gained 1 receiving yards on the play.
+SIMON GUINN is now 6 for 14 with 97 yards and 0 TDs.
+CRAIG VANHORN now has 1 catches for 1 yards and 0 TDs.
+Play is over - 2nd & 9 from the TB 41 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:30 remaining
+Ball at the TB 40.  1st & 10
+Offense picked GOAL LINE - HEAVY - SLANT (SHORT PASS)
+Defense picked FOUR THREE - OVER PLUS - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 39 yard line
+CRAIG VANHORN (TE, TB) gained control of the ball at the TB 42 yard line
+CHARLIE MAYE (LB) tackled CRAIG VANHORN at the TB 41 yard line
+Play was ended as Tackle
+Offense called a timeout
+Play ended at the TB 41 yard line
+CRAIG VANHORN gained 1 receiving yards on the play.
+SIMON GUINN is now 6 for 14 with 97 yards and 0 TDs.
+CRAIG VANHORN now has 1 catches for 1 yards and 0 TDs.
+Play is over - 2nd & 9 from the TB 41 yard line
+Score is TB - 7, VR - 6
+Play was ended as PrePlayPenalty
+Play ended at the TB 41 yard line
+There was a penalty on the play - Penalty Details: False Start against the Offense for -5 yards. Repeat.  It was accepted
+Play is over - 2nd & 14 from the TB 36 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:23 remaining
+Ball at the TB 36.  2nd & 14
+Offense picked WEAK I - TWINS - MID ATTACK (MID PASS)
+Defense picked NICKEL - TRIPLE - NICKEL BLITZ (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 36 yard line
+DERRICK CURETON (WR) dropped the pass at the TB 46 yard line
+Play was ended as Incomplete
+Play ended at the TB 36 yard line
+Play is over - 3rd & 14 from the TB 36 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:20 remaining
+Ball at the TB 36.  3rd & 14
+Offense picked I FORM - NORMAL - END AROUND (REVERSE)
+Defense picked DIME - NORMAL - MAN SPY COVER 1 (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 36 yard line
+CRAIG VANHORN (TE, TB) gained control of the ball at the TB 32 yard line
+ALFRED GREATHOUSE (DB) tackled CRAIG VANHORN at the TB 34 yard line
+Play was ended as Tackle
+Play ended at the TB 36 yard line
+CRAIG VANHORN gained -1 rushing yards on the play.
+CRAIG VANHORN now has 1 rushes for -1 yards and 0 TDs.
+Play is over - 4th & 14 from the TB 36 yard line
+Score is TB - 7, VR - 6
+
+INFO: 2ND QTR, 0:03 remaining
+Ball at the TB 36.  4th & 14
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+HARRIS LAWHORN (P, TB) gained control of the ball at the TB 25 yard line
+HARRIS LAWHORN punted the ball
+ELLIS MINNICK (DB, VR) gained control of the ball at the VR 20 yard line
+DERRICK CURETON (WR) tackled ELLIS MINNICK at the VR 26 yard line
+Play was ended as Tackle
+Play ended at the TB 25 yard line
+Play is over - 4th & 14 from the VR 25 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 10:00 remaining
+Ball at the TB 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 10 yard line
+JABARI CURETON (LB) tackled DEMARIO ROYSTER at the VR 25 yard line
+Play was ended as Tackle
+Play ended at the TB 26 yard line
+Play is over - 1st & 10 from the VR 26 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 9:56 remaining
+Ball at the VR 26.  1st & 10
+Offense picked SINGLE BACK - SLOT - HB POWER STRONG (OUTSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 1 ROBBER (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 25 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 20 yard line
+LEONARD DOBBS (DL) tackled LEONARD BOWENS at the VR 23 yard line
+Play was ended as Tackle
+Play ended at the VR 24 yard line
+LEONARD BOWENS gained -2 rushing yards on the play.
+LEONARD BOWENS now has 10 rushes for 21 yards and 0 TDs.
+Play is over - 2nd & 12 from the VR 24 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 9:41 remaining
+Ball at the VR 24.  2nd & 12
+Offense picked STRONG I - NORMAL - SKINNY POSTS TE DRAG (MID PASS)
+Defense picked DIME - TWO THREE - SS OVERLOAD 3 (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 24 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 32 yard line
+Play was ended as OOB
+Play ended at the VR 34 yard line
+LEONARD BOWENS gained 10 receiving yards on the play.
+RANDOLPH MERRIMAN is now 15 for 21 with 204 yards and 0 TDs.
+LEONARD BOWENS now has 2 catches for 24 yards and 0 TDs.
+Play is over - 3rd & 2 from the VR 34 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 9:21 remaining
+Ball at the VR 34.  3rd & 2
+Offense picked I FORM - SLOT FLEX - SE POST FLAG (DEEP PASS)
+Defense picked FOUR FOUR - STACK - COVER 3 SEAM (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 33 yard line
+RODGER GOLDMAN (RB, VR) gained control of the ball at the VR 39 yard line
+CHANDLER LAND (LB) tackled RODGER GOLDMAN at the VR 50 yard line
+Play was ended as Tackle
+Play ended at the TB 48 yard line
+RODGER GOLDMAN gained 18 receiving yards on the play.
+RANDOLPH MERRIMAN is now 16 for 22 with 222 yards and 0 TDs.
+RODGER GOLDMAN now has 2 catches for 25 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 48 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 8:57 remaining
+Ball at the TB 48.  1st & 10
+Offense picked SINGLE BACK - TRIO - HB PITCH STRONG (OUTSIDE RUN)
+Defense picked THREE FOUR - UNDER - COVER 1 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 49 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 45 yard line
+GREG MULDER (DB) tackled LEONARD BOWENS at the TB 42 yard line
+Play was ended as Tackle
+Play ended at the TB 38 yard line
+LEONARD BOWENS gained 10 rushing yards on the play.
+LEONARD BOWENS now has 11 rushes for 31 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 38 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 8:36 remaining
+Ball at the TB 38.  1st & 10
+Offense picked WEAK I - TWINS FLEX - SLANTS (SHORT PASS)
+Defense picked THREE FOUR - ODD - COVER 3 CROSS (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 39 yard line
+Play was ended as Incomplete
+Play ended at the TB 38 yard line
+There was a penalty on the play - Penalty Details: Offsides against the Defense for 5 yards. Repeat.  It was accepted
+Play is over - 1st & 5 from the TB 33 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 8:19 remaining
+Ball at the TB 33.  1st & 5
+Offense picked SHOTGUN - TREY - PA WEAK FLOOD (PLAY ACTION)
+Defense picked THREE FOUR - OVER - COVER 2 MAN UNDER (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 39 yard line
+JASPER MACKLIN (TE, VR) gained control of the ball at the TB 32 yard line
+SHERMAN MACON (DB) tackled JASPER MACKLIN at the TB 32 yard line
+Play was ended as Tackle
+Play ended at the TB 31 yard line
+JASPER MACKLIN gained 2 receiving yards on the play.
+RANDOLPH MERRIMAN is now 17 for 23 with 224 yards and 0 TDs.
+JASPER MACKLIN now has 2 catches for 37 yards and 0 TDs.
+Play is over - 2nd & 3 from the TB 31 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 7:58 remaining
+Ball at the TB 31.  2nd & 3
+Offense picked GOAL LINE - HEAVY - RB DIVE (INSIDE RUN)
+Defense picked FOUR FOUR - STACK - COVER 3 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 32 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 36 yard line
+CHASE WELSH (LB) tackled LEONARD BOWENS at the TB 26 yard line
+Play was ended as Tackle
+Play ended at the TB 23 yard line
+LEONARD BOWENS gained 8 rushing yards on the play.
+LEONARD BOWENS now has 12 rushes for 39 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 23 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 7:44 remaining
+Ball at the TB 23.  1st & 10
+Offense picked WEAK I - NORMAL - HB COUNTER (MISDIRECTION)
+Defense picked THREE FOUR - OVER - COVER 6 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 24 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 29 yard line
+JON SWAIM (DB) tackled LEONARD BOWENS at the TB 17 yard line
+Play was ended as Tackle
+Play ended at the TB 17 yard line
+LEONARD BOWENS gained 6 rushing yards on the play.
+LEONARD BOWENS now has 13 rushes for 45 yards and 0 TDs.
+Play is over - 2nd & 4 from the TB 17 yard line
+Score is TB - 7, VR - 6
+
+INFO: 3RD QTR, 7:21 remaining
+Ball at the TB 17.  2nd & 4
+Offense picked STRONG I - NORMAL - RB LEAD (INSIDE RUN)
+Defense picked THREE FOUR - OVER - COVER 2 SS TRAP (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 18 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 22 yard line
+Play was ended as Touchdown
+Play ended at the TB 17 yard line
+LEONARD BOWENS gained 17 rushing yards on the play.
+LEONARD BOWENS now has 14 rushes for 62 yards and 1 TDs.
+Play is over - 1st & GL from the TB 15 yard line
+Score is TB - 7, VR - 12
+
+INFO: 3RD QTR, 7:17 remaining
+Ball at the TB 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 22 yard line
+Play was ended as MadeFG
+Play ended at the TB 17 yard line
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 7, VR - 13
+
+INFO: 3RD QTR, 7:17 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 12 yard line
+ALONZO MCKOY (DB) tackled HAYDEN QUINN at the TB 24 yard line
+Play was ended as Tackle
+Play ended at the VR 25 yard line
+Play is over - 1st & 10 from the TB 25 yard line
+Score is TB - 7, VR - 13
+
+INFO: 3RD QTR, 7:14 remaining
+Ball at the TB 25.  1st & 10
+Offense picked I FORM - NORMAL - FB DIVE WEAK (INSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 4 QUARTERS (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 24 yard line
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 22 yard line
+QUINCY CHISOLM (DL) tackled HAYDEN QUINN at the TB 30 yard line
+Play was ended as Tackle
+Play ended at the TB 33 yard line
+HAYDEN QUINN gained 8 rushing yards on the play.
+HAYDEN QUINN now has 1 rushes for 8 yards and 0 TDs.
+Play is over - 2nd & 2 from the TB 33 yard line
+Score is TB - 7, VR - 13
+
+INFO: 3RD QTR, 6:52 remaining
+Ball at the TB 33.  2nd & 2
+Offense picked SHOTGUN - TIGHT - PA ALL GO (PLAY ACTION)
+Defense picked FOUR FOUR - OVER - FLAT FIRE (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 27 yard line
+CHARLIE MAYE (LB) tackled SIMON GUINN at the TB 27 yard line
+Play was ended as Tackle
+Play ended at the TB 28 yard line
+Play is over - 3rd & 7 from the TB 28 yard line
+Score is TB - 7, VR - 13
+
+INFO: 3RD QTR, 6:30 remaining
+Ball at the TB 28.  3rd & 7
+Offense picked GOAL LINE - HEAVY - STRETCH (OUTSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 2 SINK (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 27 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 21 yard line
+STEVIE COUNCIL broke the tackle of JAMARCUS MCNAIR (DB) at the TB 33 yard line
+MARSHALL SHELL (LB) tackled STEVIE COUNCIL at the TB 37 yard line
+Play was ended as Tackle
+Play ended at the TB 41 yard line
+STEVIE COUNCIL gained 13 rushing yards on the play.
+STEVIE COUNCIL now has 7 rushes for 52 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 41 yard line
+Score is TB - 7, VR - 13
+
+INFO: 3RD QTR, 6:03 remaining
+Ball at the TB 41.  1st & 10
+Offense picked SHOTGUN - NORMAL - TE CROSS (MID PASS)
+Defense picked FOUR THREE - STACK - COVER 1 SPY (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 35 yard line
+PARIS PINKNEY (DL) tackled SIMON GUINN at the TB 31 yard line
+SIMON GUINN fumbled at the TB 31 yard line
+JAMARCUS MCNAIR (DB, VR) gained control of the ball at the VR 31 yard line
+Play was ended as Touchdown
+Play ended at the VR 41 yard line
+Play is over - 1st & GL from the TB 15 yard line
+Score is TB - 7, VR - 19
+
+INFO: 3RD QTR, 5:55 remaining
+Ball at the TB 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 22 yard line
+Play was ended as MadeFG
+Play ended at the TB 41 yard line
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 5:55 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 8 yard line
+CYRIL PEEL (LB) tackled HAYDEN QUINN at the TB 24 yard line
+Play was ended as Tackle
+Play ended at the VR 26 yard line
+Play is over - 1st & 10 from the TB 26 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 5:55 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 8 yard line
+CYRIL PEEL (LB) tackled HAYDEN QUINN at the TB 24 yard line
+Play was ended as Tackle
+Play ended at the VR 26 yard line
+Play is over - 1st & 10 from the TB 26 yard line
+Score is TB - 7, VR - 20
+Play was ended as PrePlayPenalty
+Play ended at the TB 26 yard line
+There was a penalty on the play - Penalty Details: False Start against the Offense for -5 yards. Repeat.  It was accepted
+Play is over - 1st & 15 from the TB 21 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 5:55 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 8 yard line
+CYRIL PEEL (LB) tackled HAYDEN QUINN at the TB 24 yard line
+Play was ended as Tackle
+Play ended at the VR 26 yard line
+Play is over - 1st & 10 from the TB 26 yard line
+Score is TB - 7, VR - 20
+Play was ended as PrePlayPenalty
+Play ended at the TB 26 yard line
+There was a penalty on the play - Penalty Details: False Start against the Offense for -5 yards. Repeat.  It was accepted
+Play is over - 1st & 15 from the TB 21 yard line
+Score is TB - 7, VR - 20
+Play was ended as PrePlayPenalty
+Play ended at the TB 21 yard line
+There was a penalty on the play - Penalty Details: Encroachment against the Defense for 5 yards. Repeat.  It was accepted
+Play is over - 1st & 10 from the TB 26 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 5:23 remaining
+Ball at the TB 26.  1st & 10
+Offense picked SINGLE BACK - SLOT - HB PITCH STRONG (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 25 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 19 yard line
+FLOYD WEATHERSBY (LB) tackled STEVIE COUNCIL at the TB 32 yard line
+Play was ended as Tackle
+Play ended at the TB 32 yard line
+STEVIE COUNCIL gained 6 rushing yards on the play.
+STEVIE COUNCIL now has 8 rushes for 58 yards and 0 TDs.
+Play is over - 2nd & 4 from the TB 32 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 4:58 remaining
+Ball at the TB 32.  2nd & 4
+Offense picked STRONG I - TWINS FLEX - POWER O (OUTSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 31 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the TB 27 yard line
+STEVIE COUNCIL broke the tackle of DEONTE QUARLES (DL) at the TB 37 yard line
+ALONZO MCKOY (DB) tackled STEVIE COUNCIL at the TB 38 yard line
+Play was ended as Tackle
+Play ended at the TB 40 yard line
+STEVIE COUNCIL gained 7 rushing yards on the play.
+STEVIE COUNCIL now has 9 rushes for 65 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 40 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 4:40 remaining
+Ball at the TB 40.  1st & 10
+Offense picked I FORM - TWINS - HB DIVE (INSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 39 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 34 yard line
+ALONZO MCKOY (DB) tackled JUDSON ABLES at the TB 43 yard line
+Play was ended as Tackle
+Play ended at the TB 43 yard line
+JUDSON ABLES gained 3 rushing yards on the play.
+JUDSON ABLES now has 15 rushes for 117 yards and 1 TDs.
+Play is over - 2nd & 7 from the TB 43 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 4:21 remaining
+Ball at the TB 43.  2nd & 7
+Offense picked SINGLE BACK - TREY OPEN - DBL POST (MID PASS)
+Defense picked FOUR THREE - UNDER - ROBBER PRESS COVER 1 (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 42 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the TB 48 yard line
+Play was ended as OOB
+Play ended at the VR 46 yard line
+JUDSON ABLES gained 11 receiving yards on the play.
+SIMON GUINN is now 7 for 16 with 108 yards and 0 TDs.
+JUDSON ABLES now has 2 catches for 14 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 46 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 4:00 remaining
+Ball at the VR 46.  1st & 10
+Offense picked GOAL LINE - HEAVY - HB TOSS (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - BASE COVER 2 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 47 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 47 yard line
+FLOYD WEATHERSBY (LB) tackled JUDSON ABLES at the VR 43 yard line
+Play was ended as Tackle
+Play ended at the VR 39 yard line
+JUDSON ABLES gained 7 rushing yards on the play.
+JUDSON ABLES now has 16 rushes for 124 yards and 1 TDs.
+Play is over - 2nd & 3 from the VR 39 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 3:42 remaining
+Ball at the VR 39.  2nd & 3
+Offense picked WEAK I - TWINS - PITCH STRONG (OUTSIDE RUN)
+Defense picked FOUR FOUR - STACK - COVER 3 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 40 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 46 yard line
+CYRIL PEEL (LB) tackled JUDSON ABLES at the VR 36 yard line
+Play was ended as Tackle
+Play ended at the VR 34 yard line
+JUDSON ABLES gained 5 rushing yards on the play.
+JUDSON ABLES now has 17 rushes for 129 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 34 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 3:26 remaining
+Ball at the VR 34.  1st & 10
+Offense picked I FORM - TWINS - HB TOSS STRONG (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - BASE COVER 2 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 35 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the VR 41 yard line
+STEVIE COUNCIL broke the tackle of MARSHALL SHELL (LB) at the VR 33 yard line
+TERRENCE GUYTON (DL) tackled STEVIE COUNCIL at the VR 30 yard line
+Play was ended as Tackle
+Play ended at the VR 30 yard line
+STEVIE COUNCIL gained 4 rushing yards on the play.
+STEVIE COUNCIL now has 10 rushes for 69 yards and 0 TDs.
+Play is over - 2nd & 6 from the VR 30 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 3:10 remaining
+Ball at the VR 30.  2nd & 6
+Offense picked I FORM - NORMAL - SLANTS (SHORT PASS)
+Defense picked FOUR THREE - UNDER - BASE MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 31 yard line
+JAMARCUS MCNAIR (DB) deflected the pass at the VR 24 yard line
+Play was ended as Incomplete
+Play ended at the VR 30 yard line
+Play is over - 3rd & 6 from the VR 30 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 3:05 remaining
+Ball at the VR 30.  3rd & 6
+Offense picked SHOTGUN - NORMAL - QUICK FLIP (OUTSIDE RUN)
+Defense picked FOUR THREE - STACK - COVER 3 SKY (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 36 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 36 yard line
+MARSHALL SHELL (LB) tackled JUDSON ABLES at the VR 25 yard line
+Play was ended as Tackle
+Play ended at the VR 23 yard line
+JUDSON ABLES gained 7 rushing yards on the play.
+JUDSON ABLES now has 18 rushes for 136 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 23 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 2:49 remaining
+Ball at the VR 23.  1st & 10
+Offense picked STRONG I - NORMAL - POWER O (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 4 QUARTERS (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 24 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the VR 29 yard line
+EDGAR TARIN (DB) tackled STEVIE COUNCIL at the VR 17 yard line
+Play was ended as Tackle
+Play ended at the VR 13 yard line
+STEVIE COUNCIL gained 10 rushing yards on the play.
+STEVIE COUNCIL now has 11 rushes for 79 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 13 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 2:32 remaining
+Ball at the VR 13.  1st & 10
+Offense picked I FORM - SLOT FLEX - SE POST FLAG (DEEP PASS)
+Defense picked FOUR THREE - OVER PLUS - COVER 2 MAN UNDER (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 14 yard line
+HAYDEN QUINN (RB, TB) gained control of the ball at the VR 4 yard line
+Play was ended as OOB
+Play ended at the VR 3 yard line
+HAYDEN QUINN gained 10 receiving yards on the play.
+SIMON GUINN is now 8 for 18 with 118 yards and 0 TDs.
+HAYDEN QUINN now has 2 catches for 13 yards and 0 TDs.
+Play is over - 1st & GL from the VR 3 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 2:10 remaining
+Ball at the VR 3.  1st & GL
+Offense picked SHOTGUN - NORMAL - TE OUT (SHORT PASS)
+Defense picked GOAL LINE - SIX TWO - FLATS COVER (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 9 yard line
+QUINCY CHISOLM (DL) tackled SIMON GUINN at the VR 11 yard line
+Play was ended as Tackle
+Play ended at the VR 11 yard line
+Play is over - 2nd & GL from the VR 11 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 1:53 remaining
+Ball at the VR 11.  2nd & GL
+Offense picked SINGLE BACK - SPREAD - HB POWER WEAK (OUTSIDE RUN)
+Defense picked FOUR THREE - UNDER - COVER 3 HARD FLAT (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 12 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 16 yard line
+TERRENCE GUYTON (DL) tackled JUDSON ABLES at the VR 15 yard line
+Play was ended as Tackle
+Play ended at the VR 14 yard line
+JUDSON ABLES gained -3 rushing yards on the play.
+JUDSON ABLES now has 19 rushes for 133 yards and 1 TDs.
+Play is over - 3rd & GL from the VR 14 yard line
+Score is TB - 7, VR - 20
+
+INFO: 3RD QTR, 1:38 remaining
+Ball at the VR 14.  3rd & GL
+Offense picked SHOTGUN - NORMAL Y FLEX - FLANKER DRIVE (MID PASS)
+Defense picked DIME - ONE FOUR - COVER 2 SINK (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 20 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the VR -9 yard line
+Play was ended as Touchdown
+Play ended at the VR 14 yard line
+DERRICK CURETON gained 14 receiving yards on the play.
+SIMON GUINN is now 9 for 19 with 132 yards and 1 TDs.
+DERRICK CURETON now has 2 catches for 45 yards and 1 TDs.
+Play is over - 1st & GL from the VR 15 yard line
+Score is TB - 13, VR - 20
+
+INFO: 3RD QTR, 1:35 remaining
+Ball at the VR 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 22 yard line
+Play was ended as MadeFG
+Play ended at the VR 14 yard line
+Play is over - 1st & 10 from the TB 35 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 1:35 remaining
+Ball at the TB 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 10 yard line
+JABARI CURETON (LB) tackled DEMARIO ROYSTER at the VR 24 yard line
+Play was ended as Tackle
+Play ended at the TB 25 yard line
+Play is over - 1st & 10 from the VR 25 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 1:32 remaining
+Ball at the VR 25.  1st & 10
+Offense picked SINGLE BACK - SPREAD - HB FLATS (SCREEN PASS)
+Defense picked THREE FOUR - ODD - COVER 1 ROBBER (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 24 yard line
+Play was ended as Incomplete
+Play ended at the VR 25 yard line
+Play is over - 2nd & 10 from the VR 25 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 1:26 remaining
+Ball at the VR 25.  2nd & 10
+Offense picked WEAK I - TWINS FLEX - HB MISDIRECTION (MISDIRECTION)
+Defense picked THREE FOUR - UNDER - COVER 3 CLOUD (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 24 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 19 yard line
+CAMRYN BOYKIN (DB) tackled LEONARD BOWENS at the VR 28 yard line
+Play was ended as Tackle
+Play ended at the VR 28 yard line
+LEONARD BOWENS gained 3 rushing yards on the play.
+LEONARD BOWENS now has 15 rushes for 65 yards and 1 TDs.
+Play is over - 3rd & 7 from the VR 28 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 1:10 remaining
+Ball at the VR 28.  3rd & 7
+Offense picked SINGLE BACK - BUNCH - HB PITCH STRONG (OUTSIDE RUN)
+Defense picked THREE FOUR - SPLIT - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 27 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 22 yard line
+JON SWAIM (DB) tackled LEONARD BOWENS at the VR 36 yard line
+Play was ended as Tackle
+Play ended at the VR 37 yard line
+LEONARD BOWENS gained 9 rushing yards on the play.
+LEONARD BOWENS now has 16 rushes for 74 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 37 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 0:47 remaining
+Ball at the VR 37.  1st & 10
+Offense picked SHOTGUN - NORMAL Y FLEX - HB TOSS (OUTSIDE RUN)
+Defense picked THREE FOUR - SPLIT - COVER 3 TRIO (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 31 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 31 yard line
+JABARI CURETON (LB) tackled LEONARD BOWENS at the VR 35 yard line
+Play was ended as Tackle
+Play ended at the VR 37 yard line
+LEONARD BOWENS gained 0 rushing yards on the play.
+LEONARD BOWENS now has 17 rushes for 74 yards and 1 TDs.
+Play is over - 2nd & 10 from the VR 37 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 0:28 remaining
+Ball at the VR 37.  2nd & 10
+Offense picked WEAK I - NORMAL - TOSS WEAK (OUTSIDE RUN)
+Defense picked THREE FOUR - OVER - CROSS PINCH (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 36 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 30 yard line
+DARRELL JEFFERSON broke the tackle of CHANDLER LAND (LB) at the VR 32 yard line
+CHASE WELSH (LB) tackled DARRELL JEFFERSON at the VR 34 yard line
+Play was ended as Tackle
+Play ended at the VR 35 yard line
+DARRELL JEFFERSON gained -2 rushing yards on the play.
+DARRELL JEFFERSON now has 8 rushes for 36 yards and 0 TDs.
+Play is over - 3rd & 12 from the VR 35 yard line
+Score is TB - 14, VR - 20
+
+INFO: 3RD QTR, 0:11 remaining
+Ball at the VR 35.  3rd & 12
+Offense picked WEAK I - TWINS - PITCH STRONG (OUTSIDE RUN)
+Defense picked NICKEL - TWO FOUR ODD - COVER 4 DROP (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 34 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 29 yard line
+CAMRYN BOYKIN (DB) tackled DARRELL JEFFERSON at the VR 38 yard line
+Play was ended as Tackle
+Play ended at the VR 38 yard line
+DARRELL JEFFERSON gained 3 rushing yards on the play.
+DARRELL JEFFERSON now has 9 rushes for 39 yards and 0 TDs.
+Play is over - 4th & 9 from the VR 38 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 10:00 remaining
+Ball at the VR 38.  4th & 9
+Offense picked SPECIAL TEAMS - PUNT - PUNT PROTECT (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - PUNT RETURN - PUNT BLOCK (SPECIAL TEAMS)
+DUSTIN BEACHY (P, VR) gained control of the ball at the VR 27 yard line
+DUSTIN BEACHY punted the ball
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 18 yard line
+HAYDEN QUINN broke the tackle of DEMARIO ROYSTER (WR) at the TB 24 yard line
+CHARLIE BOYKIN (WR) tackled HAYDEN QUINN at the TB 26 yard line
+Play was ended as Tackle
+Play ended at the VR 26 yard line
+Play is over - 1st & 10 from the TB 26 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 9:52 remaining
+Ball at the TB 26.  1st & 10
+Offense picked SHOTGUN - TIGHT - ACE POSTS (DEEP PASS)
+Defense picked FOUR THREE - UNDER - ROBBER PRESS COVER 1 (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 20 yard line
+CHARLIE MAYE (LB) deflected the pass at the TB 32 yard line
+Play was ended as Incomplete
+Play ended at the TB 26 yard line
+Play is over - 2nd & 10 from the TB 26 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 9:48 remaining
+Ball at the TB 26.  2nd & 10
+Offense picked STRONG I - TWINS - SLUGGOS (DEEP PASS)
+Defense picked FOUR THREE - WEAK - COVER 3 BUZZ (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 26 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the TB 37 yard line
+ALONZO MCKOY (DB) tackled DERRICK CURETON at the TB 37 yard line
+Play was ended as Tackle
+Play ended at the VR 35 yard line
+DERRICK CURETON gained 38 receiving yards on the play.
+SIMON GUINN is now 10 for 21 with 170 yards and 1 TDs.
+DERRICK CURETON now has 3 catches for 83 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 9:25 remaining
+Ball at the VR 35.  1st & 10
+Offense picked WEAK I - NORMAL - POST FLAGS (MID PASS)
+Defense picked FOUR THREE - STACK - COVER 4 QUARTERS (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 36 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 13 yard line
+FLOYD WEATHERSBY (LB) tackled JUDSON ABLES at the VR 11 yard line
+Play was ended as Tackle
+Play ended at the VR 10 yard line
+JUDSON ABLES gained 25 receiving yards on the play.
+SIMON GUINN is now 11 for 22 with 195 yards and 1 TDs.
+JUDSON ABLES now has 3 catches for 39 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 10 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 9:01 remaining
+Ball at the VR 10.  1st & 10
+Offense picked I FORM - NORMAL - HB ISO WEAK (INSIDE RUN)
+Defense picked FOUR THREE - WEAK - COVER 3 BUZZ (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 11 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 16 yard line
+JUDSON ABLES broke the tackle of ELLIS MINNICK (DB) at the VR 3 yard line
+FLOYD WEATHERSBY (LB) tackled JUDSON ABLES at the VR 4 yard line
+Play was ended as Tackle
+Play ended at the VR 4 yard line
+JUDSON ABLES gained 6 rushing yards on the play.
+JUDSON ABLES now has 20 rushes for 139 yards and 1 TDs.
+Play is over - 2nd & 4 from the VR 4 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 8:45 remaining
+Ball at the VR 4.  2nd & 4
+Offense picked SINGLE BACK - TRIO - Inside Slot Pick (MID PASS)
+Defense picked GOAL LINE - FIVE THREE - COVER 3 MAN UNDER (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 5 yard line
+DARRYL COBBS (WR, TB) gained control of the ball at the VR 1 yard line
+Play was ended as OOB
+Play ended at the VR 2 yard line
+DARRYL COBBS gained 2 receiving yards on the play.
+SIMON GUINN is now 12 for 23 with 197 yards and 1 TDs.
+DARRYL COBBS now has 2 catches for 22 yards and 0 TDs.
+Play is over - 3rd & 2 from the VR 2 yard line
+Score is TB - 14, VR - 20
+
+INFO: 4TH QTR, 8:29 remaining
+Ball at the VR 2.  3rd & 2
+Offense picked SHOTGUN - NORMAL Y FLEX - TE SEAM (SHORT PASS)
+Defense picked GOAL LINE - FIVE THREE - BASE MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 8 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR -1 yard line
+Play was ended as Touchdown
+Play ended at the VR 2 yard line
+JUDSON ABLES gained 2 receiving yards on the play.
+SIMON GUINN is now 13 for 24 with 199 yards and 2 TDs.
+JUDSON ABLES now has 4 catches for 41 yards and 1 TDs.
+Play is over - 1st & GL from the VR 15 yard line
+Score is TB - 20, VR - 20
+
+INFO: 4TH QTR, 8:26 remaining
+Ball at the VR 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 22 yard line
+Play was ended as MadeFG
+Play ended at the VR 2 yard line
+Play is over - 1st & 10 from the TB 35 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 8:26 remaining
+Ball at the TB 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 9 yard line
+ZACHARY KELLEY (DB) tackled DEMARIO ROYSTER at the VR 25 yard line
+Play was ended as Tackle
+Play ended at the TB 25 yard line
+Play is over - 1st & 10 from the VR 25 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 8:22 remaining
+Ball at the VR 25.  1st & 10
+Offense picked SINGLE BACK - SLOT - HB POWER WEAK (OUTSIDE RUN)
+Defense picked THREE FOUR - UNDER - COVER 3 SKY (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 25 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 20 yard line
+DARRELL JEFFERSON broke the tackle of CHANDLER LAND (LB) at the VR 21 yard line
+ZACHARY KELLEY (DB) tackled DARRELL JEFFERSON at the VR 29 yard line
+Play was ended as Tackle
+Play ended at the VR 31 yard line
+DARRELL JEFFERSON gained 6 rushing yards on the play.
+DARRELL JEFFERSON now has 10 rushes for 45 yards and 0 TDs.
+Play is over - 2nd & 4 from the VR 31 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 8:01 remaining
+Ball at the VR 31.  2nd & 4
+Offense picked WEAK I - TWINS - SWING BACKS (SHORT PASS)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 30 yard line
+Play was ended as Incomplete
+Play ended at the VR 31 yard line
+Play is over - 3rd & 4 from the VR 31 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 7:55 remaining
+Ball at the VR 31.  3rd & 4
+Offense picked STRONG I - TWINS FLEX - WEAK TRAP (INSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 3 SKY (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 30 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 26 yard line
+GREG MULDER (DB) tackled DARRELL JEFFERSON at the VR 35 yard line
+Play was ended as Tackle
+Play ended at the VR 38 yard line
+DARRELL JEFFERSON gained 7 rushing yards on the play.
+DARRELL JEFFERSON now has 11 rushes for 52 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 38 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 7:33 remaining
+Ball at the VR 38.  1st & 10
+Offense picked WEAK I - TWINS - WEAK TRAP (INSIDE RUN)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 37 yard line
+DARRELL JEFFERSON (RB, VR) gained control of the ball at the VR 32 yard line
+MERLIN FORTSON (LB) tackled DARRELL JEFFERSON at the VR 38 yard line
+Play was ended as Tackle
+Play ended at the VR 40 yard line
+DARRELL JEFFERSON gained 2 rushing yards on the play.
+DARRELL JEFFERSON now has 12 rushes for 54 yards and 0 TDs.
+Play is over - 2nd & 8 from the VR 40 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 7:17 remaining
+Ball at the VR 40.  2nd & 8
+Offense picked SHOTGUN - TREY - TE SEAM (SHORT PASS)
+Defense picked THREE FOUR - UNDER - SCRAPE PRESS (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 33 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 50 yard line
+Play was ended as OOB
+Play ended at the TB 49 yard line
+There was a penalty on the play - Penalty Details: Pass Interference against the Offense for -10 yards. Repeat.  It was accepted
+Play is over - 2nd & 18 from the VR 30 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 7:17 remaining
+Ball at the VR 40.  2nd & 8
+Offense picked SHOTGUN - TREY - TE SEAM (SHORT PASS)
+Defense picked THREE FOUR - UNDER - SCRAPE PRESS (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 33 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 50 yard line
+Play was ended as OOB
+Play ended at the TB 49 yard line
+There was a penalty on the play - Penalty Details: Pass Interference against the Offense for -10 yards. Repeat.  It was accepted
+Play is over - 2nd & 18 from the VR 30 yard line
+Score is TB - 21, VR - 20
+Play was ended as PrePlayPenalty
+Play ended at the VR 30 yard line
+There was a penalty on the play - Penalty Details: False Start against the Offense for -5 yards. Repeat.  It was accepted
+Play is over - 2nd & 23 from the VR 25 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 6:37 remaining
+Ball at the VR 25.  2nd & 23
+Offense picked SHOTGUN - NORMAL Y FLEX - CORNER STRIKE (DEEP PASS)
+Defense picked NICKEL - THREE THREE ODD - COVER 4 DROP (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 18 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 33 yard line
+CHANDLER LAND (LB) tackled LEONARD BOWENS at the VR 34 yard line
+Play was ended as Tackle
+Play ended at the VR 35 yard line
+There was a penalty on the play - Penalty Details: Holding against the Defense for 5 yards. FirstDown.  It was accepted
+Play is over - 1st & 10 from the VR 30 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 6:19 remaining
+Ball at the VR 30.  1st & 10
+Offense picked WEAK I - NORMAL - POWER O (OUTSIDE RUN)
+Defense picked THREE FOUR - SPLIT - COVER 3 TRIO (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 29 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 24 yard line
+CHANDLER LAND (LB) tackled LEONARD BOWENS at the VR 35 yard line
+Play was ended as Tackle
+Play ended at the VR 38 yard line
+LEONARD BOWENS gained 8 rushing yards on the play.
+LEONARD BOWENS now has 18 rushes for 82 yards and 1 TDs.
+Play is over - 2nd & 2 from the VR 38 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 5:54 remaining
+Ball at the VR 38.  2nd & 2
+Offense picked SINGLE BACK - SLOT - HB POWER WEAK (OUTSIDE RUN)
+Defense picked FOUR FOUR - STACK - COVER 2 INVERT (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 37 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the VR 32 yard line
+QUINCY CANTY (DL) tackled LEONARD BOWENS at the VR 34 yard line
+Play was ended as Tackle
+Play ended at the VR 33 yard line
+LEONARD BOWENS gained -4 rushing yards on the play.
+LEONARD BOWENS now has 19 rushes for 78 yards and 1 TDs.
+Play is over - 3rd & 7 from the VR 33 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 5:34 remaining
+Ball at the VR 33.  3rd & 7
+Offense picked I FORM - NORMAL - SLUGGOS (DEEP PASS)
+Defense picked THREE FOUR - UNDER - ENGAGE EIGHT (BLITZ)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 33 yard line
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 46 yard line
+GREG MULDER (DB) tackled DEMARIO ROYSTER at the VR 45 yard line
+Play was ended as Tackle
+Play ended at the TB 44 yard line
+DEMARIO ROYSTER gained 23 receiving yards on the play.
+RANDOLPH MERRIMAN is now 18 for 26 with 247 yards and 0 TDs.
+DEMARIO ROYSTER now has 3 catches for 60 yards and 0 TDs.
+Play is over - 1st & 10 from the TB 44 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 5:18 remaining
+Ball at the TB 44.  1st & 10
+Offense picked I FORM - SLOT FLEX - SLANTS (MID PASS)
+Defense picked THREE FOUR - SPLIT - COVER 4 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 45 yard line
+RODGER GOLDMAN (RB, VR) gained control of the ball at the TB 37 yard line
+CHANDLER LAND (LB) tackled RODGER GOLDMAN at the TB 36 yard line
+Play was ended as Tackle
+Play ended at the TB 36 yard line
+RODGER GOLDMAN gained 8 receiving yards on the play.
+RANDOLPH MERRIMAN is now 19 for 27 with 255 yards and 0 TDs.
+RODGER GOLDMAN now has 3 catches for 33 yards and 0 TDs.
+Play is over - 2nd & 2 from the TB 36 yard line
+Score is TB - 21, VR - 20
+
+INFO: 4TH QTR, 4:56 remaining
+Ball at the TB 36.  2nd & 2
+Offense picked SINGLE BACK - SLOT - HB FLATS (SCREEN PASS)
+Defense picked FOUR FOUR - STACK - COVER 3 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 37 yard line
+CHARLIE BOYKIN (WR, VR) gained control of the ball at the TB 3 yard line
+Play was ended as Touchdown
+Play ended at the TB 36 yard line
+CHARLIE BOYKIN gained 36 receiving yards on the play.
+RANDOLPH MERRIMAN is now 20 for 28 with 291 yards and 1 TDs.
+CHARLIE BOYKIN now has 4 catches for 94 yards and 1 TDs.
+Play is over - 1st & GL from the TB 15 yard line
+Score is TB - 21, VR - 26
+
+INFO: 4TH QTR, 4:51 remaining
+Ball at the TB 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 22 yard line
+Play was ended as MadeFG
+Play ended at the TB 36 yard line
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 4:51 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 10 yard line
+CYRIL PEEL (LB) tackled HAYDEN QUINN at the TB 26 yard line
+Play was ended as Tackle
+Play ended at the VR 27 yard line
+Play is over - 1st & 10 from the TB 27 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 4:47 remaining
+Ball at the TB 27.  1st & 10
+Offense picked SINGLE BACK - TREY OPEN - HB FLATS (SCREEN PASS)
+Defense picked FOUR THREE - UNDER - COVER 1 HOLE (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 26 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the TB 37 yard line
+ALONZO MCKOY (DB) tackled DERRICK CURETON at the TB 37 yard line
+Play was ended as Tackle
+Play ended at the VR 33 yard line
+DERRICK CURETON gained 40 receiving yards on the play.
+SIMON GUINN is now 14 for 25 with 239 yards and 2 TDs.
+DERRICK CURETON now has 4 catches for 123 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 33 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 4:28 remaining
+Ball at the VR 33.  1st & 10
+Offense picked I FORM - NORMAL - POWER O (OUTSIDE RUN)
+Defense picked FOUR THREE - OVER PLUS - COVER 3 HARD FLAT (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 34 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 39 yard line
+JUDSON ABLES broke the tackle of DEONTE QUARLES (DL) at the VR 33 yard line
+DEONTE QUARLES (DL) tackled JUDSON ABLES at the VR 32 yard line
+Play was ended as Tackle
+Play ended at the VR 31 yard line
+JUDSON ABLES gained 3 rushing yards on the play.
+JUDSON ABLES now has 21 rushes for 142 yards and 1 TDs.
+Play is over - 2nd & 7 from the VR 31 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 4:10 remaining
+Ball at the VR 31.  2nd & 7
+Offense picked I FORM - NORMAL - RB LEAD (INSIDE RUN)
+Defense picked FOUR THREE - UNDER - BASE MAN (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 32 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 36 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the VR 30 yard line
+Play was ended as Tackle
+Play ended at the VR 29 yard line
+JUDSON ABLES gained 2 rushing yards on the play.
+JUDSON ABLES now has 22 rushes for 144 yards and 1 TDs.
+Play is over - 3rd & 5 from the VR 29 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 3:55 remaining
+Ball at the VR 29.  3rd & 5
+Offense picked WEAK I - NORMAL - QUICK SLANTS (SHORT PASS)
+Defense picked FOUR THREE - WEAK - COVER 4 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 29 yard line
+TREY PINKNEY (WR, TB) gained control of the ball at the VR 18 yard line
+CHARLIE MAYE (LB) tackled TREY PINKNEY at the VR 16 yard line
+Play was ended as Tackle
+Play ended at the VR 15 yard line
+TREY PINKNEY gained 14 receiving yards on the play.
+SIMON GUINN is now 15 for 26 with 253 yards and 2 TDs.
+TREY PINKNEY now has 2 catches for 53 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 15 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 3:37 remaining
+Ball at the VR 15.  1st & 10
+Offense picked GOAL LINE - HEAVY - MISDIRECTION (MISDIRECTION)
+Defense picked FOUR THREE - WEAK - COVER 1 SPY (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 15 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 21 yard line
+JUDSON ABLES broke the tackle of EDGAR TARIN (DB) at the VR 11 yard line
+ALONZO MCKOY (DB) tackled JUDSON ABLES at the VR 9 yard line
+JUDSON ABLES fumbled at the VR 8 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the VR 8 yard line
+CHARLIE MAYE (LB) tackled DERRICK CURETON at the VR 8 yard line
+Play was ended as Tackle
+Play ended at the VR 9 yard line
+Play is over - 2nd & 4 from the VR 9 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 3:19 remaining
+Ball at the VR 9.  2nd & 4
+Offense picked GOAL LINE - HEAVY - INSIDE ZONE (INSIDE RUN)
+Defense picked FOUR THREE - OVER PLUS - SS BLITZ COVER 1 (BLITZ)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 9 yard line
+STEVIE COUNCIL (RB, TB) gained control of the ball at the VR 14 yard line
+STEVIE COUNCIL broke the tackle of EDGAR TARIN (DB) at the VR 5 yard line
+BRUCE NEWLAND (LB) tackled STEVIE COUNCIL at the VR 3 yard line
+Play was ended as Tackle
+Play ended at the VR 3 yard line
+STEVIE COUNCIL gained 5 rushing yards on the play.
+STEVIE COUNCIL now has 12 rushes for 84 yards and 0 TDs.
+Play is over - 1st & GL from the VR 3 yard line
+Score is TB - 21, VR - 27
+
+INFO: 4TH QTR, 2:58 remaining
+Ball at the VR 3.  1st & GL
+Offense picked I FORM - Y TRIPS - FB DIVE STRONG (INSIDE RUN)
+Defense picked GOAL LINE - FIVE THREE - LOW COVER 3 (MAN COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 4 yard line
+HAYDEN QUINN (RB, TB) gained control of the ball at the VR 6 yard line
+MARSHALL SHELL (LB) tackled HAYDEN QUINN at the VR 1 yard line
+Play was ended as Touchdown
+Play ended at the VR 0 yard line
+HAYDEN QUINN gained 3 rushing yards on the play.
+HAYDEN QUINN now has 2 rushes for 11 yards and 1 TDs.
+Play is over - 1st & GL from the VR 15 yard line
+Score is TB - 27, VR - 27
+
+INFO: 4TH QTR, 2:56 remaining
+Ball at the VR 15.  1st & GL
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 22 yard line
+Play was ended as MadeFG
+Play ended at the VR 0 yard line
+Play is over - 1st & 10 from the TB 35 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:56 remaining
+Ball at the TB 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+DEMARIO ROYSTER (WR, VR) gained control of the ball at the VR 9 yard line
+GREG MULDER (DB) tackled DEMARIO ROYSTER at the VR 24 yard line
+Play was ended as Tackle
+Play ended at the TB 24 yard line
+Play is over - 1st & 10 from the VR 24 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:51 remaining
+Ball at the VR 24.  1st & 10
+Offense picked STRONG I - TWINS FLEX - CURLS (MID PASS)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 23 yard line
+CHANDLER LAND (LB) deflected the pass at the VR 30 yard line
+Play was ended as Incomplete
+Play ended at the VR 24 yard line
+Play is over - 2nd & 10 from the VR 24 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:46 remaining
+Ball at the VR 24.  2nd & 10
+Offense picked WEAK I - TWINS FLEX - POST FLAGS (MID PASS)
+Defense picked THREE FOUR - ODD - COVER 2 SPY (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 23 yard line
+JON SWAIM (DB) deflected the pass at the VR 46 yard line
+Play was ended as Incomplete
+Play ended at the VR 24 yard line
+There was a penalty on the play - Penalty Details: Holding against the Defense for 5 yards. FirstDown.  It was accepted
+Play is over - 1st & 10 from the VR 29 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:41 remaining
+Ball at the VR 29.  1st & 10
+Offense picked WEAK I - NORMAL - SLUGGOS (DEEP PASS)
+Defense picked THREE FOUR - OVER - COVER 3 HARD FLAT (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 28 yard line
+Play was ended as Incomplete
+Play ended at the VR 29 yard line
+Play is over - 2nd & 10 from the VR 29 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:36 remaining
+Ball at the VR 29.  2nd & 10
+Offense picked WEAK I - TWINS - CURLS (MID PASS)
+Defense picked THREE FOUR - UNDER - SPY COVER 2 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 28 yard line
+JASPER MACKLIN (TE, VR) gained control of the ball at the VR 36 yard line
+GREG MULDER (DB) tackled JASPER MACKLIN at the VR 38 yard line
+Play was ended as Tackle
+Play ended at the VR 39 yard line
+JASPER MACKLIN gained 11 receiving yards on the play.
+RANDOLPH MERRIMAN is now 21 for 31 with 302 yards and 1 TDs.
+JASPER MACKLIN now has 3 catches for 48 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 39 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:17 remaining
+Ball at the VR 39.  1st & 10
+Offense picked I FORM - TWINS - DEEP COMEBACK (DEEP PASS)
+Defense picked THREE FOUR - ODD - TAMPA 2 (ZONE COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the VR 38 yard line
+CHARLIE BOYKIN (WR, VR) gained control of the ball at the VR 30 yard line
+JON SWAIM (DB) tackled CHARLIE BOYKIN at the VR 29 yard line
+Play was ended as Tackle
+Defense called a timeout
+Play ended at the TB 28 yard line
+CHARLIE BOYKIN gained 33 receiving yards on the play.
+RANDOLPH MERRIMAN is now 22 for 32 with 335 yards and 1 TDs.
+CHARLIE BOYKIN now has 5 catches for 127 yards and 1 TDs.
+Play is over - 1st & 10 from the TB 28 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:08 remaining
+Ball at the TB 28.  1st & 10
+Offense picked STRONG I - TWINS - HB ISO WEAK (INSIDE RUN)
+Defense picked THREE FOUR - SPLIT - COVER 1 HOLE (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 29 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 34 yard line
+MERLIN FORTSON (LB) tackled LEONARD BOWENS at the TB 24 yard line
+Play was ended as Tackle
+Defense called a timeout
+Play ended at the TB 20 yard line
+LEONARD BOWENS gained 8 rushing yards on the play.
+LEONARD BOWENS now has 20 rushes for 86 yards and 1 TDs.
+Play is over - 2nd & 2 from the TB 20 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 2:02 remaining
+Ball at the TB 20.  2nd & 2
+Offense picked I FORM - NORMAL - HB MISDIRECTION (MISDIRECTION)
+Defense picked FOUR FOUR - STACK - MAN COVER 1 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 21 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 26 yard line
+CHANDLER LAND (LB) tackled LEONARD BOWENS at the TB 15 yard line
+Play was ended as Tackle
+Play ended at the TB 13 yard line
+LEONARD BOWENS gained 7 rushing yards on the play.
+LEONARD BOWENS now has 21 rushes for 93 yards and 1 TDs.
+Play is over - 1st & 10 from the TB 13 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 1:59 remaining
+Ball at the TB 13.  1st & 10
+Offense picked STRONG I - TWINS - RB LEAD (INSIDE RUN)
+Defense picked THREE FOUR - SPLIT - CENTER FIELD (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 14 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 19 yard line
+CHASE WELSH (LB) tackled LEONARD BOWENS at the TB 9 yard line
+Play was ended as Tackle
+Defense called a timeout
+Play ended at the TB 7 yard line
+LEONARD BOWENS gained 7 rushing yards on the play.
+LEONARD BOWENS now has 22 rushes for 100 yards and 1 TDs.
+Play is over - 2nd & 3 from the TB 7 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 1:52 remaining
+Ball at the TB 7.  2nd & 3
+Offense picked STRONG I - TWINS - WEAK TRAP (INSIDE RUN)
+Defense picked FOUR FOUR - STACK - COVER 3 SEAM (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 7 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 12 yard line
+EZRA RIDDICK (DL) tackled LEONARD BOWENS at the TB 10 yard line
+Play was ended as Tackle
+Play ended at the TB 10 yard line
+LEONARD BOWENS gained -3 rushing yards on the play.
+LEONARD BOWENS now has 23 rushes for 97 yards and 1 TDs.
+Play is over - 3rd & 6 from the TB 10 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 1:38 remaining
+Ball at the TB 10.  3rd & 6
+Offense picked SHOTGUN - TIGHT - HB DIVE (INSIDE RUN)
+Defense picked THREE FOUR - UNDER - ROBBER PRESS 1 (MAN COVERAGE)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 16 yard line
+LEONARD BOWENS (RB, VR) gained control of the ball at the TB 15 yard line
+LEONARD DOBBS (DL) tackled LEONARD BOWENS at the TB 12 yard line
+Play was ended as Tackle
+Play ended at the TB 12 yard line
+LEONARD BOWENS gained -3 rushing yards on the play.
+LEONARD BOWENS now has 24 rushes for 94 yards and 1 TDs.
+Play is over - 4th & 9 from the TB 12 yard line
+Score is TB - 28, VR - 27
+
+INFO: 4TH QTR, 1:22 remaining
+Ball at the TB 12.  4th & 9
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+RANDOLPH MERRIMAN (QB, VR) gained control of the ball at the TB 19 yard line
+Play was ended as MadeFG
+RANDALL WHITT made a 29 yard FG
+Play ended at the TB 12 yard line
+Play is over - 1st & 10 from the VR 35 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 1:19 remaining
+Ball at the VR 35.  1st & 10
+Offense picked KICKOFF - KICKOFF - KICKOFF MID (KICKOFF)
+Defense picked KICK RETURN - KICK RETURN - RETURN MID (KICK RETURN)
+HAYDEN QUINN (RB, TB) gained control of the ball at the TB 7 yard line
+JAMARCUS MCNAIR (DB) tackled HAYDEN QUINN at the TB 22 yard line
+Play was ended as Tackle
+Play ended at the VR 23 yard line
+Play is over - 1st & 10 from the TB 23 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 1:15 remaining
+Ball at the TB 23.  1st & 10
+Offense picked SHOTGUN - TREY - ACE POSTS (DEEP PASS)
+Defense picked FOUR THREE - STACK - TAMPA 2 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the TB 16 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the TB 49 yard line
+ELLIS MINNICK (DB) tackled DERRICK CURETON at the TB 48 yard line
+Play was ended as Tackle
+Play ended at the VR 44 yard line
+DERRICK CURETON gained 33 receiving yards on the play.
+SIMON GUINN is now 16 for 27 with 286 yards and 2 TDs.
+DERRICK CURETON now has 5 catches for 156 yards and 1 TDs.
+Play is over - 1st & 10 from the VR 44 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 0:58 remaining
+Ball at the VR 44.  1st & 10
+Offense picked SINGLE BACK - TREY OPEN - OUTS (MID PASS)
+Defense picked FOUR THREE - UNDER - COVER 6 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 45 yard line
+Play was ended as Incomplete
+Play ended at the VR 44 yard line
+Play is over - 2nd & 10 from the VR 44 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 0:54 remaining
+Ball at the VR 44.  2nd & 10
+Offense picked I FORM - TWINS - FADE SMASH (DEEP PASS)
+Defense picked FOUR THREE - OVER PLUS - COVER 2 SINK (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 45 yard line
+DERRICK CURETON (WR, TB) gained control of the ball at the VR 36 yard line
+CHARLIE MAYE (LB) tackled DERRICK CURETON at the VR 36 yard line
+Play was ended as Tackle
+Play ended at the VR 36 yard line
+DERRICK CURETON gained 8 receiving yards on the play.
+SIMON GUINN is now 17 for 29 with 294 yards and 2 TDs.
+DERRICK CURETON now has 6 catches for 164 yards and 1 TDs.
+Play is over - 3rd & 2 from the VR 36 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 0:38 remaining
+Ball at the VR 36.  3rd & 2
+Offense picked GOAL LINE - HEAVY - ISO FLAT (SHORT PASS)
+Defense picked FOUR FOUR - OVER - BASE COVER 3 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 37 yard line
+CRAIG VANHORN (TE, TB) gained control of the ball at the VR 35 yard line
+CRAIG VANHORN broke the tackle of CYRIL PEEL (LB) at the VR 35 yard line
+EDGAR TARIN (DB) tackled CRAIG VANHORN at the VR 34 yard line
+Play was ended as Tackle
+Play ended at the VR 32 yard line
+CRAIG VANHORN gained 4 receiving yards on the play.
+SIMON GUINN is now 18 for 30 with 298 yards and 2 TDs.
+CRAIG VANHORN now has 2 catches for 5 yards and 0 TDs.
+Play is over - 1st & 10 from the VR 32 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 0:19 remaining
+Ball at the VR 32.  1st & 10
+Offense picked I FORM - Y TRIPS - RB COUNTER WEAK (MISDIRECTION)
+Defense picked FOUR THREE - STACK - TAMPA 2 (ZONE COVERAGE)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 33 yard line
+JUDSON ABLES (RB, TB) gained control of the ball at the VR 38 yard line
+CHARLIE MAYE (LB) tackled JUDSON ABLES at the VR 34 yard line
+Play was ended as Tackle
+Play ended at the VR 31 yard line
+JUDSON ABLES gained 2 rushing yards on the play.
+JUDSON ABLES now has 24 rushes for 146 yards and 1 TDs.
+Play is over - 2nd & 8 from the VR 31 yard line
+Score is TB - 28, VR - 30
+
+INFO: 4TH QTR, 0:02 remaining
+Ball at the VR 31.  2nd & 8
+Offense picked SPECIAL TEAMS - FIELD GOAL - FIELD GOAL (SPECIAL TEAMS)
+Defense picked SPECIAL TEAMS - FIELD GOAL BLOCK - FG BLOCK (SPECIAL TEAMS)
+SIMON GUINN (QB, TB) gained control of the ball at the VR 37 yard line
+Play was ended as MadeFG
+ROBERTO BORREGO made a 48 yard FG
+Play ended at the VR 31 yard line
+Play is over - 2nd & 8 from the TB 35 yard line
+Score is TB - 31, VR - 30
+
