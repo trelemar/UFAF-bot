@@ -222,6 +222,9 @@ class Player:
         emoji_string = "<:{}:{}>".format(removeSpacesAndPeriods(team_city), emoji_id)
         return emoji_string
 
+    def quick_info(self):
+        return f'**{self.letter_grade()}**\t{self.attributes["POS"]}\t#{self.attributes["NUMBER"]}\t{self.full_name}\t*ID#{self.attributes["INDEX"]}*'
+
     def assign_random_dev_trait(self):
         self.attributes["DEV"] = random.choices(dev_levels, weights=dev_weights)[0]
 

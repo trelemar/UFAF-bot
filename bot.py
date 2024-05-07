@@ -1,7 +1,7 @@
 import discord
 import pandas as pd
 import dataframe_image as dfi
-from discord.ext import commands
+from discord.ext import commands, tasks
 from discord import app_commands
 from typing import Literal, Optional
 from discord.ext.commands import Greedy, Context # or a subclass of yours
@@ -9,6 +9,8 @@ from functools import cmp_to_key
 import math
 import json
 import sys
+import datetime
+from datetime import date
 
 from data import *
 from checks import *
@@ -67,6 +69,11 @@ async def role_to_team_name(ctx, team_role):
 
 bot = commands.Bot(command_prefix=prefix, description=description, intents=intents)
 
+utc = datetime.timezone.utc
+league_new_day = datetime.time(hour=12, minute=0, tzinfo=utc)
+
+print(league_new_day)
+print(datetime.datetime.now())
 @bot.command()
 @commands.guild_only()
 @commands.is_owner()
@@ -112,6 +119,8 @@ async def on_ready():
 
     await setup(bot)
     #await bot.tree.sync()
+    await resolve_waivers.start()
+
 
 def cmp_items(a, b):
     if positions.index(a["POS"]) > positions.index(b["POS"]):
@@ -120,6 +129,58 @@ def cmp_items(a, b):
         return 0
     else:
         return -1
+
+
+@tasks.loop(time=league_new_day)
+async def resolve_waivers():
+    c = bot.get_channel(1234912241782886562)
+    waivers = pull_csv(data_path + "WAIVERS.csv")
+    #for i, data in enumerate(waivers):
+
+    '''
+    l = waivers[0]["DATE"].split("-")
+    print(l)
+    l = [int(n) for n in l]
+    d = datetime.date(*l)
+    print(d)
+    '''
+    still_waivers = []
+    free_agents = []
+    new_signings = []
+    for ref in waivers:
+        l = ref["DATE"].split("-")
+        l = [int(n) for n in l]
+        d = datetime.date(*l)
+        diff = (date.today()-d).days
+        if diff >= 2:
+            if str(ref["CLAIMS"]) == "0":
+                free_agents.append(getPlayer(players, str(ref["PID"])))
+            else:
+                waiver_order = league_settings["WAIVER-ORDER"].split(",")
+                claims = str(ref["CLAIMS"]).split(",")
+                for i, tid in enumerate(waiver_order):
+                    if tid in claims:
+                        signing_team = tid
+                        p = getPlayer(players, str(ref["PID"]))
+                        p.attributes["TEAMID"] = int(signing_team)
+                        p.attributes["STATUS"] = "Active"
+                        new_signings.append(p)
+                        break
+        else:
+            still_waivers.append(ref)
+    msg = "The following players have been claimed through waivers:\n"
+    for p in new_signings:
+        team = team_table[p.attributes["TEAMID"]]
+        msg += f'**{team["CITY"]}** - {p.quick_info()}\n'
+    msg += "The following players are no longer on waivers and are free to sign with any team:\n"
+    for p in free_agents:
+        p.attributes["CONTRACT"] = 0
+        msg = msg + p.quick_info() + "\n"
+    await c.send(msg)
+    push_csv(still_waivers, data_path + "WAIVERS.csv")
+    save_changes_to_players()
+    
+
 
 class Everyone(commands.Cog, name="Everyone"):
     def __init__(self, bot):
@@ -288,6 +349,13 @@ class CancelButton(discord.ui.Button):
             #await reaction.message.row(content = "Canceled")
             print("Cancel")
 
+def save_changes_to_players():
+    player_records = []
+    for p in players:
+        player_records.append(p.attributes)
+
+    push_csv(player_records, data_path + "ROSTER.csv")
+
 async def processTransaction(msg_id, message):
     #global last_known_update_time
 
@@ -305,43 +373,72 @@ async def processTransaction(msg_id, message):
     team = team_table[transaction["team_id"]]
 
     depth_chart = get_depth_chart(transaction["team_id"], players)
+    transaction_message = None
 
     if transaction["type"] == "sign":
-        p.attributes["TEAMID"] = transaction["team_id"]
-        if transaction["ps"] == True:
-            p.attributes["STATUS"] = "Practice Squad"
-            p.attributes["DEPTH"] = "NA"
-        elif transaction["ps"] == False:
-            p.attributes["STATUS"] = "Active"
-            p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]]) + 1
-        msg = f'{p.full_name} has signed with {team["CITY"]}'
-        transaction_message = f'**{team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
-        if transaction["ps"] == True:
-            transaction_message += "\n\nTo their practice squad."
+        if transaction["on_waivers"]:
+            waivers = pull_csv(data_path + "WAIVERS.csv")
+
+            claims = str(waivers[transaction["wid"]]["CLAIMS"]) #Currently a str "1,2,3"
+            claims = claims.split(",") # now it's a list of strs ["1", "2", "3"]
+
+            if not str(transaction["team_id"]) in claims:
+                if len(claims) ==  1 and claims[0] == "0":
+                    claims[0] = str(transaction["team_id"])
+                else:
+                    claims.append(str(transaction["team_id"]))
+            
+            claims = ",".join(claims)
+
+            waivers[transaction["wid"]]["CLAIMS"] = claims
+            print(waivers)
+
+            push_csv(waivers, data_path + "WAIVERS.csv")
+            msg = "A waiver claim has been submitted."
+            #transaction_message = "A waiver claim has been submitted."
+        else:
+            p.attributes["TEAMID"] = transaction["team_id"]
+            if transaction["ps"] == True:
+                p.attributes["STATUS"] = "Practice Squad"
+                p.attributes["DEPTH"] = "NA"
+            elif transaction["ps"] == False:
+                p.attributes["STATUS"] = "Active"
+                p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]]) + 1
+            msg = f'{p.full_name} has signed with {team["CITY"]}'
+            transaction_message = f'**{team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
+            if transaction["ps"] == True:
+                transaction_message += "\n\nTo their practice squad."
+
     elif transaction["type"] == "release":
         p.attributes["TEAMID"] = 0
         p.attributes["DEPTH"] = "NA"
         p.attributes["STATUS"] = "Free Agent"
+        waivers = pull_csv(data_path + "WAIVERS.csv")
+        waivers.append({
+            "PID" : p.attributes["INDEX"],
+            "DATE" : date.today(),
+            'CLAIMS' : 0
+            })
+        push_csv(waivers, data_path + "WAIVERS.csv")
         msg = f'{team["CITY"]} has released {p.full_name}'
         transaction_message = f'**{team["CITY"]}** release:\n{p.attributes["POS"]} {p.full_name}'
+
     elif transaction["type"] == "promote":
         p.attributes["STATUS"] = "Active"
         p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]])
         msg = f'{team["CITY"]} has promoted {p.full_name}'
         transaction_message = f'**{team["CITY"]}** promote:\n{p.attributes["POS"]} {p.full_name}'
+
     elif transaction["type"] == "demote":
         p.attributes["STATUS"] = "Practice Squad"
         p.attributes["DEPTH"] = "NA"
         msg = f'{team["CITY"]} has demoted {p.full_name}'
         transaction_message = f'**{team["CITY"]}** demote:\n{p.attributes["POS"]} {p.full_name}'
 
-    player_records = []
-    for p in players:
-        player_records.append(p.attributes)
+    save_changes_to_players()
 
-    push_csv(player_records, data_path + "ROSTER.csv")
-
-    await transactions_feed.send(transaction_message)
+    if transaction_message != None:
+        await transactions_feed.send(transaction_message)
 
     del transaction_queue[msg_id]
     print("Queue size: {}".format(len(transaction_queue)))
@@ -353,6 +450,11 @@ async def processTransaction(msg_id, message):
 class LeagueOwner(commands.Cog, name="League Owner"):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.command()
+    @commands.has_any_role("DEVELOPER", "League Owner")
+    async def resolve(self, ctx):
+        await resolve_waivers()
 
     @commands.command()
     @commands.has_any_role("DEVELOPER", "League Owner")
@@ -514,16 +616,31 @@ class TeamOwner(commands.Cog, name="Team Owner"):
         except IndexError:
             pass
 
+
+        waivers = pull_csv(data_path + "WAIVERS.csv")
+        on_waivers = False
+        wid = None
+        for i, ref in enumerate(waivers):
+            if p.attributes["INDEX"] == ref["PID"]:
+                on_waivers = True
+                wid = i
+
         view = discord.ui.View()
         active_button = ConfirmButton(ctx, bot)
-        active_button.label = "Active Roster"
+        active_button.label = "Active Roster" if not on_waivers else "Waiver Claim"
         view.add_item(active_button)
-        view.add_item(PSButton(ctx, bot))
+
+        if not on_waivers: view.add_item(PSButton(ctx, bot))
+
         view.add_item(CancelButton(ctx, bot))
 
-        msg = await ctx.send(f'Sign {p.full_name} to {city}?', view=view)
-        transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False}
+        if not on_waivers:
+            msg = await ctx.send(f'Sign {p.full_name} to {city}?', view=view)
+        else:
+            msg = await ctx.send(f'{p.full_name} is currently on waivers. Would you like to claim them?', view=view)
 
+        transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False, "on_waivers" : on_waivers, "wid" : wid}
+        print(transaction_queue)
     @commands.hybrid_command(name="release", with_app_command=True, description="Release a player from a team you own.")
     @commands.has_role("Team Owner")
     async def release(self, ctx, player_id : str):
