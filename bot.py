@@ -70,7 +70,7 @@ async def role_to_team_name(ctx, team_role):
 bot = commands.Bot(command_prefix=prefix, description=description, intents=intents)
 
 utc = datetime.timezone.utc
-league_new_day = datetime.time(hour=2, minute=58, tzinfo=utc)
+league_new_day = datetime.time(hour=12, minute=0, tzinfo=utc)
 
 print(league_new_day)
 print(datetime.datetime.now())
@@ -131,8 +131,7 @@ def cmp_items(a, b):
         return -1
 
 
-#@tasks.loop(time=league_new_day)
-@tasks.loop(seconds=15)
+@tasks.loop(time=league_new_day)
 async def myLoop():
     c = bot.get_channel(1233141276426108989)
     waivers = pull_csv(data_path + "WAIVERS.csv")
@@ -360,17 +359,24 @@ async def processTransaction(msg_id, message):
     depth_chart = get_depth_chart(transaction["team_id"], players)
 
     if transaction["type"] == "sign":
-        p.attributes["TEAMID"] = transaction["team_id"]
-        if transaction["ps"] == True:
-            p.attributes["STATUS"] = "Practice Squad"
-            p.attributes["DEPTH"] = "NA"
-        elif transaction["ps"] == False:
-            p.attributes["STATUS"] = "Active"
-            p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]]) + 1
-        msg = f'{p.full_name} has signed with {team["CITY"]}'
-        transaction_message = f'**{team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
-        if transaction["ps"] == True:
-            transaction_message += "\n\nTo their practice squad."
+        if transaction["on_waivers"]:
+            waivers = pull_csv(data_path + "WAIVERS.csv")
+            waivers[transaction["wid"]]["TEAM"] = transaction["team_id"]
+            push_csv(waivers, data_path + "WAIVERS.csv")
+            msg = "A waiver claim has been made."
+            transaction_message = "A waiver claim has been made."
+        else:
+            p.attributes["TEAMID"] = transaction["team_id"]
+            if transaction["ps"] == True:
+                p.attributes["STATUS"] = "Practice Squad"
+                p.attributes["DEPTH"] = "NA"
+            elif transaction["ps"] == False:
+                p.attributes["STATUS"] = "Active"
+                p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]]) + 1
+            msg = f'{p.full_name} has signed with {team["CITY"]}'
+            transaction_message = f'**{team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
+            if transaction["ps"] == True:
+                transaction_message += "\n\nTo their practice squad."
 
     elif transaction["type"] == "release":
         p.attributes["TEAMID"] = 0
@@ -380,7 +386,7 @@ async def processTransaction(msg_id, message):
         waivers.append({
             "PID" : p.attributes["INDEX"],
             "DATE" : date.today(),
-            'TEAM' : p.attributes["TEAMID"]
+            'TEAM' : 0
             })
         push_csv(waivers, data_path + "WAIVERS.csv")
         msg = f'{team["CITY"]} has released {p.full_name}'
@@ -580,8 +586,19 @@ class TeamOwner(commands.Cog, name="Team Owner"):
         view.add_item(PSButton(ctx, bot))
         view.add_item(CancelButton(ctx, bot))
 
-        msg = await ctx.send(f'Sign {p.full_name} to {city}?', view=view)
-        transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False}
+        waivers = pull_csv(data_path + "WAIVERS.csv")
+        on_waivers = False
+        for i, ref in enumerate(waivers):
+            if p.attributes["INDEX"] == ref["PID"]:
+                on_waivers = True
+                wid = i
+
+        if not on_waivers:
+            msg = await ctx.send(f'Sign {p.full_name} to {city}?', view=view)
+        else:
+            msg = await ctx.send(f'{p.full_name} is currently on waivers. Would you like to claim them?', view=view)
+
+        transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False, "on_waivers" : on_waivers, "wid" : wid}
 
     @commands.hybrid_command(name="release", with_app_command=True, description="Release a player from a team you own.")
     @commands.has_role("Team Owner")
