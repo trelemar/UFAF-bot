@@ -310,7 +310,7 @@ class ConfirmButton(discord.ui.Button):
         self.bot = args[1]
         super().__init__(label="Confirm",style=discord.ButtonStyle.success)
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.message.edit(view=None)
             await interaction.response.defer(thinking=True)
             msg = await processTransaction(str(interaction.message.id), interaction.message)
@@ -325,7 +325,7 @@ class PSButton(discord.ui.Button):
         self.bot = args[1]
         super().__init__(label="Practice Squad",style=discord.ButtonStyle.primary)
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.message.edit(view=None)
             await interaction.response.defer(thinking=True)
             transaction_queue[str(interaction.message.id)]["ps"] = True
@@ -341,7 +341,7 @@ class CancelButton(discord.ui.Button):
         self.bot = args[1]
         super().__init__(label="Cancel",style=discord.ButtonStyle.danger)
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.response.defer(ephemeral=True)
             await interaction.message.delete()
             await interaction.message.reference.cached_message.delete()
