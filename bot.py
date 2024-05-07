@@ -119,7 +119,7 @@ async def on_ready():
 
     await setup(bot)
     #await bot.tree.sync()
-    await myLoop.start()
+    await resolve_waivers.start()
 
 
 def cmp_items(a, b):
@@ -132,8 +132,8 @@ def cmp_items(a, b):
 
 
 @tasks.loop(time=league_new_day)
-async def myLoop():
-    c = bot.get_channel(1233141276426108989)
+async def resolve_waivers():
+    c = bot.get_channel(1234912241782886562)
     waivers = pull_csv(data_path + "WAIVERS.csv")
     #for i, data in enumerate(waivers):
 
@@ -144,24 +144,40 @@ async def myLoop():
     d = datetime.date(*l)
     print(d)
     '''
-    new_waivers = []
+    still_waivers = []
     free_agents = []
+    new_signings = []
     for ref in waivers:
         l = ref["DATE"].split("-")
         l = [int(n) for n in l]
         d = datetime.date(*l)
         diff = (date.today()-d).days
         if diff >= 2:
-            free_agents.append(getPlayer(players, str(ref["PID"])))
+            if str(ref["CLAIMS"]) == "0":
+                free_agents.append(getPlayer(players, str(ref["PID"])))
+            else:
+                waiver_order = league_settings["WAIVER-ORDER"].split(",")
+                claims = str(ref["CLAIMS"]).split(",")
+                for i, tid in enumerate(waiver_order):
+                    if tid in claims:
+                        signing_team = tid
+                        p = getPlayer(players, str(ref["PID"]))
+                        p.attributes["TEAMID"] = int(signing_team)
+                        p.attributes["STATUS"] = "Active"
+                        new_signings.append(p)
+                        break
         else:
-            new_waivers.append(ref)
-
-    msg = "The following players are no longer on waivers and are free to sign with any team:\n"
+            still_waivers.append(ref)
+    msg = "The following players have been claimed through waivers:\n"
+    for p in new_signings:
+        team = team_table[p.attributes["TEAMID"]]
+        msg += f'**{team["CITY"]}** - {p.quick_info()}\n'
+    msg += "The following players are no longer on waivers and are free to sign with any team:\n"
     for p in free_agents:
         p.attributes["CONTRACT"] = 0
         msg = msg + p.quick_info() + "\n"
     await c.send(msg)
-    push_csv(new_waivers, data_path + "WAIVERS.csv")
+    push_csv(still_waivers, data_path + "WAIVERS.csv")
     save_changes_to_players()
     
 
@@ -357,6 +373,7 @@ async def processTransaction(msg_id, message):
     team = team_table[transaction["team_id"]]
 
     depth_chart = get_depth_chart(transaction["team_id"], players)
+    transaction_message = None
 
     if transaction["type"] == "sign":
         if transaction["on_waivers"]:
@@ -433,6 +450,11 @@ async def processTransaction(msg_id, message):
 class LeagueOwner(commands.Cog, name="League Owner"):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.command()
+    @commands.has_any_role("DEVELOPER", "League Owner")
+    async def resolve(self, ctx):
+        await resolve_waivers()
 
     @commands.command()
     @commands.has_any_role("DEVELOPER", "League Owner")
@@ -597,6 +619,7 @@ class TeamOwner(commands.Cog, name="Team Owner"):
 
         waivers = pull_csv(data_path + "WAIVERS.csv")
         on_waivers = False
+        wid = None
         for i, ref in enumerate(waivers):
             if p.attributes["INDEX"] == ref["PID"]:
                 on_waivers = True
@@ -617,7 +640,7 @@ class TeamOwner(commands.Cog, name="Team Owner"):
             msg = await ctx.send(f'{p.full_name} is currently on waivers. Would you like to claim them?', view=view)
 
         transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False, "on_waivers" : on_waivers, "wid" : wid}
-
+        print(transaction_queue)
     @commands.hybrid_command(name="release", with_app_command=True, description="Release a player from a team you own.")
     @commands.has_role("Team Owner")
     async def release(self, ctx, player_id : str):
