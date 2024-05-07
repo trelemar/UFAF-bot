@@ -361,10 +361,24 @@ async def processTransaction(msg_id, message):
     if transaction["type"] == "sign":
         if transaction["on_waivers"]:
             waivers = pull_csv(data_path + "WAIVERS.csv")
-            waivers[transaction["wid"]]["TEAM"] = transaction["team_id"]
+
+            claims = str(waivers[transaction["wid"]]["CLAIMS"]) #Currently a str "1,2,3"
+            claims = claims.split(",") # now it's a list of strs ["1", "2", "3"]
+
+            if not str(transaction["team_id"]) in claims:
+                if len(claims) ==  1 and claims[0] == "0":
+                    claims[0] = str(transaction["team_id"])
+                else:
+                    claims.append(str(transaction["team_id"]))
+            
+            claims = ",".join(claims)
+
+            waivers[transaction["wid"]]["CLAIMS"] = claims
+            print(waivers)
+
             push_csv(waivers, data_path + "WAIVERS.csv")
-            msg = "A waiver claim has been made."
-            transaction_message = "A waiver claim has been made."
+            msg = "A waiver claim has been submitted."
+            #transaction_message = "A waiver claim has been submitted."
         else:
             p.attributes["TEAMID"] = transaction["team_id"]
             if transaction["ps"] == True:
@@ -386,7 +400,7 @@ async def processTransaction(msg_id, message):
         waivers.append({
             "PID" : p.attributes["INDEX"],
             "DATE" : date.today(),
-            'TEAM' : 0
+            'CLAIMS' : 0
             })
         push_csv(waivers, data_path + "WAIVERS.csv")
         msg = f'{team["CITY"]} has released {p.full_name}'
@@ -406,7 +420,8 @@ async def processTransaction(msg_id, message):
 
     save_changes_to_players()
 
-    await transactions_feed.send(transaction_message)
+    if transaction_message != None:
+        await transactions_feed.send(transaction_message)
 
     del transaction_queue[msg_id]
     print("Queue size: {}".format(len(transaction_queue)))
@@ -579,12 +594,6 @@ class TeamOwner(commands.Cog, name="Team Owner"):
         except IndexError:
             pass
 
-        view = discord.ui.View()
-        active_button = ConfirmButton(ctx, bot)
-        active_button.label = "Active Roster"
-        view.add_item(active_button)
-        view.add_item(PSButton(ctx, bot))
-        view.add_item(CancelButton(ctx, bot))
 
         waivers = pull_csv(data_path + "WAIVERS.csv")
         on_waivers = False
@@ -592,6 +601,15 @@ class TeamOwner(commands.Cog, name="Team Owner"):
             if p.attributes["INDEX"] == ref["PID"]:
                 on_waivers = True
                 wid = i
+
+        view = discord.ui.View()
+        active_button = ConfirmButton(ctx, bot)
+        active_button.label = "Active Roster" if not on_waivers else "Waiver Claim"
+        view.add_item(active_button)
+
+        if not on_waivers: view.add_item(PSButton(ctx, bot))
+
+        view.add_item(CancelButton(ctx, bot))
 
         if not on_waivers:
             msg = await ctx.send(f'Sign {p.full_name} to {city}?', view=view)
