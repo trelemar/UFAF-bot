@@ -1,7 +1,7 @@
 import discord
 import pandas as pd
 import dataframe_image as dfi
-from discord.ext import commands
+from discord.ext import commands, tasks
 from discord import app_commands
 from typing import Literal, Optional
 from discord.ext.commands import Greedy, Context # or a subclass of yours
@@ -9,6 +9,8 @@ from functools import cmp_to_key
 import math
 import json
 import sys
+import datetime
+from datetime import date
 
 from data import *
 from checks import *
@@ -67,6 +69,11 @@ async def role_to_team_name(ctx, team_role):
 
 bot = commands.Bot(command_prefix=prefix, description=description, intents=intents)
 
+utc = datetime.timezone.utc
+league_new_day = datetime.time(hour=2, minute=58, tzinfo=utc)
+
+print(league_new_day)
+print(datetime.datetime.now())
 @bot.command()
 @commands.guild_only()
 @commands.is_owner()
@@ -112,6 +119,8 @@ async def on_ready():
 
     await setup(bot)
     #await bot.tree.sync()
+    await myLoop.start()
+
 
 def cmp_items(a, b):
     if positions.index(a["POS"]) > positions.index(b["POS"]):
@@ -120,6 +129,43 @@ def cmp_items(a, b):
         return 0
     else:
         return -1
+
+
+#@tasks.loop(time=league_new_day)
+@tasks.loop(seconds=15)
+async def myLoop():
+    c = bot.get_channel(1233141276426108989)
+    waivers = pull_csv(data_path + "WAIVERS.csv")
+    #for i, data in enumerate(waivers):
+
+    '''
+    l = waivers[0]["DATE"].split("-")
+    print(l)
+    l = [int(n) for n in l]
+    d = datetime.date(*l)
+    print(d)
+    '''
+    new_waivers = []
+    free_agents = []
+    for ref in waivers:
+        l = ref["DATE"].split("-")
+        l = [int(n) for n in l]
+        d = datetime.date(*l)
+        diff = (date.today()-d).days
+        if diff >= 2:
+            free_agents.append(getPlayer(players, str(ref["PID"])))
+        else:
+            new_waivers.append(ref)
+
+    msg = "The following players are no longer on waivers and are free to sign with any team:\n"
+    for p in free_agents:
+        p.attributes["CONTRACT"] = 0
+        msg = msg + p.quick_info() + "\n"
+    await c.send(msg)
+    push_csv(new_waivers, data_path + "WAIVERS.csv")
+    save_changes_to_players()
+    
+
 
 class Everyone(commands.Cog, name="Everyone"):
     def __init__(self, bot):
@@ -288,6 +334,13 @@ class CancelButton(discord.ui.Button):
             #await reaction.message.row(content = "Canceled")
             print("Cancel")
 
+def save_changes_to_players():
+    player_records = []
+    for p in players:
+        player_records.append(p.attributes)
+
+    push_csv(player_records, data_path + "ROSTER.csv")
+
 async def processTransaction(msg_id, message):
     #global last_known_update_time
 
@@ -318,28 +371,34 @@ async def processTransaction(msg_id, message):
         transaction_message = f'**{team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
         if transaction["ps"] == True:
             transaction_message += "\n\nTo their practice squad."
+
     elif transaction["type"] == "release":
         p.attributes["TEAMID"] = 0
         p.attributes["DEPTH"] = "NA"
         p.attributes["STATUS"] = "Free Agent"
+        waivers = pull_csv(data_path + "WAIVERS.csv")
+        waivers.append({
+            "PID" : p.attributes["INDEX"],
+            "DATE" : date.today(),
+            'TEAM' : p.attributes["TEAMID"]
+            })
+        push_csv(waivers, data_path + "WAIVERS.csv")
         msg = f'{team["CITY"]} has released {p.full_name}'
         transaction_message = f'**{team["CITY"]}** release:\n{p.attributes["POS"]} {p.full_name}'
+
     elif transaction["type"] == "promote":
         p.attributes["STATUS"] = "Active"
         p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]])
         msg = f'{team["CITY"]} has promoted {p.full_name}'
         transaction_message = f'**{team["CITY"]}** promote:\n{p.attributes["POS"]} {p.full_name}'
+
     elif transaction["type"] == "demote":
         p.attributes["STATUS"] = "Practice Squad"
         p.attributes["DEPTH"] = "NA"
         msg = f'{team["CITY"]} has demoted {p.full_name}'
         transaction_message = f'**{team["CITY"]}** demote:\n{p.attributes["POS"]} {p.full_name}'
 
-    player_records = []
-    for p in players:
-        player_records.append(p.attributes)
-
-    push_csv(player_records, data_path + "ROSTER.csv")
+    save_changes_to_players()
 
     await transactions_feed.send(transaction_message)
 
