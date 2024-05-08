@@ -253,7 +253,7 @@ class TeamSelect(discord.ui.Select):
         super().__init__(max_values=1,min_values=1)
     async def callback(self, interaction: discord.Interaction):
         #await interaction.response.send_message(content=f"Your choice is {self.values[0]}!",ephemeral=True)
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             self.sel_team = self.values[0]
             #command = self.ctx.bot.get_command("set")
             #await command(self.ctx, "Signing-Team", self.values[0])
@@ -285,7 +285,7 @@ class LOSignButton(discord.ui.Button):
         self.dropdown = args[3]
         super().__init__(label="Sign",style=discord.ButtonStyle.gray,emoji="📋")
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.message.edit(view=None)
             await interaction.response.defer()
             #team_role = await commands.RoleConverter().convert(ctx, TeamSelect.sel_team)
@@ -300,7 +300,7 @@ class SignButton(discord.ui.Button):
         self.player = args[2]
         super().__init__(label="Sign",style=discord.ButtonStyle.gray,emoji="📋")
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.message.edit(view=None)
             await interaction.response.defer()
             command = self.bot.get_command("sign")

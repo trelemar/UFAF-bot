@@ -6,11 +6,5 @@ def isLeagueOwner(user):
     return owner
 
 
-def is_interaction_from_original_author(interaction):
-    '''
-    original_message = interaction.message
-    print(original_message)
-    original_author = original_message.author
-    return interaction.user.id == original_author.id
-    '''
-    return True
+def is_interaction_from_original_author(ctx, interaction):
+    return ctx.author.id == interaction.user.id

@@ -130,6 +130,11 @@ def cmp_items(a, b):
     else:
         return -1
 
+def datestr_converter(s):
+    d = s.split("-")
+    d = [int(n) for n in d]
+    d = datetime.date(*d)
+    return d
 
 @tasks.loop(time=league_new_day)
 async def resolve_waivers():
@@ -310,7 +315,7 @@ class ConfirmButton(discord.ui.Button):
         self.bot = args[1]
         super().__init__(label="Confirm",style=discord.ButtonStyle.success)
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.message.edit(view=None)
             await interaction.response.defer(thinking=True)
             msg = await processTransaction(str(interaction.message.id), interaction.message)
@@ -325,7 +330,7 @@ class PSButton(discord.ui.Button):
         self.bot = args[1]
         super().__init__(label="Practice Squad",style=discord.ButtonStyle.primary)
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.message.edit(view=None)
             await interaction.response.defer(thinking=True)
             transaction_queue[str(interaction.message.id)]["ps"] = True
@@ -341,7 +346,7 @@ class CancelButton(discord.ui.Button):
         self.bot = args[1]
         super().__init__(label="Cancel",style=discord.ButtonStyle.danger)
     async def callback(self, interaction: discord.Interaction):
-        if is_interaction_from_original_author(interaction):
+        if is_interaction_from_original_author(self.ctx, interaction):
             await interaction.response.defer(ephemeral=True)
             await interaction.message.delete()
             await interaction.message.reference.cached_message.delete()
@@ -637,7 +642,11 @@ class TeamOwner(commands.Cog, name="Team Owner"):
         if not on_waivers:
             msg = await ctx.send(f'Sign {p.full_name} to {city}?', view=view)
         else:
-            msg = await ctx.send(f'{p.full_name} is currently on waivers. Would you like to claim them?', view=view)
+            d = datestr_converter(waivers[wid]["DATE"])
+            print(d)
+            d = d + datetime.timedelta(days=2)
+            d_formatted = d.strftime("%A")
+            msg = await ctx.send(f'{p.full_name} is currently on waivers until {d_formatted} at 12:00 PM UTC. Would you like to submit a claim?', view=view)
 
         transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False, "on_waivers" : on_waivers, "wid" : wid}
         print(transaction_queue)
