@@ -550,7 +550,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
             if not p.attributes["INDEX"] in used:
                 export_list.append(p.attributes)
         await ctx.reply(msg)
-        push_csv(export_list, data_path + "EXPORT.csv")
+        push_csv(export_list, data_path + f'export/{team_table[int(team_id)]["CITY"]}.csv')
 
 class TeamOwner(commands.Cog, name="Team Owner"):
     def __init__(self, bot):
