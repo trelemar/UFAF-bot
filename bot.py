@@ -119,7 +119,7 @@ async def on_ready():
 
     await setup(bot)
     #await bot.tree.sync()
-    await resolve_waivers.start()
+    await new_day_task.start()
 
 
 def cmp_items(a, b):
@@ -137,6 +137,12 @@ def datestr_converter(s):
     return d
 
 @tasks.loop(time=league_new_day)
+async def new_day_task():
+    resolve_waivers()
+    for t in teams:
+        t["PRACTICED"] = 0
+    push_csv(teams, data_path + "TEAMS.csv")
+
 async def resolve_waivers():
     c = bot.get_channel(1234912241782886562)
     waivers = pull_csv(data_path + "WAIVERS.csv")
@@ -580,17 +586,39 @@ class TeamOwner(commands.Cog, name="Team Owner"):
 
 
 
-                player_records = []
-                for p in players:
-                    player_records.append(p.attributes)
-
-                push_csv(player_records, data_path + "ROSTER.csv")
+                save_changes_to_players()
 
                 await ctx.send(msg)
             else:
                 await ctx.send("Please use a valid number")
         else:
             await ctx.send(f'{p.full_name} is not on your roster.')
+
+    @commands.hybrid_command(name="practice", with_app_command=True, description="Daily task to gradually improve players.")
+    @commands.has_role("Team Owner")
+    async def practice(self, ctx):
+        ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
+        if len(ownedTeams) == 0:
+            await ctx.reply("You are not a team owner!")
+            return
+        init()
+        team = team_table[ownedTeams[0]]
+        if team["PRACTICED"] == 1:
+            await ctx.reply(f'{team["CITY"]} has already completed their daily practice.')
+            return
+        else:
+            team["PRACTICED"] = 1
+            push_csv(teams, data_path + "TEAMS.csv")
+        roster = get_all_team_players(team["ID"], players)
+        msg = ""
+        for p in roster:
+            advs = p.practice()
+            if len(advs) > 0:
+                for r, v in advs.items():
+                    msg += f'{p.attributes["POS"]} {p.attributes["NUMBER"]} {p.full_name}\'s {r} is now **{v}**\n'
+        save_changes_to_players()
+        msg += f"**{team['CITY']} has completed their daily practice.**"
+        await ctx.send(msg)
     
     @commands.hybrid_command(name="sign", with_app_command=True, description="Sign a player to a team's roster")
     @commands.has_role("Team Owner")

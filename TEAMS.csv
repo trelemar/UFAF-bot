@@ -1,4 +1,4 @@
-ID,CITY,NICKNAME,ABV
-1,Tampa Bay,Thieves,TB
-2,Chicago,Machine,CHI
-3,Virginia,Reapers,VR
+ID,CITY,NICKNAME,ABV,PRACTICED
+1,Tampa Bay,Thieves,TB,0
+2,Chicago,Machine,CHI,0
+3,Virginia,Reapers,VR,0
