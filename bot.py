@@ -138,7 +138,7 @@ def datestr_converter(s):
 
 @tasks.loop(time=league_new_day)
 async def new_day_task():
-    resolve_waivers()
+    await resolve_waivers()
     for t in teams:
         t["PRACTICED"] = 0
     push_csv(teams, data_path + "TEAMS.csv")
@@ -510,6 +510,14 @@ class LeagueOwner(commands.Cog, name="League Owner"):
 
         await ctx.message.reply(f'League setting "{setting}" has been set to "{league_settings[setting]}"')
 
+    @commands.command()
+    @commands.has_role("League Owner")
+    async def dev(self, ctx):
+        init()
+        for p in players:
+            p.assign_random_dev_trait()
+        save_changes_to_players()
+        
     @commands.command()
     @commands.has_role("League Owner")
     async def build(self, ctx, team_id):

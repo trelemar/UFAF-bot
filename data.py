@@ -237,9 +237,11 @@ class Player:
         return f'**{self.letter_grade()}**\t{self.attributes["POS"]}\t#{self.attributes["NUMBER"]}\t{self.full_name}\t*ID#{self.attributes["INDEX"]}*'
 
     def assign_random_dev_trait(self):
-        self.attributes["DEV"] = random.choices(dev_levels.keys(), weights=dev_weights)[0]
+        levels = []
+        for k, v in dev_levels.items():
+            levels.append(k)
+        self.attributes["DEV"] = random.choices(levels, weights=dev_weights)[0]
 
-        self
 def getPlayer(records, pid):
     found = False
     player = None
