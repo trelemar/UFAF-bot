@@ -4,7 +4,7 @@ import csv
 from functools import cmp_to_key
 from parse import *
 import random
-
+from math import *
 #players_data = pd.read_csv("ROSTER.csv")
 
 #player_list = players_data.to_dict("records")
@@ -31,7 +31,7 @@ status_emojis = {
     "Free Agent" : "🔵"
 }
 
-dev_levels = ["Bronze", "Silver", "Gold", "Platinum"]
+dev_levels = {"Bronze" : 0.05, "Silver" : 0.075, "Gold" : 0.1, "Platinum" : 0.125}
 dev_weights = [5, 3, .5, 0.1]
 
 depth_order = ["QB", "RB", "FB", "WR", "TE", "LT", "LG", "C", "RG", "RT", "DE", "DT", "DE", "OLB", "MLB", "OLB", "MLB", "DB", "SS", "FS", "DB", "K", "P"]
@@ -187,7 +187,7 @@ class Player:
                 rating_index = i
                 for name, value in v.items():
                     if name != "Pos" and name != "SUM":
-                        player_weights.append(self.attributes[name] * value)
+                        player_weights.append(self.attributes[name] * floor(value))
 
 
         #(rating * weight)+(rating *weight)
@@ -196,7 +196,7 @@ class Player:
         v = self.attributes[rating_name]
         l = ""
         for letter, rng in letter_grades.items():
-            if v in rng:
+            if floor(v) in rng:
                 l = letter
         return l
     def letter_grade(self):
@@ -206,7 +206,18 @@ class Player:
             if ovr in r:
                 g = letter
         return g
+    def practice(self):
+        advancements = {}
+        for name in core_attributes[self.attributes["POS"]]:
+            att_name = attributes[name]
+            old_grade = self.rating_grade(att_name)
+            self.attributes[att_name] = round(self.attributes[att_name] + dev_levels[self.attributes["DEV"]], 3)
+            new_grade = self.rating_grade(att_name)
+            if old_grade != new_grade: advancements[name] = new_grade
+        print(f'{self.full_name} advanced: {advancements}')
+        return advancements
 
+        print(self.attributes["SPEED"])
     def team_emoji(self, ctx, teams_table):
         tid = self.attributes["TEAMID"]
         if tid > 0:
@@ -226,7 +237,7 @@ class Player:
         return f'**{self.letter_grade()}**\t{self.attributes["POS"]}\t#{self.attributes["NUMBER"]}\t{self.full_name}\t*ID#{self.attributes["INDEX"]}*'
 
     def assign_random_dev_trait(self):
-        self.attributes["DEV"] = random.choices(dev_levels, weights=dev_weights)[0]
+        self.attributes["DEV"] = random.choices(dev_levels.keys(), weights=dev_weights)[0]
 
         self
 def getPlayer(records, pid):
