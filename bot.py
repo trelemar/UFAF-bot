@@ -8,7 +8,7 @@ from discord.ext.commands import Greedy, Context # or a subclass of yours
 from functools import cmp_to_key
 import math
 import json
-import sys
+import sys, os
 import datetime
 from datetime import date
 
@@ -35,6 +35,7 @@ def getChannelByName(ctx, name):
             channel = i
     return channel
 
+'''
 if len(sys.argv) > 1 and sys.argv[1] == "y":
     BOT_TOKEN = TOKEN.BETA
     prefix = "?"
@@ -44,6 +45,7 @@ else:
     prefix = "!"
     
     data_path = "/home/trevor/UFAF_data/"
+'''
 
 def init():
     global player_records, teams, team_table, transaction_queue, players, league_settings
@@ -232,6 +234,7 @@ class Everyone(commands.Cog, name="Everyone"):
         path = f'{data_path}Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
         
         thumb = discord.File(path, filename="portrait.png")
+        stats_image = p.stats_image(league_settings, p.get_default_stat_range(), team_table)
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         team_emoji = p.team_emoji(ctx, team_table)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
@@ -252,6 +255,10 @@ class Everyone(commands.Cog, name="Everyone"):
         embedMsg.set_author(name=f'{status_emojis[p.attributes["STATUS"]]} {p.attributes["STATUS"]}')
         #embedMsg = discord.Embed(title=title, description=f'{team_name}', color=color)
         embedMsg.set_thumbnail(url="attachment://portrait.png")
+        image_files = [thumb]
+        if stats_image != None:
+            embedMsg.set_image(url="attachment://player_stats.png")
+            image_files.append(stats_image)
 
         if league_settings["LOCK"] == 0:
             if p.attributes["TEAMID"] == 0:
@@ -271,7 +278,7 @@ class Everyone(commands.Cog, name="Everyone"):
                     button.disabled = True
         '''
 
-        await ctx.send(file=thumb, embed=embedMsg, view=view)
+        await ctx.send(files=image_files, embed=embedMsg, view=view)
 
     
     @commands.hybrid_command(name="free_agents", with_app_command=True, description="Lists all free agents of a given position.")
@@ -300,7 +307,7 @@ class Everyone(commands.Cog, name="Everyone"):
             for pos, player_list in depth_chart.items():
                 if pos in positions:
                     if len(player_list) > 0:
-                        msg += f"### {pos}\n"
+                        msg += f'### {pos}**\n'
                     for i, p in enumerate(player_list):
                         count += 1
                         msg = msg + f'{i+1}. **{p.letter_grade()}**\t#{p.attributes["NUMBER"]}\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
@@ -309,11 +316,36 @@ class Everyone(commands.Cog, name="Everyone"):
         #msg = msg + f'### TOTAL: {count}'
         #await ctx.send(msg)
     @commands.hybrid_command(name="stats", with_app_command=True, description="List a player's stats.")
-    async def stats(self, ctx, player_id):
-        pass
+    @app_commands.describe(player_id="A player's full name or ID number.")
+    async def stats(self, ctx, player_id, season : int):
+        '''
+        p = getPlayer(players, player_id)
+        stats_data = pull_csv(data_path + f"stats/s{season}_w1.csv")
+        rec = None
+        for ref in stats_data:
+            if ref["PID"] == p.attributes["INDEX"]: rec = ref
+
+        if rec == None:
+            ctx.send("No stats found")
+            return
+
+        named_week_stats = {"Name" : p.full_name}
+        for k, v in rec.items():
+            if k in stat_breakdowns:
+                named_week_stats[stat_breakdowns[k]] = v
+        t = [named_week_stats, named_week_stats, named_week_stats]
+
+        df = pd.DataFrame(t)
+        df.index += 1
+        df.index.name = "Week"
+        dfi.export(df, "stats.png", max_cols=-1, table_conversion='matplotlib')
+        '''
+        p = getPlayer(players, player_id)
+        pic = p.stats_image()
+        await ctx.send(file=pic)
         
-        async def cog_command_error(self, ctx, error):
-            await ctx.message.reply(error)
+    #async def cog_command_error(self, ctx, error):
+    #    await ctx.message.reply(error)
 
 class ConfirmButton(discord.ui.Button):
     def __init__(self, *args):
@@ -371,7 +403,7 @@ async def processTransaction(msg_id, message):
     #global last_known_update_time
 
     for i in message.guild.channels:
-        if i.name == "transactions-feed":
+        if i.name == "transaction-feed":
             transactions_feed = i
         elif i.name == "player-upgrades":
             player_upgrade_channel = i

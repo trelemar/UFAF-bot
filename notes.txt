@@ -1,4 +1,4 @@
-Gamebreakers font: Draco
+Gamebreakers font: Draco, SUper brigade
 
 Heatwave fonts: Monster's heart, empire
 

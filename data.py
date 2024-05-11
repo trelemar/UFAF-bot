@@ -1,10 +1,22 @@
 import pandas as pd
 import dataframe_image as dfi
-import csv
+import csv, sys, os
 from functools import cmp_to_key
 from parse import *
 import random
 from math import *
+import TOKEN
+import discord
+
+if len(sys.argv) > 1:
+    BOT_TOKEN = TOKEN.BETA
+    prefix = "?"
+    data_path = sys.argv[1]
+else:
+    BOT_TOKEN = TOKEN.MAIN
+    prefix = "!"
+    
+    data_path = "/home/trevor/UFAF_data/"
 #players_data = pd.read_csv("ROSTER.csv")
 
 #player_list = players_data.to_dict("records")
@@ -90,8 +102,6 @@ core_attributes = {
     'P' :  ['KPW',  'KAC',  'AWR',  'SPD',  'THP',  'THA',  'TKL',  'BSHD', 'FIT']
 }
 
-print(core_attributes["DB"])
-
 def simplest_type(s):
     try:
         return literal_eval(s)
@@ -116,13 +126,54 @@ def positions_sort(a, b):
         return -1
 
 stat_breakdowns = {
-    "passing"  : {
+    "QBCompletions" : "COMP",
+    "QBAttempts" : "ATT",
+    "QBPassYards" : "YDS",
+    "QBPassTDs" : "TD",
+    "QBInts" : "INT",
+}
+
+stats_by_type = {
+    "PASSING" : {
         "QBCompletions" : "COMP",
         "QBAttempts" : "ATT",
         "QBPassYards" : "YDS",
-        "QBInts" : "INT"
+        "QBPassTDs" : "TD",
+        "QBInts" : "INT",
+        "QBLongestPass" : "LONG",
+        "QBTimesSacked" : "SACKED",
+    },
+    "RUSHING" : {
+        "RushAttempts" : "ATT",
+        "RushYards" : "YDS",
+        "RushTDs" : "TD",
+        "Fumbles" : "FUM"
+    },
+    "RECEIVING" : {
+        "Receptions" : "REC",
+        "Drops" : "DROP",
+        "ReceivingYards" :"YDS",
+        "ReceivingTDs" : "TD",
+        "LongestReception" : "LONG",
+        "YardsAfterCatch" : "YAC"
     }
 }
+
+default_stat_ranges = {
+    "PASSING" : ["QB"],
+    "RUSHING" : ["RB", "FB"],
+    "RECEIVING" : ["WR", "TE"],
+    "DEFENSE" : [],
+    "KICKING" : [],
+    "NONE" : ["OL", "LT", "LG", "C", "RG", "RT"]
+}
+
+def get_default_stat_range(pos):
+    for r, positions in default_stat_ranges.items():
+        if pos in positions: kind = r
+
+    return kind
+
 
 '''
 def stats(player_name):
@@ -192,6 +243,10 @@ class Player:
 
         #(rating * weight)+(rating *weight)
         return(round(sum(player_weights)/weight_sum))
+    def get_default_stat_range(self):
+        for r, positions in default_stat_ranges.items():
+            if self.attributes["POS"] in positions: kind = r
+        return kind
     def rating_grade(self, rating_name):
         v = self.attributes[rating_name]
         l = ""
@@ -218,6 +273,74 @@ class Player:
         return advancements
 
         print(self.attributes["SPEED"])
+
+    def stats_image(self, league_settings, kind, team_table):
+
+        if kind == "NONE":
+            return
+
+        stats_path = data_path + f'stats/s{league_settings["SEASON"]}/'
+        stat_files = []
+        for i in os.listdir(stats_path):
+            if not os.path.isdir(i) and i[0] == "s":
+                stat_files.append(i)
+
+        #stats_data = pull_csv(data_path + f'stats/s{league_settings["SEASON"]}_w1.csv')
+        print(stat_files)
+        stat_files.sort()
+        t = []
+        kind_breakdowns = stats_by_type[kind]
+        for i, f in enumerate(stat_files):
+            stats_data = pull_csv(stats_path + f)
+            rec = None
+            for ref in stats_data:
+                if ref["PID"] == self.attributes["INDEX"]: rec = ref
+
+            if rec == None:
+                #ctx.send("No stats found")
+                print(f'no stats found in sheet {f} for {self.attributes["INDEX"]}')
+            else:
+                named_week_stats = {"Week" : i + 1, "TEAM" : team_table[rec["TEAMID"]]["ABV"], "Name" : self.full_name}
+                for k, v in rec.items():
+                    if k in kind_breakdowns:
+                        named_week_stats[kind_breakdowns[k]] = v
+                t.append(named_week_stats)
+
+        #t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
+
+        df = pd.DataFrame(t).set_index("Week")
+        #df.index += 1
+        #df.index.name = "Week"
+
+
+        df.loc['TOTAL']= df.sum(numeric_only=True, axis=0)
+        df["Name"] = ""
+        df.at["TOTAL", "Week"] = ""
+        df.at["TOTAL","TEAM"] = ""
+        df.at["TOTAL", "Name"] = self.full_name
+
+        if kind == "PASSING":
+            df["AVG"] = round((df["COMP"] / df["ATT"]), 2)
+            df = df[["TEAM", "COMP", "ATT", "AVG", "YDS", "TD", "INT"]]
+        elif kind == "RUSHING":
+            df["YPC"] = round((df["YDS"] / df["ATT"]), 2)
+            df = df[["TEAM", "ATT", "YDS", "YPC", "TD", "FUM"]]
+        elif kind == 'RECEIVING':
+            df["Y/CAT"] = round(df["YDS"] / df["REC"], 1)
+            df = df[["TEAM", "REC", "YDS", "Y/CAT", "YAC", "TD", "LONG"]]
+            pass
+
+
+        whole_numbers = ["REC", "COMP", "ATT", "YDS", "YAC", "LONG", "TD", "INT", "FUM"]
+        test = {}
+        for k in whole_numbers:
+            if k in df.columns:
+                test[k] = int
+        df = df.astype(test)
+
+        dfi.export(df, "player_stats.png", max_cols=-1, table_conversion='matplotlib')
+        return discord.File("player_stats.png")
+
     def team_emoji(self, ctx, teams_table):
         tid = self.attributes["TEAMID"]
         if tid > 0:
