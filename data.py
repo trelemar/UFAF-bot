@@ -133,6 +133,41 @@ stat_breakdowns = {
     "QBInts" : "INT",
 }
 
+stats_by_type = {
+    "PASSING" : {
+        "QBCompletions" : "COMP",
+        "QBAttempts" : "ATT",
+        "QBPassYards" : "YDS",
+        "QBPassTDs" : "TD",
+        "QBInts" : "INT",
+        "QBLongestPass" : "LONG",
+        "QBTimesSacked" : "SACKED",
+    },
+    "RUSHING" : {
+        "RushAttempts" : "ATT",
+        "RushYards" : "YDS",
+        "RushTDs" : "TD",
+        "Fumbles" : "FUM"
+    },
+    "RECEIVING" : {
+        "Receptions" : "REC",
+        "ReceivingYards" :"YDS"
+    }
+}
+
+default_stat_ranges = {
+    "PASSING" : ["QB"],
+    "RUSHING" : ["RB", "FB"],
+    "RECEIVING" : ["WR", "TE"]
+}
+
+def get_default_stat_range(pos):
+    for r, positions in default_stat_ranges.items():
+        if pos in positions: kind = r
+
+    return kind
+
+
 '''
 def stats(player_name):
     stats_df = pd.read_csv("/media/trevor/DECK/UFAF/Season 1/S1_W1.csv")
@@ -201,6 +236,10 @@ class Player:
 
         #(rating * weight)+(rating *weight)
         return(round(sum(player_weights)/weight_sum))
+    def get_default_stat_range(self):
+        for r, positions in default_stat_ranges.items():
+            if self.attributes["POS"] in positions: kind = r
+        return kind
     def rating_grade(self, rating_name):
         v = self.attributes[rating_name]
         l = ""
@@ -228,8 +267,8 @@ class Player:
 
         print(self.attributes["SPEED"])
 
-    def stats_image(self, league_settings):
-        stats_path = "/Volumes/UFAF_data/stats/s1/"
+    def stats_image(self, league_settings, kind):
+        stats_path = data_path + f'stats/s{league_settings["SEASON"]}/'
         stat_files = []
         for i in os.listdir(stats_path):
             if not os.path.isdir(i) and i[0] == "s":
@@ -238,7 +277,8 @@ class Player:
         #stats_data = pull_csv(data_path + f'stats/s{league_settings["SEASON"]}_w1.csv')
         print(stat_files)
         t = []
-        for f in stat_files:
+        kind_breakdowns = stats_by_type[kind]
+        for i, f in enumerate(stat_files):
             stats_data = pull_csv(stats_path + f)
             rec = None
             for ref in stats_data:
@@ -248,18 +288,40 @@ class Player:
                 ctx.send("No stats found")
                 return
 
-            named_week_stats = {"Name" : self.full_name}
+            named_week_stats = {"Week" : i + 1, "Name" : self.full_name}
             for k, v in rec.items():
-                if k in stat_breakdowns:
-                    named_week_stats[stat_breakdowns[k]] = v
+                if k in kind_breakdowns:
+                    named_week_stats[kind_breakdowns[k]] = v
             t.append(named_week_stats)
 
         #t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
 
         df = pd.DataFrame(t)
+        df.set_index("Week")
         df.index += 1
         df.index.name = "Week"
-        
+
+
+        df.loc['TOTAL']= df.sum(numeric_only=True, axis=0)
+        df["Name"] = ""
+        df.at["TOTAL", "Week"] = ""
+        df.at["TOTAL", "Name"] = self.full_name
+
+        if kind == "PASSING":
+            df["AVG"] = round((df["COMP"] / df["ATT"]), 2)
+            df = df[["COMP", "ATT", "AVG", "YDS", "TD", "INT"]]
+        elif kind == "RUSHING":
+            df["YPC"] = round((df["YDS"] / df["ATT"]), 2)
+            df = df[["ATT", "YDS", "YPC", "TD", "FUM"]]
+
+
+        whole_numbers = ["COMP", "ATT", "YDS", "TD", "INT", "FUM"]
+        test = {}
+        for k in whole_numbers:
+            if k in df.columns:
+                test[k] = int
+        df = df.astype(test)
+
         dfi.export(df, "player_stats.png", max_cols=-1, table_conversion='matplotlib')
         return discord.File("player_stats.png")
 
