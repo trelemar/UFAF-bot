@@ -151,7 +151,11 @@ stats_by_type = {
     },
     "RECEIVING" : {
         "Receptions" : "REC",
-        "ReceivingYards" :"YDS"
+        "Drops" : "DROP",
+        "ReceivingYards" :"YDS",
+        "ReceivingTDs" : "TD",
+        "LongestReception" : "LONG",
+        "YardsAfterCatch" : "YAC"
     }
 }
 
@@ -270,7 +274,7 @@ class Player:
 
         print(self.attributes["SPEED"])
 
-    def stats_image(self, league_settings, kind):
+    def stats_image(self, league_settings, kind, team_table):
 
         if kind == "NONE":
             return
@@ -296,7 +300,7 @@ class Player:
                 #ctx.send("No stats found")
                 print(f'no stats found in sheet {f} for {self.attributes["INDEX"]}')
             else:
-                named_week_stats = {"Week" : i + 1, "Name" : self.full_name}
+                named_week_stats = {"Week" : i + 1, "TEAM" : team_table[rec["TEAMID"]]["ABV"], "Name" : self.full_name}
                 for k, v in rec.items():
                     if k in kind_breakdowns:
                         named_week_stats[kind_breakdowns[k]] = v
@@ -312,19 +316,22 @@ class Player:
         df.loc['TOTAL']= df.sum(numeric_only=True, axis=0)
         df["Name"] = ""
         df.at["TOTAL", "Week"] = ""
+        df.at["TOTAL","TEAM"] = ""
         df.at["TOTAL", "Name"] = self.full_name
 
         if kind == "PASSING":
             df["AVG"] = round((df["COMP"] / df["ATT"]), 2)
-            df = df[["COMP", "ATT", "AVG", "YDS", "TD", "INT"]]
+            df = df[["TEAM", "COMP", "ATT", "AVG", "YDS", "TD", "INT"]]
         elif kind == "RUSHING":
             df["YPC"] = round((df["YDS"] / df["ATT"]), 2)
-            df = df[["ATT", "YDS", "YPC", "TD", "FUM"]]
+            df = df[["TEAM", "ATT", "YDS", "YPC", "TD", "FUM"]]
         elif kind == 'RECEIVING':
+            df["Y/CAT"] = round(df["YDS"] / df["REC"], 1)
+            df = df[["TEAM", "REC", "YDS", "Y/CAT", "YAC", "TD", "LONG"]]
             pass
 
 
-        whole_numbers = ["COMP", "ATT", "YDS", "TD", "INT", "FUM"]
+        whole_numbers = ["REC", "COMP", "ATT", "YDS", "YAC", "LONG", "TD", "INT", "FUM"]
         test = {}
         for k in whole_numbers:
             if k in df.columns:
