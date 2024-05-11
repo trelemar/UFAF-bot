@@ -1,6 +1,6 @@
 import pandas as pd
 import dataframe_image as dfi
-import csv, sys
+import csv, sys, os
 from functools import cmp_to_key
 from parse import *
 import random
@@ -228,21 +228,33 @@ class Player:
 
         print(self.attributes["SPEED"])
 
-    def stats_image(self):
-        stats_data = pull_csv(data_path + f"stats/s1_w1.csv")
-        rec = None
-        for ref in stats_data:
-            if ref["PID"] == self.attributes["INDEX"]: rec = ref
+    def stats_image(self, league_settings):
+        stats_path = "/Volumes/UFAF_data/stats/s1/"
+        stat_files = []
+        for i in os.listdir(stats_path):
+            if not os.path.isdir(i) and i[0] == "s":
+                stat_files.append(i)
 
-        if rec == None:
-            ctx.send("No stats found")
-            return
+        #stats_data = pull_csv(data_path + f'stats/s{league_settings["SEASON"]}_w1.csv')
+        print(stat_files)
+        t = []
+        for f in stat_files:
+            stats_data = pull_csv(stats_path + f)
+            rec = None
+            for ref in stats_data:
+                if ref["PID"] == self.attributes["INDEX"]: rec = ref
 
-        named_week_stats = {"Name" : self.full_name}
-        for k, v in rec.items():
-            if k in stat_breakdowns:
-                named_week_stats[stat_breakdowns[k]] = v
-        t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
+            if rec == None:
+                ctx.send("No stats found")
+                return
+
+            named_week_stats = {"Name" : self.full_name}
+            for k, v in rec.items():
+                if k in stat_breakdowns:
+                    named_week_stats[stat_breakdowns[k]] = v
+            t.append(named_week_stats)
+
+        #t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
 
         df = pd.DataFrame(t)
         df.index += 1

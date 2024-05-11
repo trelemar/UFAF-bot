@@ -234,7 +234,7 @@ class Everyone(commands.Cog, name="Everyone"):
         path = f'{data_path}Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
         
         thumb = discord.File(path, filename="portrait.png")
-        stats_image = p.stats_image()
+        stats_image = p.stats_image(league_settings)
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         team_emoji = p.team_emoji(ctx, team_table)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
