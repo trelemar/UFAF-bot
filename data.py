@@ -1,10 +1,22 @@
 import pandas as pd
 import dataframe_image as dfi
-import csv
+import csv, sys
 from functools import cmp_to_key
 from parse import *
 import random
 from math import *
+import TOKEN
+import discord
+
+if len(sys.argv) > 1:
+    BOT_TOKEN = TOKEN.BETA
+    prefix = "?"
+    data_path = sys.argv[1]
+else:
+    BOT_TOKEN = TOKEN.MAIN
+    prefix = "!"
+    
+    data_path = "/home/trevor/UFAF_data/"
 #players_data = pd.read_csv("ROSTER.csv")
 
 #player_list = players_data.to_dict("records")
@@ -215,6 +227,30 @@ class Player:
         return advancements
 
         print(self.attributes["SPEED"])
+
+    def stats_image(self):
+        stats_data = pull_csv(data_path + f"stats/s1_w1.csv")
+        rec = None
+        for ref in stats_data:
+            if ref["PID"] == self.attributes["INDEX"]: rec = ref
+
+        if rec == None:
+            ctx.send("No stats found")
+            return
+
+        named_week_stats = {"Name" : self.full_name}
+        for k, v in rec.items():
+            if k in stat_breakdowns:
+                named_week_stats[stat_breakdowns[k]] = v
+        t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
+
+        df = pd.DataFrame(t)
+        df.index += 1
+        df.index.name = "Week"
+        
+        dfi.export(df, "player_stats.png", max_cols=-1, table_conversion='matplotlib')
+        return discord.File("player_stats.png")
+
     def team_emoji(self, ctx, teams_table):
         tid = self.attributes["TEAMID"]
         if tid > 0:

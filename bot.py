@@ -35,6 +35,7 @@ def getChannelByName(ctx, name):
             channel = i
     return channel
 
+'''
 if len(sys.argv) > 1 and sys.argv[1] == "y":
     BOT_TOKEN = TOKEN.BETA
     prefix = "?"
@@ -44,6 +45,7 @@ else:
     prefix = "!"
     
     data_path = "/home/trevor/UFAF_data/"
+'''
 
 def init():
     global player_records, teams, team_table, transaction_queue, players, league_settings
@@ -232,6 +234,7 @@ class Everyone(commands.Cog, name="Everyone"):
         path = f'{data_path}Player Portraits/Skin Tone {p.attributes["SKIN"]}/{p.attributes["PORTRAIT"]}.png'
         
         thumb = discord.File(path, filename="portrait.png")
+        stats_image = p.stats_image()
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         team_emoji = p.team_emoji(ctx, team_table)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
@@ -252,6 +255,7 @@ class Everyone(commands.Cog, name="Everyone"):
         embedMsg.set_author(name=f'{status_emojis[p.attributes["STATUS"]]} {p.attributes["STATUS"]}')
         #embedMsg = discord.Embed(title=title, description=f'{team_name}', color=color)
         embedMsg.set_thumbnail(url="attachment://portrait.png")
+        if stats_image != None: embedMsg.set_image(url="attachment://player_stats.png")
 
         if league_settings["LOCK"] == 0:
             if p.attributes["TEAMID"] == 0:
@@ -271,7 +275,7 @@ class Everyone(commands.Cog, name="Everyone"):
                     button.disabled = True
         '''
 
-        await ctx.send(file=thumb, embed=embedMsg, view=view)
+        await ctx.send(files=[thumb, stats_image], embed=embedMsg, view=view)
 
     
     @commands.hybrid_command(name="free_agents", with_app_command=True, description="Lists all free agents of a given position.")
@@ -311,6 +315,7 @@ class Everyone(commands.Cog, name="Everyone"):
     @commands.hybrid_command(name="stats", with_app_command=True, description="List a player's stats.")
     @app_commands.describe(player_id="A player's full name or ID number.")
     async def stats(self, ctx, player_id, season : int):
+        '''
         p = getPlayer(players, player_id)
         stats_data = pull_csv(data_path + f"stats/s{season}_w1.csv")
         rec = None
@@ -331,7 +336,10 @@ class Everyone(commands.Cog, name="Everyone"):
         df.index += 1
         df.index.name = "Week"
         dfi.export(df, "stats.png", max_cols=-1, table_conversion='matplotlib')
-        await ctx.send(file=discord.File("stats.png"))
+        '''
+        p = getPlayer(players, player_id)
+        pic = p.stats_image()
+        await ctx.send(file=pic)
         
     #async def cog_command_error(self, ctx, error):
     #    await ctx.message.reply(error)
