@@ -90,8 +90,6 @@ core_attributes = {
     'P' :  ['KPW',  'KAC',  'AWR',  'SPD',  'THP',  'THA',  'TKL',  'BSHD', 'FIT']
 }
 
-print(core_attributes["DB"])
-
 def simplest_type(s):
     try:
         return literal_eval(s)
@@ -116,12 +114,11 @@ def positions_sort(a, b):
         return -1
 
 stat_breakdowns = {
-    "passing"  : {
-        "QBCompletions" : "COMP",
-        "QBAttempts" : "ATT",
-        "QBPassYards" : "YDS",
-        "QBInts" : "INT"
-    }
+    "QBCompletions" : "pCOMP",
+    "QBAttempts" : "pATT",
+    "QBPassYards" : "pYDS",
+    "QBPassTDs" : "pTD",
+    "QBInts" : "pINT",
 }
 
 '''

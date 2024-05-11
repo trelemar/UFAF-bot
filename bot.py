@@ -309,11 +309,26 @@ class Everyone(commands.Cog, name="Everyone"):
         #msg = msg + f'### TOTAL: {count}'
         #await ctx.send(msg)
     @commands.hybrid_command(name="stats", with_app_command=True, description="List a player's stats.")
+    @app_commands.describe(player_id="A player's full name or ID number.")
     async def stats(self, ctx, player_id):
-        pass
+        p = getPlayer(players, player_id)
+        stats_data = pull_csv(data_path + "stats/s1_w1.csv")
+        rec = None
+        for ref in stats_data:
+            if ref["PID"] == p.attributes["INDEX"]: rec = ref
+
+        if rec == None:
+            ctx.send("No stats found")
+            return
+        t = [rec, rec, rec]
+        df = pd.DataFrame(t)
+        df.index += 1
+        df.index.name = "Week"
+        dfi.export(df, "stats.png", max_cols=-1, table_conversion='matplotlib')
+        await ctx.send(file=discord.File("stats.png"))
         
-        async def cog_command_error(self, ctx, error):
-            await ctx.message.reply(error)
+    #async def cog_command_error(self, ctx, error):
+    #    await ctx.message.reply(error)
 
 class ConfirmButton(discord.ui.Button):
     def __init__(self, *args):
@@ -371,7 +386,7 @@ async def processTransaction(msg_id, message):
     #global last_known_update_time
 
     for i in message.guild.channels:
-        if i.name == "transactions-feed":
+        if i.name == "transaction-feed":
             transactions_feed = i
         elif i.name == "player-upgrades":
             player_upgrade_channel = i
