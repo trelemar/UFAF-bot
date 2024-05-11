@@ -255,7 +255,10 @@ class Everyone(commands.Cog, name="Everyone"):
         embedMsg.set_author(name=f'{status_emojis[p.attributes["STATUS"]]} {p.attributes["STATUS"]}')
         #embedMsg = discord.Embed(title=title, description=f'{team_name}', color=color)
         embedMsg.set_thumbnail(url="attachment://portrait.png")
-        if stats_image != None: embedMsg.set_image(url="attachment://player_stats.png")
+        image_files = [thumb]
+        if stats_image != None:
+            embedMsg.set_image(url="attachment://player_stats.png")
+            image_files.append(stats_image)
 
         if league_settings["LOCK"] == 0:
             if p.attributes["TEAMID"] == 0:
@@ -275,7 +278,7 @@ class Everyone(commands.Cog, name="Everyone"):
                     button.disabled = True
         '''
 
-        await ctx.send(files=[thumb, stats_image], embed=embedMsg, view=view)
+        await ctx.send(files=image_files, embed=embedMsg, view=view)
 
     
     @commands.hybrid_command(name="free_agents", with_app_command=True, description="Lists all free agents of a given position.")

@@ -9,9 +9,9 @@ def main():
 	stat_path = sys.argv[1]
 	out_path = sys.argv[2]
 	#stat_path = "/mnt/rasp/stat_logs/s1/"
-	players = data.pull_csv(stat_path + "../../ROSTER.csv")
+	players = data.pull_csv(stat_path + "../../../ROSTER.csv")
 	p_dict = {}
-	teams = data.pull_csv(f'{stat_path}../../TEAMS.csv')
+	teams = data.pull_csv(f'{stat_path}../../../TEAMS.csv')
 
 	team_table = {}
 	for team in teams:
@@ -20,7 +20,7 @@ def main():
 
 	stat_files = []
 	for i in os.listdir(stat_path):
-		if not os.path.isdir(i):
+		if not os.path.isdir(i) and i[0] != ".":
 			stat_files.append(i)
 
 	print(stat_files)

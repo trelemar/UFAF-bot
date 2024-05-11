@@ -158,7 +158,10 @@ stats_by_type = {
 default_stat_ranges = {
     "PASSING" : ["QB"],
     "RUSHING" : ["RB", "FB"],
-    "RECEIVING" : ["WR", "TE"]
+    "RECEIVING" : ["WR", "TE"],
+    "DEFENSE" : [],
+    "KICKING" : [],
+    "NONE" : ["OL", "LT", "LG", "C", "RG", "RT"]
 }
 
 def get_default_stat_range(pos):
@@ -268,6 +271,10 @@ class Player:
         print(self.attributes["SPEED"])
 
     def stats_image(self, league_settings, kind):
+
+        if kind == "NONE":
+            return
+
         stats_path = data_path + f'stats/s{league_settings["SEASON"]}/'
         stat_files = []
         for i in os.listdir(stats_path):
@@ -276,6 +283,7 @@ class Player:
 
         #stats_data = pull_csv(data_path + f'stats/s{league_settings["SEASON"]}_w1.csv')
         print(stat_files)
+        stat_files.sort()
         t = []
         kind_breakdowns = stats_by_type[kind]
         for i, f in enumerate(stat_files):
@@ -285,21 +293,20 @@ class Player:
                 if ref["PID"] == self.attributes["INDEX"]: rec = ref
 
             if rec == None:
-                ctx.send("No stats found")
-                return
-
-            named_week_stats = {"Week" : i + 1, "Name" : self.full_name}
-            for k, v in rec.items():
-                if k in kind_breakdowns:
-                    named_week_stats[kind_breakdowns[k]] = v
-            t.append(named_week_stats)
+                #ctx.send("No stats found")
+                print(f'no stats found in sheet {f} for {self.attributes["INDEX"]}')
+            else:
+                named_week_stats = {"Week" : i + 1, "Name" : self.full_name}
+                for k, v in rec.items():
+                    if k in kind_breakdowns:
+                        named_week_stats[kind_breakdowns[k]] = v
+                t.append(named_week_stats)
 
         #t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
 
-        df = pd.DataFrame(t)
-        df.set_index("Week")
-        df.index += 1
-        df.index.name = "Week"
+        df = pd.DataFrame(t).set_index("Week")
+        #df.index += 1
+        #df.index.name = "Week"
 
 
         df.loc['TOTAL']= df.sum(numeric_only=True, axis=0)
@@ -313,6 +320,8 @@ class Player:
         elif kind == "RUSHING":
             df["YPC"] = round((df["YDS"] / df["ATT"]), 2)
             df = df[["ATT", "YDS", "YPC", "TD", "FUM"]]
+        elif kind == 'RECEIVING':
+            pass
 
 
         whole_numbers = ["COMP", "ATT", "YDS", "TD", "INT", "FUM"]
