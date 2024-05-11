@@ -114,11 +114,11 @@ def positions_sort(a, b):
         return -1
 
 stat_breakdowns = {
-    "QBCompletions" : "pCOMP",
-    "QBAttempts" : "pATT",
-    "QBPassYards" : "pYDS",
-    "QBPassTDs" : "pTD",
-    "QBInts" : "pINT",
+    "QBCompletions" : "COMP",
+    "QBAttempts" : "ATT",
+    "QBPassYards" : "YDS",
+    "QBPassTDs" : "TD",
+    "QBInts" : "INT",
 }
 
 '''

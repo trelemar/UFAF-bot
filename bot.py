@@ -8,7 +8,7 @@ from discord.ext.commands import Greedy, Context # or a subclass of yours
 from functools import cmp_to_key
 import math
 import json
-import sys
+import sys, os
 import datetime
 from datetime import date
 
@@ -310,9 +310,9 @@ class Everyone(commands.Cog, name="Everyone"):
         #await ctx.send(msg)
     @commands.hybrid_command(name="stats", with_app_command=True, description="List a player's stats.")
     @app_commands.describe(player_id="A player's full name or ID number.")
-    async def stats(self, ctx, player_id):
+    async def stats(self, ctx, player_id, season : int):
         p = getPlayer(players, player_id)
-        stats_data = pull_csv(data_path + "stats/s1_w1.csv")
+        stats_data = pull_csv(data_path + f"stats/s{season}_w1.csv")
         rec = None
         for ref in stats_data:
             if ref["PID"] == p.attributes["INDEX"]: rec = ref
@@ -320,7 +320,13 @@ class Everyone(commands.Cog, name="Everyone"):
         if rec == None:
             ctx.send("No stats found")
             return
-        t = [rec, rec, rec]
+
+        named_week_stats = {"Name" : p.full_name}
+        for k, v in rec.items():
+            if k in stat_breakdowns:
+                named_week_stats[stat_breakdowns[k]] = v
+        t = [named_week_stats, named_week_stats, named_week_stats]
+
         df = pd.DataFrame(t)
         df.index += 1
         df.index.name = "Week"
