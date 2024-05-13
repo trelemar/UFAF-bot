@@ -308,38 +308,40 @@ class Player:
 
         #t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
 
-        df = pd.DataFrame(t).set_index("Week")
-        #df.index += 1
-        #df.index.name = "Week"
+        if len(t) > 0:
+            
+            df = pd.DataFrame(t).set_index("Week")
+            #df.index += 1
+            #df.index.name = "Week"
 
 
-        df.loc['TOTAL']= df.sum(numeric_only=True, axis=0)
-        df["Name"] = ""
-        df.at["TOTAL", "Week"] = ""
-        df.at["TOTAL","TEAM"] = ""
-        df.at["TOTAL", "Name"] = self.full_name
+            df.loc['TOTAL']= df.sum(numeric_only=True, axis=0)
+            df["Name"] = ""
+            df.at["TOTAL", "Week"] = ""
+            df.at["TOTAL","TEAM"] = ""
+            df.at["TOTAL", "Name"] = self.full_name
 
-        if kind == "PASSING":
-            df["AVG"] = round((df["COMP"] / df["ATT"]), 2)
-            df = df[["TEAM", "COMP", "ATT", "AVG", "YDS", "TD", "INT"]]
-        elif kind == "RUSHING":
-            df["YPC"] = round((df["YDS"] / df["ATT"]), 2)
-            df = df[["TEAM", "ATT", "YDS", "YPC", "TD", "FUM"]]
-        elif kind == 'RECEIVING':
-            df["Y/CAT"] = round(df["YDS"] / df["REC"], 1)
-            df = df[["TEAM", "REC", "YDS", "Y/CAT", "YAC", "TD", "LONG"]]
-            pass
+            if kind == "PASSING":
+                df["AVG"] = round((df["COMP"] / df["ATT"]), 2)
+                df = df[["TEAM", "COMP", "ATT", "AVG", "YDS", "TD", "INT"]]
+            elif kind == "RUSHING":
+                df["YPC"] = round((df["YDS"] / df["ATT"]), 2)
+                df = df[["TEAM", "ATT", "YDS", "YPC", "TD", "FUM"]]
+            elif kind == 'RECEIVING':
+                df["Y/CAT"] = round(df["YDS"] / df["REC"], 1)
+                df = df[["TEAM", "REC", "YDS", "Y/CAT", "YAC", "TD", "LONG"]]
+                pass
 
 
-        whole_numbers = ["REC", "COMP", "ATT", "YDS", "YAC", "LONG", "TD", "INT", "FUM"]
-        test = {}
-        for k in whole_numbers:
-            if k in df.columns:
-                test[k] = int
-        df = df.astype(test)
+            whole_numbers = ["REC", "COMP", "ATT", "YDS", "YAC", "LONG", "TD", "INT", "FUM"]
+            test = {}
+            for k in whole_numbers:
+                if k in df.columns:
+                    test[k] = int
+            df = df.astype(test)
 
-        dfi.export(df, "player_stats.png", max_cols=-1, table_conversion='matplotlib')
-        return discord.File("player_stats.png")
+            dfi.export(df, "player_stats.png", max_cols=-1, table_conversion='matplotlib')
+            return discord.File("player_stats.png")
 
     def team_emoji(self, ctx, teams_table):
         tid = self.attributes["TEAMID"]
