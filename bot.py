@@ -248,8 +248,9 @@ class Everyone(commands.Cog, name="Everyone"):
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         title = f'{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {p.attributes["DEV"]}'
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
-        embedMsg.add_field(name="", value=f'**Age** {p.attributes["AGE"]}')
-        embedMsg.add_field(name="", value=f'**Ht** {height} · **Wt** {p.attributes["Weight"]} lbs', inline=False)
+        embedMsg.add_field(name="", value=f'**Age:** {p.attributes["AGE"]}')
+        embedMsg.add_field(name="", value=f'**Ht:** {height} · **Wt:** {p.attributes["Weight"]} lbs', inline=False)
+        embedMsg.add_field(name="", value=f'**College:** {p.attributes["COLLEGE"]}')
         #embedMsg.add_field(name="", value=f'**College** {p["College"]} · **Hometown** {p["Hometown"]}, {p["State"]}', inline=False)
 
         for rating_name in core_attributes[p.attributes["POS"]]:
@@ -315,7 +316,7 @@ class Everyone(commands.Cog, name="Everyone"):
             for pos, player_list in depth_chart.items():
                 if pos in positions:
                     if len(player_list) > 0:
-                        msg += f'### {pos}**\n'
+                        msg += f'### {pos}:\n'
                     for i, p in enumerate(player_list):
                         count += 1
                         msg = msg + f'{i+1}. **{p.letter_grade()}**\t#{p.attributes["NUMBER"]}\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
