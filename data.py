@@ -211,12 +211,12 @@ letter_grades = {
     "A+"    :   range(97, 100)
 }
 
-def get_team_emoji(message, team):
-    if message.guild == None:
+def get_team_emoji(guild, team):
+    if guild == None:
         return ""
     emoji_id = 0
     if team == 0: team = "ufaf"
-    for emoji in message.guild.emojis:
+    for emoji in guild.emojis:
         if emoji.name == removeSpacesAndPeriods(team):
             emoji_id = emoji.id
     emoji_string = "<:{}:{}>".format(removeSpacesAndPeriods(team), emoji_id)
@@ -309,7 +309,7 @@ class Player:
         #t = [named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats, named_week_stats]
 
         if len(t) > 0:
-            
+
             df = pd.DataFrame(t).set_index("Week")
             #df.index += 1
             #df.index.name = "Week"
@@ -359,7 +359,7 @@ class Player:
         return emoji_string
 
     def quick_info(self):
-        return f'**{self.letter_grade()}**\t{self.attributes["POS"]}\t#{self.attributes["NUMBER"]}\t{self.full_name}\t*ID#{self.attributes["INDEX"]}*'
+        return f'**{self.letter_grade()}** {self.attributes["POS"]} #{self.attributes["NUMBER"]} {self.full_name} *ID#{self.attributes["INDEX"]}*'
 
     def assign_random_dev_trait(self):
         levels = []
