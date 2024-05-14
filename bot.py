@@ -171,6 +171,7 @@ async def resolve_waivers():
             else:
                 waiver_order = league_settings["WAIVER-ORDER"].split(",")
                 claims = str(ref["CLAIMS"]).split(",")
+                tid_to_pop = None
                 for i, tid in enumerate(waiver_order):
                     if tid in claims:
                         signing_team = tid
@@ -178,13 +179,20 @@ async def resolve_waivers():
                         p.attributes["TEAMID"] = int(signing_team)
                         p.attributes["STATUS"] = "Active"
                         new_signings.append(p)
+                        tid_to_pop = tid
                         break
+                if tid_to_pop != None:
+                    waiver_order.pop(waiver_order.index(tid_to_pop))
+                    waiver_order.append(tid_to_pop)
+                    print(waiver_order)
+                    command = bot.get_command("set")
+                    await command(bot.get_guild(1186088092608778240), "WAIVER-ORDER", ",".join(str(tid) for tid in waiver_order), True)
         else:
             still_waivers.append(ref)
     msg = "The following players have been claimed through waivers:\n"
     for p in new_signings:
         team = team_table[p.attributes["TEAMID"]]
-        msg += f'**{team["CITY"]}** - {p.quick_info()}\n'
+        msg += f'**({get_team_emoji(bot.get_guild(1186088092608778240), team["CITY"])}{team["CITY"]})** {p.quick_info()}\n'
     msg += "The following players are no longer on waivers and are free to sign with any team:\n"
     for p in free_agents:
         p.attributes["CONTRACT"] = 0
@@ -240,8 +248,9 @@ class Everyone(commands.Cog, name="Everyone"):
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         title = f'{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {p.attributes["DEV"]}'
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
-        embedMsg.add_field(name="", value=f'**Age** {p.attributes["AGE"]}')
-        embedMsg.add_field(name="", value=f'**Ht** {height} · **Wt** {p.attributes["Weight"]} lbs', inline=False)
+        embedMsg.add_field(name="", value=f'**Age:** {p.attributes["AGE"]}')
+        embedMsg.add_field(name="", value=f'**Ht:** {height} · **Wt:** {p.attributes["Weight"]} lbs', inline=False)
+        embedMsg.add_field(name="", value=f'**College:** {p.attributes["COLLEGE"]}')
         #embedMsg.add_field(name="", value=f'**College** {p["College"]} · **Hometown** {p["Hometown"]}, {p["State"]}', inline=False)
 
         for rating_name in core_attributes[p.attributes["POS"]]:
@@ -307,7 +316,7 @@ class Everyone(commands.Cog, name="Everyone"):
             for pos, player_list in depth_chart.items():
                 if pos in positions:
                     if len(player_list) > 0:
-                        msg += f'### {pos}**\n'
+                        msg += f'### {pos}:\n'
                     for i, p in enumerate(player_list):
                         count += 1
                         msg = msg + f'{i+1}. **{p.letter_grade()}**\t#{p.attributes["NUMBER"]}\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
@@ -414,6 +423,7 @@ async def processTransaction(msg_id, message):
     p = transaction["player"]
 
     team = team_table[transaction["team_id"]]
+    guild = bot.get_guild(1186088092608778240)
 
     depth_chart = get_depth_chart(transaction["team_id"], players)
     transaction_message = None
@@ -448,7 +458,7 @@ async def processTransaction(msg_id, message):
                 p.attributes["STATUS"] = "Active"
                 p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]]) + 1
             msg = f'{p.full_name} has signed with {team["CITY"]}'
-            transaction_message = f'**{team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
+            transaction_message = f'**{get_team_emoji(guild, team["CITY"])} {team["CITY"]}** sign:\n{p.attributes["POS"]} {p.full_name}'
             if transaction["ps"] == True:
                 transaction_message += "\n\nTo their practice squad."
 
@@ -464,19 +474,19 @@ async def processTransaction(msg_id, message):
             })
         push_csv(waivers, data_path + "WAIVERS.csv")
         msg = f'{team["CITY"]} has released {p.full_name}'
-        transaction_message = f'**{team["CITY"]}** release:\n{p.attributes["POS"]} {p.full_name}'
+        transaction_message = f'**{get_team_emoji(guild, team["CITY"])} {team["CITY"]}** release:\n{p.attributes["POS"]} {p.full_name}'
 
     elif transaction["type"] == "promote":
         p.attributes["STATUS"] = "Active"
         p.attributes["DEPTH"] = len(depth_chart[p.attributes["POS"]])
         msg = f'{team["CITY"]} has promoted {p.full_name}'
-        transaction_message = f'**{team["CITY"]}** promote:\n{p.attributes["POS"]} {p.full_name}'
+        transaction_message = f'**{get_team_emoji(guild, team["CITY"])} {team["CITY"]}** promote:\n{p.attributes["POS"]} {p.full_name}'
 
     elif transaction["type"] == "demote":
         p.attributes["STATUS"] = "Practice Squad"
         p.attributes["DEPTH"] = "NA"
         msg = f'{team["CITY"]} has demoted {p.full_name}'
-        transaction_message = f'**{team["CITY"]}** demote:\n{p.attributes["POS"]} {p.full_name}'
+        transaction_message = f'**{get_team_emoji(guild, team["CITY"])} {team["CITY"]}** demote:\n{p.attributes["POS"]} {p.full_name}'
 
     save_changes_to_players()
 
@@ -517,7 +527,8 @@ class LeagueOwner(commands.Cog, name="League Owner"):
         with open('league_settings.json', 'w') as settings_file:
             json.dump(league_settings, settings_file)
 
-        await ctx.message.reply(f'League setting "{setting}" has been set to "{value}"')
+        if not quiet:
+            await ctx.message.reply(f'League setting "{setting}" has been set to "{value}"')
 
     @commands.command()
     @commands.has_any_role("DEVELOPER", "League Owner")
