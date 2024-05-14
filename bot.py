@@ -250,7 +250,7 @@ class Everyone(commands.Cog, name="Everyone"):
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
         embedMsg.add_field(name="", value=f'**Age:** {p.attributes["AGE"]}')
         embedMsg.add_field(name="", value=f'**Ht:** {height} · **Wt:** {p.attributes["Weight"]} lbs', inline=False)
-        embedMsg.add_field(name="", value=f'**College:** {p.attributes["COLLEGE"]}')
+        embedMsg.add_field(name="", value=f'**College:** {p.attributes["COLLEGE"]}', inline=False)
         #embedMsg.add_field(name="", value=f'**College** {p["College"]} · **Hometown** {p["Hometown"]}, {p["State"]}', inline=False)
 
         for rating_name in core_attributes[p.attributes["POS"]]:
