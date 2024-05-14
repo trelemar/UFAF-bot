@@ -47,6 +47,8 @@ else:
     data_path = "/home/trevor/UFAF_data/"
 '''
 
+BETA = prefix == "?" and True or False
+
 def init():
     global player_records, teams, team_table, transaction_queue, players, league_settings
     with open("league_settings.json") as settings_file:
@@ -146,7 +148,11 @@ async def new_day_task():
     push_csv(teams, data_path + "TEAMS.csv")
 
 async def resolve_waivers():
-    c = bot.get_channel(1234912241782886562)
+
+    if not BETA:
+        c = bot.get_channel(1234912241782886562)
+    else:
+        c = bot.get_channel(1240013780600225852)
     waivers = pull_csv(data_path + "WAIVERS.csv")
     #for i, data in enumerate(waivers):
 
@@ -411,11 +417,10 @@ def save_changes_to_players():
 async def processTransaction(msg_id, message):
     #global last_known_update_time
 
-    for i in message.guild.channels:
-        if i.name == "transaction-feed":
-            transactions_feed = i
-        elif i.name == "player-upgrades":
-            player_upgrade_channel = i
+    if BETA:
+        transactions_feed = bot.get_channel(1240013780600225852)
+    else:
+        transactions_feed = bot.get_channel(1240017926845759528)
 
     msg = ""
     transaction = transaction_queue[msg_id]
@@ -648,6 +653,11 @@ class TeamOwner(commands.Cog, name="Team Owner"):
     @commands.hybrid_command(name="practice", with_app_command=True, description="Daily task to gradually improve players.")
     @commands.has_role("Team Owner")
     async def practice(self, ctx):
+        if BETA:
+            prog_feed = bot.get_channel(1240016034946093147)
+        else:
+            prog_feed = bot.get_channel(1238612958808899654)
+
         ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
         if len(ownedTeams) == 0:
             await ctx.reply("You are not a team owner!")
@@ -668,8 +678,8 @@ class TeamOwner(commands.Cog, name="Team Owner"):
                 for r, v in advs.items():
                     msg += f'{p.attributes["POS"]} {p.attributes["NUMBER"]} {p.full_name}\'s {r} is now **{v}**\n'
         save_changes_to_players()
-        msg += f"**{team['CITY']} has completed their daily practice.**"
-        await ctx.send(msg)
+        msg += f"**{get_team_emoji(bot.get_guild(1186088092608778240), team['CITY'])} {team['CITY']} has completed their daily practice.**"
+        await prog_feed.send(msg)
     
     @commands.hybrid_command(name="sign", with_app_command=True, description="Sign a player to a team's roster")
     @commands.has_role("Team Owner")
