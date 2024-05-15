@@ -163,9 +163,9 @@ default_stat_ranges = {
     "PASSING" : ["QB"],
     "RUSHING" : ["RB", "FB"],
     "RECEIVING" : ["WR", "TE"],
-    "DEFENSE" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "DB", "FS", "SS", "DB"],
-    "KICKING" : ["K", "P"],
-    "NONE" : ["OL", "LT", "LG", "C", "RG", "RT"]
+    #"DEFENSE" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "DB", "FS", "SS", "DB"],
+    #"KICKING" : ["K", "P"],
+    "NONE" : ["OL", "LT", "LG", "C", "RG", "RT", "DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "DB", "FS", "SS", "DB", "K", "P"]
 }
 
 def get_default_stat_range(pos):
