@@ -150,7 +150,7 @@ async def new_day_task():
 async def resolve_waivers():
 
     if not BETA:
-        c = bot.get_channel(1234912241782886562)
+        c = bot.get_channel(1240017926845759528)
     else:
         c = bot.get_channel(1240013780600225852)
     waivers = pull_csv(data_path + "WAIVERS.csv")
@@ -203,6 +203,8 @@ async def resolve_waivers():
     for p in free_agents:
         p.attributes["CONTRACT"] = 0
         msg = msg + p.quick_info() + "\n"
+    if len(new_signings) <= 0 and len(free_agents) <= 0:
+        msg = "No waiver news today."
     await c.send(msg)
     push_csv(still_waivers, data_path + "WAIVERS.csv")
     save_changes_to_players()
