@@ -125,6 +125,12 @@ async def on_ready():
     #await bot.tree.sync()
     await new_day_task.start()
 
+@bot.event
+async def on_member_join(member):
+    c = bot.get_channel(1240411739074461737)
+
+    await c.send(f'{member.name} joined. Welcome to the UFAF!')
+
 
 def cmp_items(a, b):
     if positions.index(a["POS"]) > positions.index(b["POS"]):
