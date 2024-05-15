@@ -163,8 +163,8 @@ default_stat_ranges = {
     "PASSING" : ["QB"],
     "RUSHING" : ["RB", "FB"],
     "RECEIVING" : ["WR", "TE"],
-    "DEFENSE" : [],
-    "KICKING" : [],
+    "DEFENSE" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "DB", "FS", "SS", "DB"],
+    "KICKING" : ["K", "P"],
     "NONE" : ["OL", "LT", "LG", "C", "RG", "RT"]
 }
 
