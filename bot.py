@@ -313,7 +313,37 @@ class Everyone(commands.Cog, name="Everyone"):
             if p.attributes["POS"] == position and p.attributes["TEAMID"] == 0:
                 msg = msg + f'**{p.letter_grade()}**\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
         await ctx.reply(content=msg)
-
+    @commands.hybrid_command(name="roster_breakdown", with_app_command=True, description="List positional counts and # of players")
+    async def roster_breakdown(self, ctx, team_role : str):
+        init()
+        team_name = await role_to_team_name(ctx, team_role)
+        tid = team_name_to_id(team_name, teams)
+        msg = f'{team_name}\'s roster breakdown:\n'
+        depth_chart = get_depth_chart(tid, players)
+        roster = get_all_team_players(tid, players)
+        count = 0
+        for pos, chart in depth_chart.items():
+            if len(chart) > 0:
+                count += len(chart)
+                acount = 0
+                pscount = 0
+                for p in chart:
+                    if p.attributes["STATUS"] == "Practice Squad":
+                        pscount += 1
+                    else:
+                        acount += 1
+                msg += f'**{pos}: {acount}**'
+                if pscount > 0: msg += f' *PS: {pscount}*'
+                msg += "\n"
+        acount = 0
+        pscount = 0
+        for p in roster:
+            if p.attributes["STATUS"] == "Practice Squad":
+                pscount += 1
+            else:
+                acount += 1
+        msg += f'**TOTAL:** {len(roster)}, **Active:** {acount}, **Practice Squad:** {pscount}'
+        await ctx.reply(msg)
     @commands.hybrid_command(name="roster", with_app_command=True, description="List a team's entire roster.")
     async def roster(self, ctx, team_role : str):
         init()
