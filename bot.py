@@ -718,6 +718,7 @@ class TeamOwner(commands.Cog, name="Team Owner"):
         save_changes_to_players()
         msg += f"**{get_team_emoji(bot.get_guild(1186088092608778240), team['CITY'])} {team['CITY']} has completed their daily practice.**"
         await prog_feed.send(msg)
+        await ctx.send(msg)
     
     @commands.hybrid_command(name="sign", with_app_command=True, description="Sign a player to a team's roster")
     @commands.has_role("Team Owner")
