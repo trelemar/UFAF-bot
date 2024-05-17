@@ -711,15 +711,11 @@ class TeamOwner(commands.Cog, name="Team Owner"):
             return
         init()
         team = team_table[ownedTeams[0]]
-        '''
         if team["PRACTICED"] == 1:
             await ctx.reply(f'{team["CITY"]} has already completed their daily practice.')
             return
-        #else:
-        '''
-        if True:
+        else:
             team["PRACTICED"] = 1
-            team["PRACTICED"] = 0
             team["PSTREAK"] += 1
             push_csv(teams, data_path + "TEAMS.csv")
         roster = get_all_team_players(team["ID"], players)
