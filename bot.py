@@ -630,9 +630,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
                 for n in player.attributes:
                     r = player.attributes[n]
                     if type(r) == float and not is_nan(r):
-                        print(r)
                         player.attributes[n] = format(int(r), ".4g")
-                        print(player.attributes[n])
 
                 export_list.append(player.attributes)
                 used.append(player.attributes["INDEX"])
@@ -713,29 +711,37 @@ class TeamOwner(commands.Cog, name="Team Owner"):
             return
         init()
         team = team_table[ownedTeams[0]]
+        '''
         if team["PRACTICED"] == 1:
             await ctx.reply(f'{team["CITY"]} has already completed their daily practice.')
             return
-        else:
+        #else:
+        '''
+        if True:
             team["PRACTICED"] = 1
+            team["PRACTICED"] = 0
             team["PSTREAK"] += 1
             push_csv(teams, data_path + "TEAMS.csv")
         roster = get_all_team_players(team["ID"], players)
-        msg = ""
+        upgrade_msg = ""
         streak = team["PSTREAK"]
         for p in roster:
             if streak % 3 == 0:
-                advs = p.practice(1.5)
+                advs, old = p.practice(1.5)
             else:
-                advs = p.practice(1)
+                advs, old = p.practice(1)
             if len(advs) > 0:
                 for r, v in advs.items():
-                    msg += f'{p.attributes["POS"]} {p.attributes["NUMBER"]} {p.full_name}\'s {r} is now **{v}**\n'
+                    #upgrade_msg += f'{p.attributes["POS"]} {p.attributes["NUMBER"]} {p.full_name}\'s {r} is now **{v}**\n'
+                    upgrade_msg += f'{p.quick_info()} - **{r} advanced to {v}**\n'
+            if old != p.letter_grade():
+                upgrade_msg += f'⏫{p.quick_info()} - **OVR advanced to {p.letter_grade()}**\n'
         save_changes_to_players()
-        msg += f"**{get_team_emoji(bot.get_guild(1186088092608778240), team['CITY'])} {team['CITY']} has completed their daily practice.**\n"
+        msg = f"## {get_team_emoji(bot.get_guild(1186088092608778240), team['CITY'])} {team['CITY']} has completed their daily practice.\n"
         if streak % 3 == 0:
             msg += "**STREAK BONUS x1.5**\n"
-        msg += f'Current streak: {streak}, Next bonus in: {abs((streak % 3)-3)}'
+        msg += f'Current streak: {streak}, Next bonus in: {abs((streak % 3)-3)}\n\n'
+        msg += upgrade_msg
         await prog_feed.send(msg)
         await ctx.send(msg)
     

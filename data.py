@@ -274,6 +274,7 @@ class Player:
         return g
     def practice(self, multiplier):
         advancements = {}
+        old_ovr = self.letter_grade()
         for name in core_attributes[self.attributes["POS"]]:
             att_name = attributes[name]
             old_grade = self.rating_grade(att_name)
@@ -281,7 +282,7 @@ class Player:
             new_grade = self.rating_grade(att_name)
             if old_grade != new_grade: advancements[name] = new_grade
         print(f'{self.full_name} advanced: {advancements}')
-        return advancements
+        return advancements, old_ovr
 
         print(self.attributes["SPEED"])
 
@@ -370,7 +371,7 @@ class Player:
         return emoji_string
 
     def quick_info(self):
-        return f'**{self.letter_grade()}** #{self.attributes["NUMBER"]} {dev_emojis[self.attributes["DEV"]]}**{self.full_name}** ({self.attributes["AGE"]}yo) *ID#{self.attributes["INDEX"]}*'
+        return f'**{self.letter_grade()}** {self.attributes["POS"]} #{self.attributes["NUMBER"]} {dev_emojis[self.attributes["DEV"]]} **{self.full_name}** ({self.attributes["AGE"]}yo) *ID#{self.attributes["INDEX"]}*'
 
     def assign_random_dev_trait(self):
         levels = []
