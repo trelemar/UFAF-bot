@@ -268,12 +268,12 @@ class Player:
             if ovr in r:
                 g = letter
         return g
-    def practice(self):
+    def practice(self, multiplier):
         advancements = {}
         for name in core_attributes[self.attributes["POS"]]:
             att_name = attributes[name]
             old_grade = self.rating_grade(att_name)
-            self.attributes[att_name] = round(self.attributes[att_name] + dev_levels[self.attributes["DEV"]], 3)
+            self.attributes[att_name] = round(self.attributes[att_name] + (dev_levels[self.attributes["DEV"]] * multiplier), 3)
             new_grade = self.rating_grade(att_name)
             if old_grade != new_grade: advancements[name] = new_grade
         print(f'{self.full_name} advanced: {advancements}')

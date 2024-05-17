@@ -150,6 +150,8 @@ def datestr_converter(s):
 async def new_day_task():
     await resolve_waivers()
     for t in teams:
+        if t["PRACTICED"] == 0: 
+            t["PSTREAK"] = 0
         t["PRACTICED"] = 0
     push_csv(teams, data_path + "TEAMS.csv")
 
@@ -708,16 +710,24 @@ class TeamOwner(commands.Cog, name="Team Owner"):
             return
         else:
             team["PRACTICED"] = 1
+            team["PSTREAK"] += 1
             push_csv(teams, data_path + "TEAMS.csv")
         roster = get_all_team_players(team["ID"], players)
         msg = ""
+        streak = team["PSTREAK"]
         for p in roster:
-            advs = p.practice()
+            if streak % 3 == 0:
+                advs = p.practice(1.5)
+            else:
+                advs = p.practice(1)
             if len(advs) > 0:
                 for r, v in advs.items():
                     msg += f'{p.attributes["POS"]} {p.attributes["NUMBER"]} {p.full_name}\'s {r} is now **{v}**\n'
         save_changes_to_players()
-        msg += f"**{get_team_emoji(bot.get_guild(1186088092608778240), team['CITY'])} {team['CITY']} has completed their daily practice.**"
+        msg += f"**{get_team_emoji(bot.get_guild(1186088092608778240), team['CITY'])} {team['CITY']} has completed their daily practice.**\n"
+        if streak % 3 == 0:
+            msg += "**STREAK BONUS x1.5**\n"
+        msg += f'Current streak: {streak}, Next bonus in: {abs((streak % 3)-3)}'
         await prog_feed.send(msg)
         await ctx.send(msg)
     
