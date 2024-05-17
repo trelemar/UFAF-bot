@@ -43,6 +43,13 @@ status_emojis = {
     "Free Agent" : "🔵"
 }
 
+dev_emojis = {
+    "Bronze" : "🥉",
+    "Silver" : "🥈",
+    "Gold" : "🥇",
+    "Platinum" : "🏆"
+}
+
 dev_levels = {"Bronze" : 0.05, "Silver" : 0.075, "Gold" : 0.1, "Platinum" : 0.125}
 dev_weights = [5, 3, .5, 0.1]
 
@@ -359,7 +366,7 @@ class Player:
         return emoji_string
 
     def quick_info(self):
-        return f'**{self.letter_grade()}** {self.attributes["POS"]} #{self.attributes["NUMBER"]} {self.full_name} *ID#{self.attributes["INDEX"]}*'
+        return f'**{self.letter_grade()}** #{self.attributes["NUMBER"]} {dev_emojis[self.attributes["DEV"]]}**{self.full_name}** ({self.attributes["AGE"]}yo) *ID#{self.attributes["INDEX"]}*'
 
     def assign_random_dev_trait(self):
         levels = []

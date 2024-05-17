@@ -311,7 +311,7 @@ class Everyone(commands.Cog, name="Everyone"):
         msg = f'## Free Agent {position}s\n'
         for p in players:
             if p.attributes["POS"] == position and p.attributes["TEAMID"] == 0:
-                msg = msg + f'**{p.letter_grade()}**\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
+                msg = msg + f'{p.quick_info()}\n'
         await ctx.reply(content=msg)
     @commands.hybrid_command(name="roster_breakdown", with_app_command=True, description="List positional counts and # of players")
     async def roster_breakdown(self, ctx, team_role : str):
@@ -363,7 +363,8 @@ class Everyone(commands.Cog, name="Everyone"):
                         msg += f'### {pos}:\n'
                     for i, p in enumerate(player_list):
                         count += 1
-                        msg = msg + f'{i+1}. **{p.letter_grade()}**\t#{p.attributes["NUMBER"]}\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
+                        msg = msg + f'{i+1}. {p.quick_info()}\n'
+                        #msg = msg + f'{i+1}. **{p.letter_grade()}**\t#{p.attributes["NUMBER"]}\t{p.full_name}\t*ID#{p.attributes["INDEX"]}*\n'
             await ctx.send(msg)
 
         #msg = msg + f'### TOTAL: {count}'
