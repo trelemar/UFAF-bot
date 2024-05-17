@@ -115,6 +115,8 @@ def simplest_type(s):
     except:
         return s
 
+def is_nan(x):
+    return (x != x)
 
 def pull_csv(filename):
     players_data = pd.read_csv(filename)
@@ -245,11 +247,13 @@ class Player:
                 rating_index = i
                 for name, value in v.items():
                     if name != "Pos" and name != "SUM":
-                        player_weights.append(self.attributes[name] * floor(value))
+                        player_weights.append(self.attributes[name] * value)
 
 
         #(rating * weight)+(rating *weight)
-        return(round(sum(player_weights)/weight_sum))
+        ovr = round(sum(player_weights)/weight_sum)
+        print(ovr)
+        return(ovr)
     def get_default_stat_range(self):
         for r, positions in default_stat_ranges.items():
             if self.attributes["POS"] in positions: kind = r

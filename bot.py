@@ -626,6 +626,14 @@ class LeagueOwner(commands.Cog, name="League Owner"):
                     player = depth_chart[pos][amount + count]
                     count += 1
                 msg = msg + f'{pos} - {player.full_name}\n'
+
+                for n in player.attributes:
+                    r = player.attributes[n]
+                    if type(r) == float and not is_nan(r):
+                        print(r)
+                        player.attributes[n] = format(int(r), ".4g")
+                        print(player.attributes[n])
+
                 export_list.append(player.attributes)
                 used.append(player.attributes["INDEX"])
                 '''
