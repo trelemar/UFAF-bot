@@ -260,7 +260,7 @@ class Everyone(commands.Cog, name="Everyone"):
         #title = f'**{p.full_name}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
         team_emoji = p.team_emoji(ctx, team_table)
         #title = f'**{p.full_name}** · *SUPERSTAR*\n**{p.letter_grade()}** · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}'
-        title = f'{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {p.attributes["DEV"]}'
+        title = f'ID#{p.attributes["INDEX"]}\n{p.full_name} · {p.attributes["POS"]} · #{p.attributes["NUMBER"]}\n**{p.letter_grade()}** {dev_emojis[p.attributes["DEV"]]} {p.attributes["DEV"]}'
         embedMsg = discord.Embed(title=title, description=f'{team_emoji} {team_name}', color=color)
         embedMsg.add_field(name="", value=f'**Age:** {p.attributes["AGE"]}')
         embedMsg.add_field(name="", value=f'**Ht:** {height} · **Wt:** {p.attributes["Weight"]} lbs', inline=False)
@@ -269,7 +269,7 @@ class Everyone(commands.Cog, name="Everyone"):
 
         for rating_name in core_attributes[p.attributes["POS"]]:
             l = p.rating_grade(attributes[rating_name])
-            embedMsg.add_field(name=l, value=rating_name, inline=True)
+            embedMsg.add_field(name=rating_name, value=l, inline=True)
         '''
         embedMsg.add_field(name="🌵 Gunslinger", value="+THP, -AWR for each active *🔪 Deep Threat* WR", inline=True)
         embedMsg.add_field(name="🏠 Homebody", value="+AWR when playing at home", inline=True)
