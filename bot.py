@@ -613,6 +613,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
         init()
         roster = get_all_team_players(team_id, players)
         depth_chart = get_depth_chart(team_id, players)
+        team = team_table[int(team_id)]
 
         msg = ""
         used = []
@@ -627,11 +628,6 @@ class LeagueOwner(commands.Cog, name="League Owner"):
                     count += 1
                 msg = msg + f'{pos} - {player.full_name}\n'
 
-                for n in player.attributes:
-                    r = player.attributes[n]
-                    if type(r) == float and not is_nan(r):
-                        player.attributes[n] = format(int(r), ".4g")
-
                 export_list.append(player.attributes)
                 used.append(player.attributes["INDEX"])
                 '''
@@ -642,10 +638,25 @@ class LeagueOwner(commands.Cog, name="League Owner"):
                         break
                 '''
         for i, p in enumerate(roster):
+            for n in p.attributes:
+                r = p.attributes[n]
+                if type(r) == float and not is_nan(r):
+                    p.attributes[n] = format(int(r), ".4g")
             if not p.attributes["INDEX"] in used:
                 export_list.append(p.attributes)
         await ctx.reply(msg)
-        push_csv(export_list, data_path + f'export/{team_table[int(team_id)]["CITY"]}.csv')
+        export_list = [p for p in export_list if p["STATUS"] == "Active"]
+        atts_to_remove = ["TEAMID", "STATUS", "SALARY", "DEPTH", "DEV", "COLLEGE", "CONTRACT"]
+        for i, p in enumerate(export_list):
+            for a in atts_to_remove:
+                del p[a]
+            p["INDEX"] = i
+        
+        epath = data_path + f'export/UFAF - {team["CITY"]} {team["NICKNAME"]}/'
+        if not os.path.exists(epath):
+            os.mkdir(epath)
+        push_csv(export_list, epath + "ROSTER.csv")
+        #push_csv(export_list, data_path + f'export/{team_table[int(team_id)]["CITY"]}.csv')
 
 class TeamOwner(commands.Cog, name="Team Owner"):
     def __init__(self, bot):
@@ -799,6 +810,36 @@ class TeamOwner(commands.Cog, name="Team Owner"):
 
         transaction_queue[str(msg.id)] = {"player" : p, "type" : "sign", "team_id" : tid, "ps" : False, "on_waivers" : on_waivers, "wid" : wid}
         print(transaction_queue)
+    
+    @commands.hybrid_command(name="renumber", with_app_command=True, description="Change a player's jersey number.")
+    @commands.has_role("Team Owner")
+    async def renumber(self, ctx, player_id : str, number : int):
+        init()
+        if league_settings["LOCK"] == 1:
+            print("LOCKED")
+            await ctx.reply("Team rosters are currently locked.")
+            return
+        init()
+        pid = str(player_id)
+        ownedTeams = get_owned_team_ids(ctx, ctx.message.author, teams)
+        p = getPlayer(players, pid)
+
+        if p.attributes["TEAMID"] in ownedTeams:
+            team = team_table[p.attributes["TEAMID"]]
+            roster = get_all_team_players(team["ID"], players)
+            if number in range(0, 100):
+                for tm in roster:
+                    if tm.attributes["NUMBER"] == number:
+                        await ctx.reply(f'The following player is already wearing #{number}\n{tm.quick_info()}')
+                        return
+                p.attributes["NUMBER"] = number
+                await ctx.reply(f'{p.full_name} has been set to wear #{number}')
+                save_changes_to_players()
+            else:
+                await ctx.reply(f'{number} is not valid. Please choose a number 0-99.')
+        else:
+            await ctx.reply(f'{p.full_name} is not on a team you own.')
+
     @commands.hybrid_command(name="release", with_app_command=True, description="Release a player from a team you own.")
     @commands.has_role("Team Owner")
     async def release(self, ctx, player_id : str):
