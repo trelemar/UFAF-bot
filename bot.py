@@ -609,8 +609,19 @@ class LeagueOwner(commands.Cog, name="League Owner"):
         
     @commands.command()
     @commands.has_role("League Owner")
-    async def build(self, ctx, team_id):
+    async def build(self, ctx, team_role):
         init()
+
+        try:
+            role = await commands.RoleConverter().convert(ctx, team_role)
+            print(role.name)
+            for team in teams:
+                if role.name == f'{team["CITY"]} {team["NICKNAME"]}':
+                    team_id = team["ID"]
+                    city = team["CITY"]
+        except IndexError:
+            pass
+
         roster = get_all_team_players(team_id, players)
         depth_chart = get_depth_chart(team_id, players)
         team = team_table[int(team_id)]
