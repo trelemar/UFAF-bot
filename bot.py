@@ -611,7 +611,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
     @commands.has_role("League Owner")
     async def build(self, ctx, team_role):
         init()
-
+        
         try:
             role = await commands.RoleConverter().convert(ctx, team_role)
             print(role.name)
@@ -641,13 +641,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
 
                 export_list.append(player.attributes)
                 used.append(player.attributes["INDEX"])
-                '''
-                for p in roster:
-                    if p.attributes["POS"] == pos and not p.attributes["INDEX"] in used:
-                        used.append(p.attributes["INDEX"])
-                        msg = msg + f'{pos} - {p.full_name}\n'
-                        break
-                '''
+
         for i, p in enumerate(roster):
             for n in p.attributes:
                 r = p.attributes[n]
@@ -657,6 +651,9 @@ class LeagueOwner(commands.Cog, name="League Owner"):
                 export_list.append(p.attributes)
         await ctx.reply(msg)
         export_list = [p for p in export_list if p["STATUS"] == "Active"]
+        if len(export_list) != 53:
+            await ctx.reply(f"Roster count error. Got {len(export_list)} players.")
+            return
         atts_to_remove = ["TEAMID", "STATUS", "SALARY", "DEPTH", "DEV", "COLLEGE", "CONTRACT"]
         for i, p in enumerate(export_list):
             for a in atts_to_remove:
@@ -667,7 +664,7 @@ class LeagueOwner(commands.Cog, name="League Owner"):
         if not os.path.exists(epath):
             os.mkdir(epath)
         push_csv(export_list, epath + "ROSTER.csv")
-        #push_csv(export_list, data_path + f'export/{team_table[int(team_id)]["CITY"]}.csv')
+        await ctx.reply(f'Exported roster with {len(export_list)} players.')
 
 class TeamOwner(commands.Cog, name="Team Owner"):
     def __init__(self, bot):

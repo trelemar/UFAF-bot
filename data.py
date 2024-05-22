@@ -87,6 +87,7 @@ attributes = {
     "POT" : "POTENTIAL"
 }
 
+#game_attributes = ["FIRST", "LAST", "SKIN", "NUMBER", "Height", "Weight", "POS", "AWARE"	SPEED	TLK BRK	FUMBLE	CATCH	RTRN	PAS BLK	RUN BLK	THR PWR	THR ACC	KCK PWR	KCK ACC	BLK SHD	PAS RSH	TACKLE	HIT PWR	M COV	Z COV	FITNESS	DISCIPLINE	POTENTIAL	VISOR	SLEEVES	BANDS	WRAPS	AGE	PORTRAIT
 core_attributes = {
     'QB' : ['THP',  'THA',  'AWR',  'SPD',  'FIT',  'FUM'],
     'RB' : ['TLB',  'SPD',  'FUM', 'AWR', 'CAT',  'RTRN', 'PBLK'],
@@ -165,6 +166,20 @@ stats_by_type = {
         "ReceivingTDs" : "TD",
         "LongestReception" : "LONG",
         "YardsAfterCatch" : "YAC"
+    },
+    "DEFENSIVE": {
+        "Tackles" : "TKL",
+        "Sacks" : "SACK",
+        "KnockDowns" : "PDEF",
+        "Interceptions" : "INT",
+        "ForcedFumbles" : "FUM",
+        "DefensiveTDs" : "TD"
+    },
+    "KICKING" : {
+        "FGMade" : "FGM",
+        "FGAttempted" : "FGA",
+        "XPMade" : "XPM",
+        "XPAttempted" : "XPA"
     }
 }
 
@@ -172,9 +187,9 @@ default_stat_ranges = {
     "PASSING" : ["QB"],
     "RUSHING" : ["RB", "FB"],
     "RECEIVING" : ["WR", "TE"],
-    #"DEFENSE" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "DB", "FS", "SS", "DB"],
-    #"KICKING" : ["K", "P"],
-    "NONE" : ["OL", "LT", "LG", "C", "RG", "RT", "DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "DB", "FS", "SS", "DB", "K", "P"]
+    "DEFENSIVE" : ["DL", "DE", "DT", "LB", "OLB", "MLB", "CB", "FS", "SS", "DB"],
+    "KICKING" : ["K", "P"],
+    "NONE" : ["OL", "LT", "LG", "C", "RG", "RT"]
 }
 
 def get_default_stat_range(pos):
@@ -303,6 +318,8 @@ class Player:
         t = []
         kind_breakdowns = stats_by_type[kind]
         for i, f in enumerate(stat_files):
+            if i + 1 >= league_settings["WEEK"]:
+                return
             stats_data = pull_csv(stats_path + f)
             rec = None
             for ref in stats_data:
@@ -342,10 +359,13 @@ class Player:
             elif kind == 'RECEIVING':
                 df["Y/CAT"] = round(df["YDS"] / df["REC"], 1)
                 df = df[["TEAM", "REC", "YDS", "Y/CAT", "YAC", "TD", "LONG"]]
-                pass
+            elif kind == "DEFENSIVE":
+                df = df[["TEAM", "TKL", "SACK", "PDEF", "INT", "FUM"]]
+            elif kind == "KICKING":
+                df = df[["TEAM", "FGM", "FGA", "XPM", "XPA"]]
 
 
-            whole_numbers = ["REC", "COMP", "ATT", "YDS", "YAC", "LONG", "TD", "INT", "FUM"]
+            whole_numbers = ["REC", "COMP", "ATT", "YDS", "YAC", "LONG", "TD", "INT", "FUM", "FGM", "FGA", "XPM", "XPA", "TKL", "INT", "PDEF"]
             test = {}
             for k in whole_numbers:
                 if k in df.columns:
